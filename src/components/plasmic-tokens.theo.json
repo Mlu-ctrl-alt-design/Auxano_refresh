@@ -1,0 +1,69 @@
+{
+  "props": [
+    {
+      "name": "AuxanoOrange",
+      "type": "color",
+      "value": "#D36134",
+      "category": "color",
+      "meta": {
+        "projectId": "oGQcGtbFzYohLFbpGrRxL3",
+        "id": "kIXZiwkj8"
+      }
+    },
+    {
+      "name": "Graybg",
+      "type": "color",
+      "value": "#F1F5F9",
+      "category": "color",
+      "meta": {
+        "projectId": "oGQcGtbFzYohLFbpGrRxL3",
+        "id": "xWnLbHkzL"
+      }
+    },
+    {
+      "name": "TextGray",
+      "type": "color",
+      "value": "#434343",
+      "category": "color",
+      "meta": {
+        "projectId": "oGQcGtbFzYohLFbpGrRxL3",
+        "id": "IhGUZWkMP"
+      }
+    },
+    {
+      "name": "almost white",
+      "type": "color",
+      "value": "#FCFCFC",
+      "category": "color",
+      "meta": {
+        "projectId": "oGQcGtbFzYohLFbpGrRxL3",
+        "id": "_SJKE-afz"
+      }
+    },
+    {
+      "name": "base",
+      "type": "spacing",
+      "value": "16px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "oGQcGtbFzYohLFbpGrRxL3",
+        "id": "uyB8FyBfU"
+      }
+    },
+    {
+      "name": "basex2",
+      "type": "spacing",
+      "value": "16px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "oGQcGtbFzYohLFbpGrRxL3",
+        "id": "tKYBpA2Rz"
+      }
+    }
+  ],
+  "global": {
+    "meta": {
+      "source": "plasmic.app"
+    }
+  }
+}
