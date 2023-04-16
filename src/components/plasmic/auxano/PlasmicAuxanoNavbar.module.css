@@ -29,6 +29,18 @@
   align-items: center;
   justify-content: space-between;
   min-width: 0;
+  margin-left: calc(0px - 64px);
+  width: calc(100% + 64px);
+}
+.navbar > :global(.__wab_flex-container) > *,
+.navbar > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.navbar > :global(.__wab_flex-container) > picture > img,
+.navbar
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 64px;
 }
 .navbar {
   width: 100%;
@@ -50,7 +62,7 @@
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    padding: 12px;
+    padding: 12px 48px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -58,8 +70,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: calc(0px - var(--token-uyB8FyBfU));
-    width: calc(100% + var(--token-uyB8FyBfU));
+    margin-left: calc(0px - 56px);
+    width: calc(100% + 56px);
     margin-top: calc(0px - 0px);
     height: calc(100% + 0px);
   }
@@ -73,7 +85,7 @@
     > :global(.__wab_slot)
     > picture
     > img {
-    margin-left: var(--token-uyB8FyBfU);
+    margin-left: 56px;
     margin-top: 0px;
   }
 }
@@ -85,21 +97,23 @@
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    padding: 12px;
+    padding: 12px 48px;
   }
 }
 .logo21 {
-  width: auto;
-  height: 67px;
+  width: 100%;
+  height: auto;
   display: flex;
   position: relative;
   overflow: hidden;
   flex-direction: column;
+  min-width: 0;
 }
 .logo21 > :global(.__wab_flex-container) {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  min-width: 0;
   margin-top: calc(0px - 10px);
   height: calc(100% + 10px);
 }
@@ -114,14 +128,15 @@
   margin-top: 10px;
 }
 .logo21 {
-  width: auto;
-  height: 67px;
+  width: 100%;
+  height: auto;
   display: flex;
   position: relative;
   overflow: hidden;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .logo21 {
@@ -142,8 +157,9 @@
 .img {
   position: relative;
   object-fit: fill;
-  max-width: 100%;
+  max-width: 65%;
   height: auto;
+  width: auto;
 }
 .img > picture > img {
   object-fit: fill;
@@ -154,15 +170,17 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .img {
     height: auto;
+    width: auto;
+    max-width: 45%;
   }
 }
 .svg {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 1em;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
-  height: 1em;
   display: none;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -380,17 +398,19 @@
   position: relative;
 }
 .navItems {
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   position: relative;
   flex-direction: row;
-  padding: var(--token-uyB8FyBfU);
+  min-width: 0;
+  padding: 12px;
 }
 .navItems > :global(.__wab_flex-container) {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  min-width: 0;
   margin-left: calc(0px - 20px);
   width: calc(100% + 20px);
 }
@@ -405,14 +425,15 @@
   margin-left: 20px;
 }
 .navItems {
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   position: relative;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--token-uyB8FyBfU);
+  min-width: 0;
+  padding: 12px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .navItems {
@@ -533,4 +554,6 @@
   line-height: 20px;
   color: rgba(247, 249, 251, 1);
   position: relative;
+  width: auto;
+  padding: 0px;
 }

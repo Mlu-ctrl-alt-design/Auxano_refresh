@@ -22,7 +22,8 @@ import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_auxano.module.css"; // plasmic-import: oGQcGtbFzYohLFbpGrRxL3/projectcss
 import sty from "./PlasmicAuxanoNavbar.module.css"; // plasmic-import: NaO7GDEY89/css
-import logo21Png6W6DQyfAv from "./images/logo21Png.png"; // plasmic-import: 6w6DQyfAv/picture
+import MenuAlt01SvgrepoComsvgIcon from "./icons/PlasmicIcon__MenuAlt01SvgrepoComsvg"; // plasmic-import: Lv8Znu3CNG/icon
+import logo212XpngXScDVnNt from "./images/logo212Xpng.png"; // plasmic-import: xScDVn-NT/picture
 
 export const PlasmicAuxanoNavbar__VariantProps = new Array();
 
@@ -92,21 +93,27 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                 : "auto"
             }
             displayMaxHeight={"none"}
-            displayMaxWidth={"100%"}
+            displayMaxWidth={
+              hasVariant(globalVariants, "screen", "mobileOnly") ? "45%" : "65%"
+            }
             displayMinHeight={"0"}
             displayMinWidth={"0"}
-            displayWidth={"auto"}
+            displayWidth={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "auto"
+                : "auto"
+            }
             loading={"lazy"}
             src={{
-              src: logo21Png6W6DQyfAv,
-              fullWidth: 220,
-              fullHeight: 68,
+              src: logo212XpngXScDVnNt,
+              fullWidth: 439,
+              fullHeight: 134,
               aspectRatio: undefined
             }}
           />
         </p.Stack>
         {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
-          <svg
+          <MenuAlt01SvgrepoComsvgIcon
             data-plasmic-name={"svg"}
             data-plasmic-override={overrides.svg}
             className={classNames(projectcss.all, sty.svg)}

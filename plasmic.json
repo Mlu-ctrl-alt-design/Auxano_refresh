@@ -142,6 +142,11 @@
           "id": "SsHUxMu660",
           "name": "BarChart2Icon",
           "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__BarChart2.jsx"
+        },
+        {
+          "id": "Lv8Znu3CNG",
+          "name": "MenuAlt01SvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__MenuAlt01SvgrepoComsvg.jsx"
         }
       ],
       "images": [
