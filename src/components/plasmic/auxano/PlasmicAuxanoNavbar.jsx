@@ -22,15 +22,7 @@ import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_auxano.module.css"; // plasmic-import: oGQcGtbFzYohLFbpGrRxL3/projectcss
 import sty from "./PlasmicAuxanoNavbar.module.css"; // plasmic-import: NaO7GDEY89/css
-import VectorIcon from "./icons/PlasmicIcon__Vector"; // plasmic-import: ARaGWbusD/icon
-import Vector2Icon from "./icons/PlasmicIcon__Vector2"; // plasmic-import: 54fgFiIVv2/icon
-import Vector3Icon from "./icons/PlasmicIcon__Vector3"; // plasmic-import: FvtAmqf4DD/icon
-import Vector4Icon from "./icons/PlasmicIcon__Vector4"; // plasmic-import: Af8W2fKOCs/icon
-import Vector5Icon from "./icons/PlasmicIcon__Vector5"; // plasmic-import: vTWh1pCPXu/icon
-import Vector6Icon from "./icons/PlasmicIcon__Vector6"; // plasmic-import: m2ezYW9JIc/icon
-import Vector7Icon from "./icons/PlasmicIcon__Vector7"; // plasmic-import: PqQwYULlsQ/icon
-import vector8MSbhKZZa from "./images/vector8.svg"; // plasmic-import: mSbh-K_ZZa/picture
-import vector9B5G8TSvIl from "./images/vector9.svg"; // plasmic-import: B5_g8tSvIL/picture
+import logo21Png6W6DQyfAv from "./images/logo21Png.png"; // plasmic-import: 6w6DQyfAv/picture
 
 export const PlasmicAuxanoNavbar__VariantProps = new Array();
 
@@ -89,172 +81,114 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
           hasGap={true}
           className={classNames(projectcss.all, sty.logo21)}
         >
+          <p.PlasmicImg
+            data-plasmic-name={"img"}
+            data-plasmic-override={overrides.img}
+            alt={""}
+            className={classNames(sty.img)}
+            displayHeight={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "auto"
+                : "auto"
+            }
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: logo21Png6W6DQyfAv,
+              fullWidth: 220,
+              fullHeight: 68,
+              aspectRatio: undefined
+            }}
+          />
+        </p.Stack>
+        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+          <svg
+            data-plasmic-name={"svg"}
+            data-plasmic-override={overrides.svg}
+            className={classNames(projectcss.all, sty.svg)}
+            role={"img"}
+          />
+        ) : null}
+        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
           <div
-            data-plasmic-name={"layer2"}
-            data-plasmic-override={overrides.layer2}
-            className={classNames(projectcss.all, sty.layer2)}
+            data-plasmic-name={"links"}
+            data-plasmic-override={overrides.links}
+            className={classNames(projectcss.all, sty.links)}
           >
-            <div
-              data-plasmic-name={"layer1"}
-              data-plasmic-override={overrides.layer1}
-              className={classNames(projectcss.all, sty.layer1)}
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"linkItem"}
+              data-plasmic-override={overrides.linkItem}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.linkItem)}
             >
-              <VectorIcon
-                className={classNames(projectcss.all, sty.svg__cFZoZ)}
-                role={"img"}
-              />
-
-              <Vector2Icon
-                className={classNames(projectcss.all, sty.svg__vftPc)}
-                role={"img"}
-              />
-
-              <Vector3Icon
-                className={classNames(projectcss.all, sty.svg__jv8ZR)}
-                role={"img"}
-              />
-
-              <Vector4Icon
-                className={classNames(projectcss.all, sty.svg__eh9Cr)}
-                role={"img"}
-              />
-
-              <Vector5Icon
-                className={classNames(projectcss.all, sty.svg__n77AV)}
-                role={"img"}
-              />
-
-              <Vector6Icon
-                className={classNames(projectcss.all, sty.svg__oc3WX)}
-                role={"img"}
-              />
-
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__rCAu1
+                  sty.text__uz2P
                 )}
               >
-                {"BUSINESS CONSULTING"}
+                {"Home"}
               </div>
-              <Vector7Icon
-                className={classNames(projectcss.all, sty.svg__e5Rk)}
-                role={"img"}
-              />
-
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img___8QIu)}
-                displayHeight={"45px"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"38px"}
-                loading={"lazy"}
-                src={{
-                  src: vector8MSbhKZZa,
-                  fullWidth: 38,
-                  fullHeight: 45,
-                  aspectRatio: 0.844444
-                }}
-              />
-
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__tE7H7)}
-                displayHeight={"67px"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: vector9B5G8TSvIl,
-                  fullWidth: 42,
-                  fullHeight: 67,
-                  aspectRatio: 0.626866
-                }}
-              />
-            </div>
+            </p.Stack>
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"linkItem2"}
+              data-plasmic-override={overrides.linkItem2}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.linkItem2)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__kPo3Q
+                )}
+              >
+                {"About"}
+              </div>
+            </p.Stack>
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"linkItem3"}
+              data-plasmic-override={overrides.linkItem3}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.linkItem3)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__eAun2
+                )}
+              >
+                {"Services"}
+              </div>
+            </p.Stack>
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"linkItem4"}
+              data-plasmic-override={overrides.linkItem4}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.linkItem4)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__dGgBc
+                )}
+              >
+                {"Contact"}
+              </div>
+            </p.Stack>
           </div>
-        </p.Stack>
-        <div
-          data-plasmic-name={"links"}
-          data-plasmic-override={overrides.links}
-          className={classNames(projectcss.all, sty.links)}
-        >
-          <p.Stack
-            as={"div"}
-            data-plasmic-name={"linkItem"}
-            data-plasmic-override={overrides.linkItem}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.linkItem)}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__uz2P
-              )}
-            >
-              {"Home"}
-            </div>
-          </p.Stack>
-          <p.Stack
-            as={"div"}
-            data-plasmic-name={"linkItem2"}
-            data-plasmic-override={overrides.linkItem2}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.linkItem2)}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__kPo3Q
-              )}
-            >
-              {"About"}
-            </div>
-          </p.Stack>
-          <p.Stack
-            as={"div"}
-            data-plasmic-name={"linkItem3"}
-            data-plasmic-override={overrides.linkItem3}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.linkItem3)}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__eAun2
-              )}
-            >
-              {"Services"}
-            </div>
-          </p.Stack>
-          <p.Stack
-            as={"div"}
-            data-plasmic-name={"linkItem4"}
-            data-plasmic-override={overrides.linkItem4}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.linkItem4)}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__dGgBc
-              )}
-            >
-              {"Contact"}
-            </div>
-          </p.Stack>
-        </div>
+        ) : null}
         {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
           <p.Stack
             as={"div"}
@@ -311,8 +245,8 @@ const PlasmicDescendants = {
     "root",
     "navbar",
     "logo21",
-    "layer2",
-    "layer1",
+    "img",
+    "svg",
     "links",
     "linkItem",
     "linkItem2",
@@ -327,8 +261,8 @@ const PlasmicDescendants = {
   navbar: [
     "navbar",
     "logo21",
-    "layer2",
-    "layer1",
+    "img",
+    "svg",
     "links",
     "linkItem",
     "linkItem2",
@@ -340,9 +274,9 @@ const PlasmicDescendants = {
     "button2"
   ],
 
-  logo21: ["logo21", "layer2", "layer1"],
-  layer2: ["layer2", "layer1"],
-  layer1: ["layer1"],
+  logo21: ["logo21", "img"],
+  img: ["img"],
+  svg: ["svg"],
   links: ["links", "linkItem", "linkItem2", "linkItem3", "linkItem4"],
   linkItem: ["linkItem"],
   linkItem2: ["linkItem2"],
@@ -389,8 +323,8 @@ export const PlasmicAuxanoNavbar = Object.assign(
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
     logo21: makeNodeComponent("logo21"),
-    layer2: makeNodeComponent("layer2"),
-    layer1: makeNodeComponent("layer1"),
+    img: makeNodeComponent("img"),
+    svg: makeNodeComponent("svg"),
     links: makeNodeComponent("links"),
     linkItem: makeNodeComponent("linkItem"),
     linkItem2: makeNodeComponent("linkItem2"),

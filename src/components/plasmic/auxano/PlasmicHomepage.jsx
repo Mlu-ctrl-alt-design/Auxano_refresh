@@ -523,10 +523,9 @@ function PlasmicHomepage__RenderFunc(props) {
                           </div>
                         </p.Stack>
                         <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__g6Gd6
-                          )}
+                          data-plasmic-name={"button"}
+                          data-plasmic-override={overrides.button}
+                          className={classNames(projectcss.all, sty.button)}
                         >
                           <p.Stack
                             as={"div"}
@@ -746,16 +745,9 @@ function PlasmicHomepage__RenderFunc(props) {
                     "we understand that every business is unique, and we tailor our turnaround strategies to each client's specific needs. Our goal is to help businesses achieve financial stability and long-term success by implementing proven strategies that are customized to their situation."
                   }
                 </div>
-                <button
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.button,
-                    projectcss.__wab_text,
-                    sty.button___3K6Zh
-                  )}
-                >
-                  {"Get in touch"}
-                </button>
+                <Button2
+                  className={classNames("__wab_instance", sty.button2___8FNws)}
+                />
               </p.Stack>
               <div className={classNames(projectcss.all, sty.column__l6KUx)} />
             </p.Stack>
@@ -793,6 +785,7 @@ const PlasmicDescendants = {
     "textAndSupportingText3",
     "text3",
     "supportingText4",
+    "button",
     "buttonBase",
     "arrowRight",
     "featureText4",
@@ -833,6 +826,7 @@ const PlasmicDescendants = {
     "textAndSupportingText3",
     "text3",
     "supportingText4",
+    "button",
     "buttonBase",
     "arrowRight",
     "featureText4",
@@ -863,6 +857,7 @@ const PlasmicDescendants = {
     "textAndSupportingText3",
     "text3",
     "supportingText4",
+    "button",
     "buttonBase",
     "arrowRight",
     "featureText4",
@@ -889,6 +884,7 @@ const PlasmicDescendants = {
     "textAndSupportingText3",
     "text3",
     "supportingText4",
+    "button",
     "buttonBase",
     "arrowRight",
     "featureText4",
@@ -932,6 +928,7 @@ const PlasmicDescendants = {
     "textAndSupportingText3",
     "text3",
     "supportingText4",
+    "button",
     "buttonBase",
     "arrowRight"
   ],
@@ -945,6 +942,7 @@ const PlasmicDescendants = {
 
   text3: ["text3"],
   supportingText4: ["supportingText4"],
+  button: ["button", "buttonBase", "arrowRight"],
   buttonBase: ["buttonBase", "arrowRight"],
   arrowRight: ["arrowRight"],
   featureText4: [
@@ -1030,6 +1028,7 @@ export const PlasmicHomepage = Object.assign(
     textAndSupportingText3: makeNodeComponent("textAndSupportingText3"),
     text3: makeNodeComponent("text3"),
     supportingText4: makeNodeComponent("supportingText4"),
+    button: makeNodeComponent("button"),
     buttonBase: makeNodeComponent("buttonBase"),
     arrowRight: makeNodeComponent("arrowRight"),
     featureText4: makeNodeComponent("featureText4"),

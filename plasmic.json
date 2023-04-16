@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -154,6 +154,16 @@
           "id": "B5_g8tSvIL",
           "name": "Vector 9",
           "filePath": "plasmic/auxano/images/vector9.svg"
+        },
+        {
+          "id": "xScDVn-NT",
+          "name": "logo 2@1@2x.png",
+          "filePath": "plasmic/auxano/images/logo212Xpng.png"
+        },
+        {
+          "id": "6w6DQyfAv",
+          "name": "logo 2@1.png",
+          "filePath": "plasmic/auxano/images/logo21Png.png"
         }
       ],
       "indirect": false,
