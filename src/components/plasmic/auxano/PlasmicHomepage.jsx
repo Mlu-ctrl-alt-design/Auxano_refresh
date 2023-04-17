@@ -18,7 +18,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import AuxanoNavbar from "../../AuxanoNavbar"; // plasmic-import: NaO7GDEY89/component
+import Nav from "../../Nav"; // plasmic-import: s6BAdvu7gu/component
 import Button2 from "../../Button2"; // plasmic-import: puKm7ksVLVR/component
 import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -73,10 +73,10 @@ function PlasmicHomepage__RenderFunc(props) {
             sty.root
           )}
         >
-          <AuxanoNavbar
-            data-plasmic-name={"auxanoNavbar"}
-            data-plasmic-override={overrides.auxanoNavbar}
-            className={classNames("__wab_instance", sty.auxanoNavbar)}
+          <Nav
+            data-plasmic-name={"nav"}
+            data-plasmic-override={overrides.nav}
+            className={classNames("__wab_instance", sty.nav)}
           />
 
           <div
@@ -761,7 +761,7 @@ function PlasmicHomepage__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "auxanoNavbar",
+    "nav",
     "headersection",
     "visionSection",
     "h4",
@@ -801,7 +801,7 @@ const PlasmicDescendants = {
     "h5"
   ],
 
-  auxanoNavbar: ["auxanoNavbar"],
+  nav: ["nav"],
   headersection: ["headersection"],
   visionSection: ["visionSection", "h4"],
   h4: ["h4"],
@@ -1004,7 +1004,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    auxanoNavbar: makeNodeComponent("auxanoNavbar"),
+    nav: makeNodeComponent("nav"),
     headersection: makeNodeComponent("headersection"),
     visionSection: makeNodeComponent("visionSection"),
     h4: makeNodeComponent("h4"),
