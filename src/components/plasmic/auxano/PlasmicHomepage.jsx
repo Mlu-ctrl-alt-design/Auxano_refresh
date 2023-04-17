@@ -816,51 +816,6 @@ function PlasmicHomepage__RenderFunc(props) {
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox___8WFo0
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__lOm0A
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#FBFBFB" }}
-                            >
-                              {"Director of something"}
-                            </span>
-                          </React.Fragment>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__ynsbp
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#F7F7F7" }}
-                            >
-                              {"Director of something"}
-                            </span>
-                          </React.Fragment>
-                        </div>
-                      </div>
-                    ) : null}
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
                           sty.freeBox__izBnF
                         )}
                       >

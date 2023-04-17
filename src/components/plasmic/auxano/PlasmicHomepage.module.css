@@ -1478,7 +1478,7 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 64px 128px;
+  padding: 32px 24px;
 }
 .columns__oJsX {
   display: flex;
@@ -1590,41 +1590,13 @@
   min-height: 0;
   padding: 8px;
 }
-.freeBox___8WFo0 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  object-fit: cover;
-  max-width: 100%;
-  background: linear-gradient(0deg, #ce9fff30 0%, #56b9ff 100%) 0% 0% / 100%
-      100% repeat,
-    url("https://images.unsplash.com/photo-1573497491765-dccce02b29df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80")
-      left 30% top -62% / 241px 100% no-repeat;
-  min-width: 0;
-  min-height: 0;
-  padding: 8px;
-}
-.text__lOm0A {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  color: var(--token-_SJKE-afz);
-  font-size: 9px;
-}
-.text__ynsbp {
-  position: relative;
-  width: 100px;
-  height: auto;
-  max-width: 100%;
-  font-size: 6px;
-}
 .freeBox__izBnF {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
   max-width: 100%;
   background: linear-gradient(0deg, #ce9fff30 0%, #56b9ff 100%) 0% 0% / 100%
       100% repeat,
@@ -1654,7 +1626,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
   max-width: 100%;
   background: linear-gradient(0deg, #ce9fff30 0%, #56b9ff 100%) 0% 0% / 100%
       100% repeat,
@@ -1684,12 +1657,14 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
   max-width: 100%;
   background: linear-gradient(0deg, #ce9fff30 0%, #56b9ff 100%) 0% 0% / 100%
       100% repeat,
     url("https://images.unsplash.com/photo-1573497491765-dccce02b29df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80")
       left 30% top -62% / 100% 100% no-repeat;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
   min-width: 0;
   min-height: 0;
   padding: 8px;
