@@ -688,8 +688,10 @@ function PlasmicHomepage__RenderFunc(props) {
             </div>
             <p.Stack
               as={"div"}
+              data-plasmic-name={"columns"}
+              data-plasmic-override={overrides.columns}
               hasGap={true}
-              className={classNames(projectcss.all, sty.columns__b9542)}
+              className={classNames(projectcss.all, sty.columns)}
             >
               <p.Stack
                 as={"div"}
@@ -755,51 +757,34 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-override={overrides.teamSection}
             className={classNames(projectcss.all, sty.teamSection)}
           >
-            <div className={classNames(projectcss.all, sty.columns__oJsX)}>
+            <div className={classNames(projectcss.all, sty.freeBox__s8Vj)}>
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.column__eO6AR)}
+                className={classNames(projectcss.all, sty.freeBox__vhmpt)}
               >
-                <div
+                <h3
                   className={classNames(
                     projectcss.all,
+                    projectcss.h3,
                     projectcss.__wab_text,
-                    sty.text__exiyX
+                    sty.h3__tMyyj
                   )}
                 >
                   <React.Fragment>
-                    <React.Fragment>{""}</React.Fragment>
-                    {
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__k89Ur
-                        )}
-                      >
-                        <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ color: "#424242" }}
-                          >
-                            {"Meet the team with 30 years of experience"}
-                          </span>
-                        </React.Fragment>
-                      </h3>
-                    }
-
-                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#424242" }}
+                    >
+                      {"Meet the team with 30 years of experience"}
+                    </span>
                   </React.Fragment>
-                </div>
+                </h3>
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text___57R2H
+                    sty.text__xdjba
                   )}
                 >
                   {
@@ -807,23 +792,23 @@ function PlasmicHomepage__RenderFunc(props) {
                   }
                 </div>
               </p.Stack>
-              <div className={classNames(projectcss.all, sty.column__bojgp)}>
-                {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__fGt2E)}>
+                <div className={classNames(projectcss.all, sty.freeBox__wIx3K)}>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__pvMhr)}
+                    className={classNames(projectcss.all, sty.freeBox__j6EXy)}
                   >
                     {true ? (
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__izBnF
+                          sty.freeBox__crdKo
                         )}
                       >
                         <div
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text___3Qbb3
+                            sty.text__orF7P
                           )}
                         >
                           <React.Fragment>
@@ -841,94 +826,7 @@ function PlasmicHomepage__RenderFunc(props) {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__wjqxo
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#F7F7F7" }}
-                            >
-                              {"Director of something"}
-                            </span>
-                          </React.Fragment>
-                        </div>
-                      </div>
-                    ) : null}
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__chqL7
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__xyCsH
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#FBFBFB" }}
-                            >
-                              {"Director of something"}
-                            </span>
-                          </React.Fragment>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__jR1Ly
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#F7F7F7" }}
-                            >
-                              {"Director of something"}
-                            </span>
-                          </React.Fragment>
-                        </div>
-                      </div>
-                    ) : null}
-                    {true ? (
-                      <div
-                        className={classNames(projectcss.all, sty.freeBox__kSO)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__aari
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#FBFBFB" }}
-                            >
-                              {"Director of something"}
-                            </span>
-                          </React.Fragment>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__lSdRs
+                            sty.text___8L4Ak
                           )}
                         >
                           <React.Fragment>
@@ -945,8 +843,136 @@ function PlasmicHomepage__RenderFunc(props) {
                       </div>
                     ) : null}
                   </div>
-                ) : null}
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__kaWmH)}
+                  >
+                    {true ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__ekJgJ
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__heWte
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#FBFBFB" }}
+                            >
+                              {"Director of something"}
+                            </span>
+                          </React.Fragment>
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__tBvg3
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#F7F7F7" }}
+                            >
+                              {"Director of something"}
+                            </span>
+                          </React.Fragment>
+                        </div>
+                      </div>
+                    ) : null}
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__r7X5M)}
+                  >
+                    {true ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__oygMe
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___8ZHe9
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#FBFBFB" }}
+                            >
+                              {"Director of something"}
+                            </span>
+                          </React.Fragment>
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__xG2L
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#F7F7F7" }}
+                            >
+                              {"Director of something"}
+                            </span>
+                          </React.Fragment>
+                        </div>
+                      </div>
+                    ) : null}
+                  </div>
+                </div>
               </div>
+              {true ? (
+                <div className={classNames(projectcss.all, sty.freeBox__n7Acl)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__spy7D)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__ofAvq)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__tqWc0)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__wSvV6)}
+                    />
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___21Lt6
+                      )}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__d1V5A)}
+                    />
+                  </div>
+                </div>
+              ) : null}
             </div>
           </div>
         </div>
@@ -994,6 +1020,7 @@ const PlasmicDescendants = {
     "servicesSection",
     "titleSection",
     "h2",
+    "columns",
     "h5",
     "teamSection"
   ],
@@ -1161,9 +1188,10 @@ const PlasmicDescendants = {
 
   text4: ["text4"],
   supportingText5: ["supportingText5"],
-  servicesSection: ["servicesSection", "titleSection", "h2", "h5"],
+  servicesSection: ["servicesSection", "titleSection", "h2", "columns", "h5"],
   titleSection: ["titleSection", "h2"],
   h2: ["h2"],
+  columns: ["columns", "h5"],
   h5: ["h5"],
   teamSection: ["teamSection"]
 };
@@ -1237,6 +1265,7 @@ export const PlasmicHomepage = Object.assign(
     servicesSection: makeNodeComponent("servicesSection"),
     titleSection: makeNodeComponent("titleSection"),
     h2: makeNodeComponent("h2"),
+    columns: makeNodeComponent("columns"),
     h5: makeNodeComponent("h5"),
     teamSection: makeNodeComponent("teamSection"),
     // Metadata about props expected for PlasmicHomepage
