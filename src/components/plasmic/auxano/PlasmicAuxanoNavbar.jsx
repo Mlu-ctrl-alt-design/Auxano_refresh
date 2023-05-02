@@ -149,6 +149,52 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
               data-plasmic-override={overrides.linkItem2}
               hasGap={true}
               className={classNames(projectcss.all, sty.linkItem2)}
+              onClick={async event => {
+                const $steps = {};
+                $steps["goToAbout"] = true
+                  ? (() => {
+                      const actionArgs = {
+                        destination: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "navigation",
+                            interactionUuid: "MAOty9dvA",
+                            componentUuid: "NaO7GDEY89",
+                            argName: "destination"
+                          },
+                          () => `/about`
+                        )
+                      };
+                      return __wrapUserFunction(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "MAOty9dvA",
+                          componentUuid: "NaO7GDEY89"
+                        },
+                        () =>
+                          (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]),
+                        actionArgs
+                      );
+                    })()
+                  : undefined;
+                if (
+                  typeof $steps["goToAbout"] === "object" &&
+                  typeof $steps["goToAbout"].then === "function"
+                ) {
+                  $steps["goToAbout"] = await __wrapUserPromise(
+                    {
+                      type: "InteractionLoc",
+                      actionName: "navigation",
+                      interactionUuid: "MAOty9dvA",
+                      componentUuid: "NaO7GDEY89"
+                    },
+                    $steps["goToAbout"]
+                  );
+                }
+              }}
             >
               <div
                 className={classNames(

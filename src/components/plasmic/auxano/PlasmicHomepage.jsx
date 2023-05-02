@@ -29,6 +29,10 @@ import ZapIcon from "./icons/PlasmicIcon__Zap"; // plasmic-import: jioqPss8S/ico
 import MailIcon from "./icons/PlasmicIcon__Mail"; // plasmic-import: _ML9L86z7M/icon
 import BarChart2Icon from "./icons/PlasmicIcon__BarChart2"; // plasmic-import: SsHUxMu660/icon
 import IconOutlinearrowCircleRightIcon from "./icons/PlasmicIcon__IconOutlinearrowCircleRight"; // plasmic-import: 5zaaodNA-j/icon
+import PlayIcon from "./icons/PlasmicIcon__Play"; // plasmic-import: PfPBwXScCL/icon
+import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: uM0UfxiiLg/icon
+import Play2Icon from "./icons/PlasmicIcon__Play2"; // plasmic-import: b3IC_eiOwR/icon
+import IconOutlinearrowRight2Icon from "./icons/PlasmicIcon__IconOutlinearrowRight2"; // plasmic-import: 1Aov_gh-ME/icon
 
 export const PlasmicHomepage__VariantProps = new Array();
 
@@ -1070,6 +1074,218 @@ function PlasmicHomepage__RenderFunc(props) {
                 </div>
               </div>
             </p.Stack>
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"testimonial"}
+              data-plasmic-override={overrides.testimonial}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.testimonial)}
+            >
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"frame26"}
+                data-plasmic-override={overrides.frame26}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.frame26)}
+              >
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"frame25"}
+                  data-plasmic-override={overrides.frame25}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.frame25)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__cFwF
+                    )}
+                  >
+                    {"People trust us"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__hovC
+                    )}
+                  >
+                    {
+                      "We’ve had the priviledge of helping out a few businesses, why take our word for it, Listen to what our clients have to say."
+                    }
+                  </div>
+                </p.Stack>
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"list"}
+                  data-plasmic-override={overrides.list}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.list)}
+                >
+                  <div
+                    data-plasmic-name={"_1"}
+                    data-plasmic-override={overrides._1}
+                    className={classNames(projectcss.all, sty._1)}
+                  >
+                    <div
+                      data-plasmic-name={"bg"}
+                      data-plasmic-override={overrides.bg}
+                      className={classNames(projectcss.all, sty.bg)}
+                    />
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__nWs6Z
+                      )}
+                    >
+                      {"Albert Flores"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__mG7O4
+                      )}
+                    >
+                      {"Founder of GearUp"}
+                    </div>
+                    <PlayIcon
+                      className={classNames(projectcss.all, sty.svg__zMFrM)}
+                      role={"img"}
+                    />
+                  </div>
+                  <div
+                    data-plasmic-name={"_2"}
+                    data-plasmic-override={overrides._2}
+                    className={classNames(projectcss.all, sty._2)}
+                  >
+                    <div
+                      data-plasmic-name={"bg2"}
+                      data-plasmic-override={overrides.bg2}
+                      className={classNames(projectcss.all, sty.bg2)}
+                    />
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__qqvFf
+                      )}
+                    >
+                      {"Leslie Alexander"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__stKh5
+                      )}
+                    >
+                      {"Co-Founder of Womenia"}
+                    </div>
+                    <div
+                      data-plasmic-name={"play"}
+                      data-plasmic-override={overrides.play}
+                      className={classNames(projectcss.all, sty.play)}
+                    >
+                      <div
+                        data-plasmic-name={"bg3"}
+                        data-plasmic-override={overrides.bg3}
+                        className={classNames(projectcss.all, sty.bg3)}
+                      />
+
+                      <Icon3Icon
+                        className={classNames(projectcss.all, sty.svg___04Z6O)}
+                        role={"img"}
+                      />
+                    </div>
+                  </div>
+                  <div
+                    data-plasmic-name={"_3"}
+                    data-plasmic-override={overrides._3}
+                    className={classNames(projectcss.all, sty._3)}
+                  >
+                    <div
+                      data-plasmic-name={"bg4"}
+                      data-plasmic-override={overrides.bg4}
+                      className={classNames(projectcss.all, sty.bg4)}
+                    />
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__jw9Up
+                      )}
+                    >
+                      {"Courtney Henry"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___6AsMs
+                      )}
+                    >
+                      {"Founder of CH Beauty"}
+                    </div>
+                    <Play2Icon
+                      className={classNames(projectcss.all, sty.svg__sTcpn)}
+                      role={"img"}
+                    />
+                  </div>
+                </p.Stack>
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"buttonPrimaryWithIcon"}
+                  data-plasmic-override={overrides.buttonPrimaryWithIcon}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    sty.buttonPrimaryWithIcon
+                  )}
+                >
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"frame1"}
+                    data-plasmic-override={overrides.frame1}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.frame1)}
+                  >
+                    <div
+                      data-plasmic-name={"seeAllReviews"}
+                      data-plasmic-override={overrides.seeAllReviews}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.seeAllReviews
+                      )}
+                    >
+                      {"See all reviews "}
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__zT7Ep)}
+                    >
+                      <p.Stack
+                        as={"div"}
+                        data-plasmic-name={"icon"}
+                        data-plasmic-override={overrides.icon}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.icon)}
+                      >
+                        <IconOutlinearrowRight2Icon
+                          className={classNames(projectcss.all, sty.svg__frkdn)}
+                          role={"img"}
+                        />
+                      </p.Stack>
+                    </div>
+                  </p.Stack>
+                </p.Stack>
+              </p.Stack>
+            </p.Stack>
             <Footer
               data-plasmic-name={"footer"}
               data-plasmic-override={overrides.footer}
@@ -1150,6 +1366,22 @@ const PlasmicDescendants = {
     "frame22",
     "person7",
     "frame23",
+    "testimonial",
+    "frame26",
+    "frame25",
+    "list",
+    "_1",
+    "bg",
+    "_2",
+    "bg2",
+    "play",
+    "bg3",
+    "_3",
+    "bg4",
+    "buttonPrimaryWithIcon",
+    "frame1",
+    "seeAllReviews",
+    "icon",
     "footer"
   ],
 
@@ -1427,6 +1659,63 @@ const PlasmicDescendants = {
   frame22: ["frame22"],
   person7: ["person7", "frame23"],
   frame23: ["frame23"],
+  testimonial: [
+    "testimonial",
+    "frame26",
+    "frame25",
+    "list",
+    "_1",
+    "bg",
+    "_2",
+    "bg2",
+    "play",
+    "bg3",
+    "_3",
+    "bg4",
+    "buttonPrimaryWithIcon",
+    "frame1",
+    "seeAllReviews",
+    "icon"
+  ],
+
+  frame26: [
+    "frame26",
+    "frame25",
+    "list",
+    "_1",
+    "bg",
+    "_2",
+    "bg2",
+    "play",
+    "bg3",
+    "_3",
+    "bg4",
+    "buttonPrimaryWithIcon",
+    "frame1",
+    "seeAllReviews",
+    "icon"
+  ],
+
+  frame25: ["frame25"],
+  list: ["list", "_1", "bg", "_2", "bg2", "play", "bg3", "_3", "bg4"],
+  _1: ["_1", "bg"],
+  bg: ["bg"],
+  _2: ["_2", "bg2", "play", "bg3"],
+  bg2: ["bg2"],
+  play: ["play", "bg3"],
+  bg3: ["bg3"],
+  _3: ["_3", "bg4"],
+  bg4: ["bg4"],
+  buttonPrimaryWithIcon: [
+    "buttonPrimaryWithIcon",
+    "frame1",
+    "seeAllReviews",
+    "icon"
+  ],
+
+  frame1: ["frame1", "seeAllReviews", "icon"],
+  seeAllReviews: ["seeAllReviews"],
+  icon: ["icon"],
   footer: ["footer"]
 };
 
@@ -1524,6 +1813,22 @@ export const PlasmicHomepage = Object.assign(
     frame22: makeNodeComponent("frame22"),
     person7: makeNodeComponent("person7"),
     frame23: makeNodeComponent("frame23"),
+    testimonial: makeNodeComponent("testimonial"),
+    frame26: makeNodeComponent("frame26"),
+    frame25: makeNodeComponent("frame25"),
+    list: makeNodeComponent("list"),
+    _1: makeNodeComponent("_1"),
+    bg: makeNodeComponent("bg"),
+    _2: makeNodeComponent("_2"),
+    bg2: makeNodeComponent("bg2"),
+    play: makeNodeComponent("play"),
+    bg3: makeNodeComponent("bg3"),
+    _3: makeNodeComponent("_3"),
+    bg4: makeNodeComponent("bg4"),
+    buttonPrimaryWithIcon: makeNodeComponent("buttonPrimaryWithIcon"),
+    frame1: makeNodeComponent("frame1"),
+    seeAllReviews: makeNodeComponent("seeAllReviews"),
+    icon: makeNodeComponent("icon"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
