@@ -20,6 +20,7 @@ import {
 } from "@plasmicapp/react-web";
 import AuxanoNavbar from "../../AuxanoNavbar"; // plasmic-import: NaO7GDEY89/component
 import Button2 from "../../Button2"; // plasmic-import: puKm7ksVLVR/component
+import Footer from "../../Footer"; // plasmic-import: 6NjpMkUH8g-/component
 import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_auxano.module.css"; // plasmic-import: oGQcGtbFzYohLFbpGrRxL3/projectcss
@@ -975,6 +976,17 @@ function PlasmicHomepage__RenderFunc(props) {
               ) : null}
             </div>
           </div>
+          <section
+            data-plasmic-name={"section"}
+            data-plasmic-override={overrides.section}
+            className={classNames(projectcss.all, sty.section)}
+          >
+            <Footer
+              data-plasmic-name={"footer"}
+              data-plasmic-override={overrides.footer}
+              className={classNames("__wab_instance", sty.footer)}
+            />
+          </section>
         </div>
       </div>
     </React.Fragment>
@@ -1022,7 +1034,9 @@ const PlasmicDescendants = {
     "h2",
     "columns",
     "h5",
-    "teamSection"
+    "teamSection",
+    "section",
+    "footer"
   ],
 
   auxanoNavbar: ["auxanoNavbar"],
@@ -1193,7 +1207,9 @@ const PlasmicDescendants = {
   h2: ["h2"],
   columns: ["columns", "h5"],
   h5: ["h5"],
-  teamSection: ["teamSection"]
+  teamSection: ["teamSection"],
+  section: ["section", "footer"],
+  footer: ["footer"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -1268,6 +1284,8 @@ export const PlasmicHomepage = Object.assign(
     columns: makeNodeComponent("columns"),
     h5: makeNodeComponent("h5"),
     teamSection: makeNodeComponent("teamSection"),
+    section: makeNodeComponent("section"),
+    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps,

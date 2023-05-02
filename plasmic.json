@@ -93,6 +93,32 @@
           "cssFilePath": "plasmic/auxano/PlasmicNav.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "RdHlrJ1IAu",
+          "name": "About",
+          "type": "managed",
+          "projectId": "oGQcGtbFzYohLFbpGrRxL3",
+          "renderModuleFilePath": "plasmic/auxano/PlasmicAbout.jsx",
+          "importSpec": {
+            "modulePath": "About.jsx"
+          },
+          "cssFilePath": "plasmic/auxano/PlasmicAbout.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "6NjpMkUH8g-",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "oGQcGtbFzYohLFbpGrRxL3",
+          "renderModuleFilePath": "plasmic/auxano/PlasmicFooter.jsx",
+          "importSpec": {
+            "modulePath": "Footer.jsx"
+          },
+          "cssFilePath": "plasmic/auxano/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -160,6 +186,36 @@
           "id": "Lv8Znu3CNG",
           "name": "MenuAlt01SvgrepoComsvgIcon",
           "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__MenuAlt01SvgrepoComsvg.jsx"
+        },
+        {
+          "id": "OY1KSwwKNC",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__Icon2.jsx"
+        },
+        {
+          "id": "bHHCIj0oV",
+          "name": "ShapeIcon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__Shape.jsx"
+        },
+        {
+          "id": "9WqpIBpt3K",
+          "name": "Shape2Icon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__Shape2.jsx"
+        },
+        {
+          "id": "kpU_nZgOJW",
+          "name": "IconOutlineatSymbolIcon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__IconOutlineatSymbol.jsx"
+        },
+        {
+          "id": "-XIeFpLboO",
+          "name": "IconOutlinearrowRightIcon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__IconOutlinearrowRight.jsx"
+        },
+        {
+          "id": "2w8-9uBSES",
+          "name": "Line63Icon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__Line63.jsx"
         }
       ],
       "images": [
@@ -182,6 +238,56 @@
           "id": "6w6DQyfAv",
           "name": "logo 2@1.png",
           "filePath": "plasmic/auxano/images/logo21Png.png"
+        },
+        {
+          "id": "bYwskdO8_",
+          "name": "Rectangle 5",
+          "filePath": "plasmic/auxano/images/rectangle5.jpg"
+        },
+        {
+          "id": "8JR49v1G2W",
+          "name": "Rectangle 4",
+          "filePath": "plasmic/auxano/images/rectangle4.jpg"
+        },
+        {
+          "id": "JI-9CIeP5G",
+          "name": "Rectangle 6",
+          "filePath": "plasmic/auxano/images/rectangle6.jpg"
+        },
+        {
+          "id": "fe6oYxri2B",
+          "name": "Rectangle 7",
+          "filePath": "plasmic/auxano/images/rectangle7.jpg"
+        },
+        {
+          "id": "SEpKCrTHi0",
+          "name": "Rectangle 8",
+          "filePath": "plasmic/auxano/images/rectangle8.jpg"
+        },
+        {
+          "id": "oVybxATEP",
+          "name": "Rectangle 9",
+          "filePath": "plasmic/auxano/images/rectangle9.jpg"
+        },
+        {
+          "id": "5_3NCxLRcA",
+          "name": "Vector 10",
+          "filePath": "plasmic/auxano/images/vector10.svg"
+        },
+        {
+          "id": "HvPQaGEjAa",
+          "name": "Vector 11",
+          "filePath": "plasmic/auxano/images/vector11.svg"
+        },
+        {
+          "id": "eIacBx8itx",
+          "name": "Frame 11",
+          "filePath": "plasmic/auxano/images/frame11.svg"
+        },
+        {
+          "id": "UMkNDbIWC",
+          "name": "Frame 26",
+          "filePath": "plasmic/auxano/images/frame26.jpg"
         }
       ],
       "indirect": false,
@@ -216,8 +322,7 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     }
   ],
   "globalVariants": {
@@ -231,6 +336,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.259",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.259/dist/plasmic.schema.json"
+  "cliVersion": "0.1.272",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.272/dist/plasmic.schema.json"
 }

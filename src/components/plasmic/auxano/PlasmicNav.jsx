@@ -94,7 +94,7 @@ function PlasmicNav__RenderFunc(props) {
       closeButton={
         <p.PlasmicImg
           alt={""}
-          className={classNames(sty.img__aBhJp)}
+          className={classNames(sty.img__foVsl)}
           displayHeight={"auto"}
           displayMaxHeight={"none"}
           displayMaxWidth={"none"}
@@ -145,7 +145,7 @@ function PlasmicNav__RenderFunc(props) {
       openButton={
         <p.PlasmicImg
           alt={""}
-          className={classNames(sty.img__pckb)}
+          className={classNames(sty.img__zu6UJ)}
           displayHeight={"auto"}
           displayMaxHeight={"none"}
           displayMaxWidth={"none"}
