@@ -216,6 +216,11 @@
           "id": "2w8-9uBSES",
           "name": "Line63Icon",
           "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__Line63.jsx"
+        },
+        {
+          "id": "5zaaodNA-j",
+          "name": "IconOutlinearrowCircleRightIcon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__IconOutlinearrowCircleRight.jsx"
         }
       ],
       "images": [
@@ -288,6 +293,41 @@
           "id": "UMkNDbIWC",
           "name": "Frame 26",
           "filePath": "plasmic/auxano/images/frame26.jpg"
+        },
+        {
+          "id": "EepSE_294",
+          "name": "Person 4",
+          "filePath": "plasmic/auxano/images/person4.jpg"
+        },
+        {
+          "id": "uKnFhe8-Sm",
+          "name": "Person 5",
+          "filePath": "plasmic/auxano/images/person5.jpg"
+        },
+        {
+          "id": "VBQOLViFb4",
+          "name": "Person 6",
+          "filePath": "plasmic/auxano/images/person6.jpg"
+        },
+        {
+          "id": "s6Vvy9XitL",
+          "name": "Person 7",
+          "filePath": "plasmic/auxano/images/person7.jpg"
+        },
+        {
+          "id": "3vY3ttAsyM",
+          "name": "Person",
+          "filePath": "plasmic/auxano/images/person.jpg"
+        },
+        {
+          "id": "b4TOO4vU6k",
+          "name": "Person 2",
+          "filePath": "plasmic/auxano/images/person2.jpg"
+        },
+        {
+          "id": "I2hcGaxO_C",
+          "name": "Person 3",
+          "filePath": "plasmic/auxano/images/person3.jpg"
         }
       ],
       "indirect": false,

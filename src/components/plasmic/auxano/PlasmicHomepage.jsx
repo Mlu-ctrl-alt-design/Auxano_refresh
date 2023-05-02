@@ -28,6 +28,7 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: Ybl9MM68MVSW/
 import ZapIcon from "./icons/PlasmicIcon__Zap"; // plasmic-import: jioqPss8S/icon
 import MailIcon from "./icons/PlasmicIcon__Mail"; // plasmic-import: _ML9L86z7M/icon
 import BarChart2Icon from "./icons/PlasmicIcon__BarChart2"; // plasmic-import: SsHUxMu660/icon
+import IconOutlinearrowCircleRightIcon from "./icons/PlasmicIcon__IconOutlinearrowCircleRight"; // plasmic-import: 5zaaodNA-j/icon
 
 export const PlasmicHomepage__VariantProps = new Array();
 
@@ -753,238 +754,330 @@ function PlasmicHomepage__RenderFunc(props) {
               <div className={classNames(projectcss.all, sty.column__l6KUx)} />
             </p.Stack>
           </p.Stack>
-          <div
-            data-plasmic-name={"teamSection"}
-            data-plasmic-override={overrides.teamSection}
-            className={classNames(projectcss.all, sty.teamSection)}
-          >
-            <div className={classNames(projectcss.all, sty.freeBox__s8Vj)}>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__vhmpt)}
+          <section className={classNames(projectcss.all, sty.section__sae0Z)}>
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"teamSection"}
+              data-plasmic-override={overrides.teamSection}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.teamSection)}
+            >
+              <div
+                data-plasmic-name={"teamInner"}
+                data-plasmic-override={overrides.teamInner}
+                className={classNames(projectcss.all, sty.teamInner)}
               >
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__tMyyj
-                  )}
-                >
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#424242" }}
-                    >
-                      {"Meet the team with 30 years of experience"}
-                    </span>
-                  </React.Fragment>
-                </h3>
                 <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__xdjba
-                  )}
+                  data-plasmic-name={"top"}
+                  data-plasmic-override={overrides.top}
+                  className={classNames(projectcss.all, sty.top)}
                 >
-                  {
-                    "Our goal and vision remain steadfast in that we consistently strive to be the leading competitively business consultancy in South Africa"
-                  }
-                </div>
-              </p.Stack>
-              <div className={classNames(projectcss.all, sty.freeBox__fGt2E)}>
-                <div className={classNames(projectcss.all, sty.freeBox__wIx3K)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__j6EXy)}
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"meetTheTeam"}
+                    data-plasmic-override={overrides.meetTheTeam}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.meetTheTeam)}
                   >
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__crdKo
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__orF7P
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#FBFBFB" }}
-                            >
-                              {"Director of something"}
-                            </span>
-                          </React.Fragment>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___8L4Ak
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#F7F7F7" }}
-                            >
-                              {"Director of something"}
-                            </span>
-                          </React.Fragment>
-                        </div>
-                      </div>
-                    ) : null}
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__kaWmH)}
-                  >
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__ekJgJ
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__heWte
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#FBFBFB" }}
-                            >
-                              {"Director of something"}
-                            </span>
-                          </React.Fragment>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__tBvg3
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#F7F7F7" }}
-                            >
-                              {"Director of something"}
-                            </span>
-                          </React.Fragment>
-                        </div>
-                      </div>
-                    ) : null}
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__r7X5M)}
-                  >
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__oygMe
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___8ZHe9
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#FBFBFB" }}
-                            >
-                              {"Director of something"}
-                            </span>
-                          </React.Fragment>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__xG2L
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#F7F7F7" }}
-                            >
-                              {"Director of something"}
-                            </span>
-                          </React.Fragment>
-                        </div>
-                      </div>
-                    ) : null}
-                  </div>
-                </div>
-              </div>
-              {true ? (
-                <div className={classNames(projectcss.all, sty.freeBox__n7Acl)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__spy7D)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__ofAvq)}
-                    />
-
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__tqWc0)}
-                    />
-
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__wSvV6)}
-                    />
-
                     <div
                       className={classNames(
                         projectcss.all,
-                        sty.freeBox___21Lt6
+                        projectcss.__wab_text,
+                        sty.text___17PH
                       )}
-                    />
-
+                    >
+                      {"Meet the team with 30 years of experience"}
+                    </div>
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__d1V5A)}
-                    />
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__hHtHd
+                      )}
+                    >
+                      {
+                        "Our goal and vision remain steadfast in that we consistently strive to be the leading competitively business consultancy in South Africa"
+                      }
+                    </div>
+                  </p.Stack>
+                  <div
+                    data-plasmic-name={"frame39"}
+                    data-plasmic-override={overrides.frame39}
+                    className={classNames(projectcss.all, sty.frame39)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"person"}
+                      data-plasmic-override={overrides.person}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.person)}
+                    >
+                      <div
+                        data-plasmic-name={"frame16"}
+                        data-plasmic-override={overrides.frame16}
+                        className={classNames(projectcss.all, sty.frame16)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___9Rt0J
+                          )}
+                        >
+                          {"First Name"}
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___5OTyz
+                          )}
+                        >
+                          {"Director of something"}
+                        </div>
+                      </div>
+                    </p.Stack>
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"person2"}
+                      data-plasmic-override={overrides.person2}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.person2)}
+                    >
+                      <div
+                        data-plasmic-name={"frame17"}
+                        data-plasmic-override={overrides.frame17}
+                        className={classNames(projectcss.all, sty.frame17)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__duha3
+                          )}
+                        >
+                          {"First Name"}
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__zlQAg
+                          )}
+                        >
+                          {"Director of something"}
+                        </div>
+                      </div>
+                    </p.Stack>
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"person3"}
+                      data-plasmic-override={overrides.person3}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.person3)}
+                    >
+                      <div
+                        data-plasmic-name={"frame18"}
+                        data-plasmic-override={overrides.frame18}
+                        className={classNames(projectcss.all, sty.frame18)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__eir0G
+                          )}
+                        >
+                          {"First Name"}
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__vsD0R
+                          )}
+                        >
+                          {"Director of something"}
+                        </div>
+                      </div>
+                    </p.Stack>
                   </div>
                 </div>
-              ) : null}
-            </div>
-          </div>
-          <section
-            data-plasmic-name={"section"}
-            data-plasmic-override={overrides.section}
-            className={classNames(projectcss.all, sty.section)}
-          >
+                <div
+                  data-plasmic-name={"bottom"}
+                  data-plasmic-override={overrides.bottom}
+                  className={classNames(projectcss.all, sty.bottom)}
+                >
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"frame19"}
+                    data-plasmic-override={overrides.frame19}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.frame19)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"textButton"}
+                      data-plasmic-override={overrides.textButton}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.textButton)}
+                    >
+                      <div
+                        data-plasmic-name={"text5"}
+                        data-plasmic-override={overrides.text5}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text5
+                        )}
+                      >
+                        {"View Full Team"}
+                      </div>
+                      <IconOutlinearrowCircleRightIcon
+                        className={classNames(projectcss.all, sty.svg__bvK)}
+                        role={"img"}
+                      />
+                    </p.Stack>
+                  </p.Stack>
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"person4"}
+                    data-plasmic-override={overrides.person4}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.person4)}
+                  >
+                    <div
+                      data-plasmic-name={"frame20"}
+                      data-plasmic-override={overrides.frame20}
+                      className={classNames(projectcss.all, sty.frame20)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__wLtKl
+                        )}
+                      >
+                        {"First Name"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__bwcxp
+                        )}
+                      >
+                        {"Director of something"}
+                      </div>
+                    </div>
+                  </p.Stack>
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"person5"}
+                    data-plasmic-override={overrides.person5}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.person5)}
+                  >
+                    <div
+                      data-plasmic-name={"frame21"}
+                      data-plasmic-override={overrides.frame21}
+                      className={classNames(projectcss.all, sty.frame21)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__osF9C
+                        )}
+                      >
+                        {"First Name"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__sdNfr
+                        )}
+                      >
+                        {"Director of something"}
+                      </div>
+                    </div>
+                  </p.Stack>
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"person6"}
+                    data-plasmic-override={overrides.person6}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.person6)}
+                  >
+                    <div
+                      data-plasmic-name={"frame22"}
+                      data-plasmic-override={overrides.frame22}
+                      className={classNames(projectcss.all, sty.frame22)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___7MGru
+                        )}
+                      >
+                        {"First Name"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___4FWty
+                        )}
+                      >
+                        {"Director of something"}
+                      </div>
+                    </div>
+                  </p.Stack>
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"person7"}
+                    data-plasmic-override={overrides.person7}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.person7)}
+                  >
+                    <div
+                      data-plasmic-name={"frame23"}
+                      data-plasmic-override={overrides.frame23}
+                      className={classNames(projectcss.all, sty.frame23)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__r51Ku
+                        )}
+                      >
+                        {"First Name"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__kN78U
+                        )}
+                      >
+                        {"Director of something"}
+                      </div>
+                    </div>
+                  </p.Stack>
+                </div>
+              </div>
+            </p.Stack>
             <Footer
               data-plasmic-name={"footer"}
               data-plasmic-override={overrides.footer}
               className={classNames("__wab_instance", sty.footer)}
+            />
+
+            <section
+              className={classNames(projectcss.all, sty.section__oMnsh)}
             />
           </section>
         </div>
@@ -1035,7 +1128,28 @@ const PlasmicDescendants = {
     "columns",
     "h5",
     "teamSection",
-    "section",
+    "teamInner",
+    "top",
+    "meetTheTeam",
+    "frame39",
+    "person",
+    "frame16",
+    "person2",
+    "frame17",
+    "person3",
+    "frame18",
+    "bottom",
+    "frame19",
+    "textButton",
+    "text5",
+    "person4",
+    "frame20",
+    "person5",
+    "frame21",
+    "person6",
+    "frame22",
+    "person7",
+    "frame23",
     "footer"
   ],
 
@@ -1207,8 +1321,112 @@ const PlasmicDescendants = {
   h2: ["h2"],
   columns: ["columns", "h5"],
   h5: ["h5"],
-  teamSection: ["teamSection"],
-  section: ["section", "footer"],
+  teamSection: [
+    "teamSection",
+    "teamInner",
+    "top",
+    "meetTheTeam",
+    "frame39",
+    "person",
+    "frame16",
+    "person2",
+    "frame17",
+    "person3",
+    "frame18",
+    "bottom",
+    "frame19",
+    "textButton",
+    "text5",
+    "person4",
+    "frame20",
+    "person5",
+    "frame21",
+    "person6",
+    "frame22",
+    "person7",
+    "frame23"
+  ],
+
+  teamInner: [
+    "teamInner",
+    "top",
+    "meetTheTeam",
+    "frame39",
+    "person",
+    "frame16",
+    "person2",
+    "frame17",
+    "person3",
+    "frame18",
+    "bottom",
+    "frame19",
+    "textButton",
+    "text5",
+    "person4",
+    "frame20",
+    "person5",
+    "frame21",
+    "person6",
+    "frame22",
+    "person7",
+    "frame23"
+  ],
+
+  top: [
+    "top",
+    "meetTheTeam",
+    "frame39",
+    "person",
+    "frame16",
+    "person2",
+    "frame17",
+    "person3",
+    "frame18"
+  ],
+
+  meetTheTeam: ["meetTheTeam"],
+  frame39: [
+    "frame39",
+    "person",
+    "frame16",
+    "person2",
+    "frame17",
+    "person3",
+    "frame18"
+  ],
+
+  person: ["person", "frame16"],
+  frame16: ["frame16"],
+  person2: ["person2", "frame17"],
+  frame17: ["frame17"],
+  person3: ["person3", "frame18"],
+  frame18: ["frame18"],
+  bottom: [
+    "bottom",
+    "frame19",
+    "textButton",
+    "text5",
+    "person4",
+    "frame20",
+    "person5",
+    "frame21",
+    "person6",
+    "frame22",
+    "person7",
+    "frame23"
+  ],
+
+  frame19: ["frame19", "textButton", "text5"],
+  textButton: ["textButton", "text5"],
+  text5: ["text5"],
+  person4: ["person4", "frame20"],
+  frame20: ["frame20"],
+  person5: ["person5", "frame21"],
+  frame21: ["frame21"],
+  person6: ["person6", "frame22"],
+  frame22: ["frame22"],
+  person7: ["person7", "frame23"],
+  frame23: ["frame23"],
   footer: ["footer"]
 };
 
@@ -1284,7 +1502,28 @@ export const PlasmicHomepage = Object.assign(
     columns: makeNodeComponent("columns"),
     h5: makeNodeComponent("h5"),
     teamSection: makeNodeComponent("teamSection"),
-    section: makeNodeComponent("section"),
+    teamInner: makeNodeComponent("teamInner"),
+    top: makeNodeComponent("top"),
+    meetTheTeam: makeNodeComponent("meetTheTeam"),
+    frame39: makeNodeComponent("frame39"),
+    person: makeNodeComponent("person"),
+    frame16: makeNodeComponent("frame16"),
+    person2: makeNodeComponent("person2"),
+    frame17: makeNodeComponent("frame17"),
+    person3: makeNodeComponent("person3"),
+    frame18: makeNodeComponent("frame18"),
+    bottom: makeNodeComponent("bottom"),
+    frame19: makeNodeComponent("frame19"),
+    textButton: makeNodeComponent("textButton"),
+    text5: makeNodeComponent("text5"),
+    person4: makeNodeComponent("person4"),
+    frame20: makeNodeComponent("frame20"),
+    person5: makeNodeComponent("person5"),
+    frame21: makeNodeComponent("frame21"),
+    person6: makeNodeComponent("person6"),
+    frame22: makeNodeComponent("frame22"),
+    person7: makeNodeComponent("person7"),
+    frame23: makeNodeComponent("frame23"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
