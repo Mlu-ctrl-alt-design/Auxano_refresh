@@ -106,13 +106,6 @@ function PlasmicFooter__RenderFunc(props) {
               data-plasmic-override={overrides.cta}
               className={classNames(projectcss.all, sty.cta)}
             >
-              {true ? (
-                <div
-                  data-plasmic-name={"bg"}
-                  data-plasmic-override={overrides.bg}
-                  className={classNames(projectcss.all, sty.bg)}
-                />
-              ) : null}
               <p.Stack
                 as={"div"}
                 data-plasmic-name={"content"}
@@ -924,7 +917,6 @@ const PlasmicDescendants = {
     "frame4",
     "frame14",
     "cta",
-    "bg",
     "content",
     "frame13",
     "form",
@@ -996,7 +988,6 @@ const PlasmicDescendants = {
     "frame4",
     "frame14",
     "cta",
-    "bg",
     "content",
     "frame13",
     "form",
@@ -1067,7 +1058,6 @@ const PlasmicDescendants = {
     "frame4",
     "frame14",
     "cta",
-    "bg",
     "content",
     "frame13",
     "form",
@@ -1090,7 +1080,6 @@ const PlasmicDescendants = {
   frame14: [
     "frame14",
     "cta",
-    "bg",
     "content",
     "frame13",
     "form",
@@ -1112,7 +1101,6 @@ const PlasmicDescendants = {
 
   cta: [
     "cta",
-    "bg",
     "content",
     "frame13",
     "form",
@@ -1132,7 +1120,6 @@ const PlasmicDescendants = {
     "icon3"
   ],
 
-  bg: ["bg"],
   content: [
     "content",
     "frame13",
@@ -1533,7 +1520,6 @@ export const PlasmicFooter = Object.assign(
     frame4: makeNodeComponent("frame4"),
     frame14: makeNodeComponent("frame14"),
     cta: makeNodeComponent("cta"),
-    bg: makeNodeComponent("bg"),
     content: makeNodeComponent("content"),
     frame13: makeNodeComponent("frame13"),
     form: makeNodeComponent("form"),
