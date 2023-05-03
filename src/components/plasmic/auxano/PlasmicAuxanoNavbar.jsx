@@ -128,23 +128,6 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
           >
             <p.Stack
               as={"div"}
-              data-plasmic-name={"linkItem"}
-              data-plasmic-override={overrides.linkItem}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.linkItem)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__uz2P
-                )}
-              >
-                {"Home"}
-              </div>
-            </p.Stack>
-            <p.Stack
-              as={"div"}
               data-plasmic-name={"linkItem2"}
               data-plasmic-override={overrides.linkItem2}
               hasGap={true}
@@ -203,21 +186,130 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                   sty.text__kPo3Q
                 )}
               >
-                {"About"}
+                {"Home"}
               </div>
             </p.Stack>
             <p.Stack
               as={"div"}
-              data-plasmic-name={"linkItem3"}
-              data-plasmic-override={overrides.linkItem3}
+              data-plasmic-name={"linkItem5"}
+              data-plasmic-override={overrides.linkItem5}
               hasGap={true}
-              className={classNames(projectcss.all, sty.linkItem3)}
+              className={classNames(projectcss.all, sty.linkItem5)}
+              onClick={async event => {
+                const $steps = {};
+                $steps["goToAbout"] = true
+                  ? (() => {
+                      const actionArgs = {
+                        destination: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "navigation",
+                            interactionUuid: "7ikq1LCK8v",
+                            componentUuid: "NaO7GDEY89",
+                            argName: "destination"
+                          },
+                          () => `/about`
+                        )
+                      };
+                      return __wrapUserFunction(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "7ikq1LCK8v",
+                          componentUuid: "NaO7GDEY89"
+                        },
+                        () =>
+                          (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]),
+                        actionArgs
+                      );
+                    })()
+                  : undefined;
+                if (
+                  typeof $steps["goToAbout"] === "object" &&
+                  typeof $steps["goToAbout"].then === "function"
+                ) {
+                  $steps["goToAbout"] = await __wrapUserPromise(
+                    {
+                      type: "InteractionLoc",
+                      actionName: "navigation",
+                      interactionUuid: "7ikq1LCK8v",
+                      componentUuid: "NaO7GDEY89"
+                    },
+                    $steps["goToAbout"]
+                  );
+                }
+              }}
             >
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__eAun2
+                  sty.text___3Aikf
+                )}
+              >
+                {"About"}
+              </div>
+            </p.Stack>
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"linkItem7"}
+              data-plasmic-override={overrides.linkItem7}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.linkItem7)}
+              onClick={async event => {
+                const $steps = {};
+                $steps["goToAbout"] = true
+                  ? (() => {
+                      const actionArgs = {
+                        destination: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "navigation",
+                            interactionUuid: "asrIT0dkTp",
+                            componentUuid: "NaO7GDEY89",
+                            argName: "destination"
+                          },
+                          () => `/about`
+                        )
+                      };
+                      return __wrapUserFunction(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "asrIT0dkTp",
+                          componentUuid: "NaO7GDEY89"
+                        },
+                        () =>
+                          (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]),
+                        actionArgs
+                      );
+                    })()
+                  : undefined;
+                if (
+                  typeof $steps["goToAbout"] === "object" &&
+                  typeof $steps["goToAbout"].then === "function"
+                ) {
+                  $steps["goToAbout"] = await __wrapUserPromise(
+                    {
+                      type: "InteractionLoc",
+                      actionName: "navigation",
+                      interactionUuid: "asrIT0dkTp",
+                      componentUuid: "NaO7GDEY89"
+                    },
+                    $steps["goToAbout"]
+                  );
+                }
+              }}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__t3VyU
                 )}
               >
                 {"Services"}
@@ -225,16 +317,62 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
             </p.Stack>
             <p.Stack
               as={"div"}
-              data-plasmic-name={"linkItem4"}
-              data-plasmic-override={overrides.linkItem4}
+              data-plasmic-name={"linkItem6"}
+              data-plasmic-override={overrides.linkItem6}
               hasGap={true}
-              className={classNames(projectcss.all, sty.linkItem4)}
+              className={classNames(projectcss.all, sty.linkItem6)}
+              onClick={async event => {
+                const $steps = {};
+                $steps["goToAbout"] = true
+                  ? (() => {
+                      const actionArgs = {
+                        destination: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "navigation",
+                            interactionUuid: "ch4tARe8ux",
+                            componentUuid: "NaO7GDEY89",
+                            argName: "destination"
+                          },
+                          () => `/about`
+                        )
+                      };
+                      return __wrapUserFunction(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "ch4tARe8ux",
+                          componentUuid: "NaO7GDEY89"
+                        },
+                        () =>
+                          (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]),
+                        actionArgs
+                      );
+                    })()
+                  : undefined;
+                if (
+                  typeof $steps["goToAbout"] === "object" &&
+                  typeof $steps["goToAbout"].then === "function"
+                ) {
+                  $steps["goToAbout"] = await __wrapUserPromise(
+                    {
+                      type: "InteractionLoc",
+                      actionName: "navigation",
+                      interactionUuid: "ch4tARe8ux",
+                      componentUuid: "NaO7GDEY89"
+                    },
+                    $steps["goToAbout"]
+                  );
+                }
+              }}
             >
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__dGgBc
+                  sty.text__ht8BS
                 )}
               >
                 {"Contact"}
@@ -301,10 +439,10 @@ const PlasmicDescendants = {
     "img",
     "svg",
     "links",
-    "linkItem",
     "linkItem2",
-    "linkItem3",
-    "linkItem4",
+    "linkItem5",
+    "linkItem7",
+    "linkItem6",
     "navItems",
     "button",
     "getInTouch",
@@ -317,10 +455,10 @@ const PlasmicDescendants = {
     "img",
     "svg",
     "links",
-    "linkItem",
     "linkItem2",
-    "linkItem3",
-    "linkItem4",
+    "linkItem5",
+    "linkItem7",
+    "linkItem6",
     "navItems",
     "button",
     "getInTouch",
@@ -330,11 +468,11 @@ const PlasmicDescendants = {
   logo21: ["logo21", "img"],
   img: ["img"],
   svg: ["svg"],
-  links: ["links", "linkItem", "linkItem2", "linkItem3", "linkItem4"],
-  linkItem: ["linkItem"],
+  links: ["links", "linkItem2", "linkItem5", "linkItem7", "linkItem6"],
   linkItem2: ["linkItem2"],
-  linkItem3: ["linkItem3"],
-  linkItem4: ["linkItem4"],
+  linkItem5: ["linkItem5"],
+  linkItem7: ["linkItem7"],
+  linkItem6: ["linkItem6"],
   navItems: ["navItems", "button", "getInTouch", "button2"],
   button: ["button", "getInTouch"],
   getInTouch: ["getInTouch"],
@@ -379,10 +517,10 @@ export const PlasmicAuxanoNavbar = Object.assign(
     img: makeNodeComponent("img"),
     svg: makeNodeComponent("svg"),
     links: makeNodeComponent("links"),
-    linkItem: makeNodeComponent("linkItem"),
     linkItem2: makeNodeComponent("linkItem2"),
-    linkItem3: makeNodeComponent("linkItem3"),
-    linkItem4: makeNodeComponent("linkItem4"),
+    linkItem5: makeNodeComponent("linkItem5"),
+    linkItem7: makeNodeComponent("linkItem7"),
+    linkItem6: makeNodeComponent("linkItem6"),
     navItems: makeNodeComponent("navItems"),
     button: makeNodeComponent("button"),
     getInTouch: makeNodeComponent("getInTouch"),
