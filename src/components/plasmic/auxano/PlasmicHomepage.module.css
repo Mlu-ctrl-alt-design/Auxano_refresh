@@ -1489,15 +1489,17 @@
   grid-column: 4;
 }
 .teamSection {
-  width: 1440px;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  padding: 64px 134px;
+  grid-column-start: 2;
+  grid-column-end: -2;
+  padding: 64px 0px;
 }
 .teamSection > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   margin-top: calc(0px - 10px);
   height: calc(100% + 10px);
@@ -1513,25 +1515,31 @@
   margin-top: 10px;
 }
 .teamSection {
-  width: 1440px;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
-  padding: 64px 134px;
+  grid-column-start: 2;
+  grid-column-end: -2;
+  padding: 64px 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .teamSection {
-    width: auto;
+    width: 100%;
     justify-self: flex-start;
+    grid-column-start: 1;
+    grid-column-end: -1;
     padding: 24px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .teamSection {
-    width: auto;
+    width: 100%;
     justify-self: flex-start;
+    grid-column-start: 1;
+    grid-column-end: -1;
     padding: 24px;
   }
 }
@@ -1553,11 +1561,15 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-end;
+  max-width: 100%;
+  width: 100%;
+  min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .top {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
   }
 }
 .meetTheTeam {
@@ -1566,13 +1578,16 @@
   position: relative;
   flex-grow: 1;
   flex-direction: column;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  width: 100%;
+  max-width: 50%;
+  min-width: 0;
+  padding: 24px 8px;
 }
 .meetTheTeam > :global(.__wab_flex-container) {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  min-width: 0;
   margin-top: calc(0px - 24px);
   height: calc(100% + 24px);
 }
@@ -1594,8 +1609,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  width: 100%;
+  max-width: 50%;
+  min-width: 0;
+  padding: 24px 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .meetTheTeam {
+    max-width: 100%;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .meetTheTeam {
+    max-width: 100%;
+  }
 }
 .text___17PH {
   display: block;
@@ -1607,6 +1634,7 @@
   color: rgba(63, 63, 63, 1);
   align-self: stretch;
   position: relative;
+  width: auto;
 }
 .text__hHtHd {
   display: block;
@@ -1618,6 +1646,11 @@
   color: rgba(127, 127, 127, 1);
   align-self: stretch;
   position: relative;
+  margin-right: 0px;
+  padding-right: 0px;
+  max-width: 623px;
+  width: 100%;
+  min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .text__hHtHd {
@@ -1653,12 +1686,15 @@
   position: relative;
   flex-grow: 1;
   flex-direction: column;
+  width: 100%;
+  min-width: 0;
   padding: 32px 16px 12px;
 }
 .person > :global(.__wab_flex-container) {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+  min-width: 0;
   margin-top: calc(0px - 10px);
   height: calc(100% + 10px);
 }
@@ -1688,6 +1724,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+  width: 100%;
+  min-width: 0;
   padding: 32px 16px 12px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -1752,12 +1790,15 @@
   position: relative;
   flex-grow: 1;
   flex-direction: column;
+  width: 100%;
+  min-width: 0;
   padding: 32px 16px 12px;
 }
 .person2 > :global(.__wab_flex-container) {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+  min-width: 0;
   margin-top: calc(0px - 10px);
   height: calc(100% + 10px);
 }
@@ -1787,6 +1828,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+  width: 100%;
+  min-width: 0;
   padding: 32px 16px 12px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -1836,6 +1879,32 @@
   line-height: 16px;
   color: rgba(222, 222, 222, 1);
   position: relative;
+}
+.bottom {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  max-width: 100%;
+  width: 100%;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    align-content: stretch;
+    align-self: flex-start;
+    min-width: 0;
+  }
 }
 .person3 {
   background: linear-gradient(
@@ -1891,6 +1960,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .person3 {
     width: 100%;
+    height: 239px;
     min-width: 0;
   }
 }
@@ -1902,6 +1972,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .person3 {
     width: 100%;
+    height: 239px;
     min-width: 0;
   }
 }
@@ -1936,110 +2007,6 @@
   color: rgba(222, 222, 222, 1);
   position: relative;
 }
-.bottom {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .bottom {
-    display: flex;
-    flex-direction: row;
-  }
-}
-.frame19 {
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  padding: 10px 10px 24px;
-}
-.frame19 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: calc(0px - 10px);
-  height: calc(100% + 10px);
-}
-.frame19 > :global(.__wab_flex-container) > *,
-.frame19 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.frame19 > :global(.__wab_flex-container) > picture > img,
-.frame19
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 10px;
-}
-.frame19 {
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 10px 10px 24px;
-}
-.textButton {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-}
-.textButton > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: calc(0px - 8px);
-  width: calc(100% + 8px);
-}
-.textButton > :global(.__wab_flex-container) > *,
-.textButton > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.textButton > :global(.__wab_flex-container) > picture > img,
-.textButton
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 8px;
-}
-.textButton {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-.text5 {
-  display: block;
-  font-size: 14px;
-  font-family: "Golos Text";
-  font-weight: 600;
-  letter-spacing: 0em;
-  line-height: 20px;
-  color: rgba(14, 22, 41, 1);
-  position: relative;
-}
-.svg__bvK {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  color: #0f172a;
-  width: 20px;
-  height: 20px;
-  display: block;
-  overflow: hidden;
-  flex-shrink: 0;
-}
 .person4 {
   background: linear-gradient(
         180deg,
@@ -2047,14 +2014,13 @@
         rgba(0, 0, 0, 0.33) 147.61%
       )
       0% 0% / 100% 100% no-repeat,
-    url("./images/person4.jpg") center center / cover no-repeat,
+    url("./images/person3.jpg") center center / cover no-repeat,
     rgba(255, 255, 255, 1);
-  width: 202px;
-  height: 239px;
+  height: 271px;
   display: flex;
   position: relative;
+  flex-grow: 1;
   flex-direction: column;
-  flex-shrink: 0;
   padding: 32px 16px 12px;
 }
 .person4 > :global(.__wab_flex-container) {
@@ -2081,19 +2047,37 @@
         rgba(0, 0, 0, 0.33) 147.61%
       )
       0% 0% / 100% 100% no-repeat,
-    url("./images/person4.jpg") center center / cover no-repeat,
+    url("./images/person3.jpg") center center / cover no-repeat,
     rgba(255, 255, 255, 1);
-  width: 202px;
-  height: 239px;
+  height: 271px;
   display: flex;
   position: relative;
+  flex-grow: 1;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  flex-shrink: 0;
   padding: 32px 16px 12px;
 }
-.frame20 {
+@media (min-width: 0px) and (max-width: 768px) {
+  .person4 {
+    width: 100%;
+    height: 239px;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .person4 > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .person4 {
+    width: 100%;
+    height: 239px;
+    min-width: 0;
+  }
+}
+.frame21 {
   width: auto;
   height: auto;
   display: flex;
@@ -2102,7 +2086,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.text__wLtKl {
+.text__tnkhj {
   display: block;
   font-size: 18px;
   text-align: center;
@@ -2113,7 +2097,7 @@
   color: rgba(222, 222, 222, 1);
   position: relative;
 }
-.text__bwcxp {
+.text__rjEbA {
   display: block;
   font-size: 12px;
   text-align: center;
@@ -2131,14 +2115,13 @@
         rgba(0, 0, 0, 0.33) 147.61%
       )
       0% 0% / 100% 100% no-repeat,
-    url("./images/person5.jpg") center center / cover no-repeat,
+    url("./images/person3.jpg") center center / cover no-repeat,
     rgba(255, 255, 255, 1);
-  width: 202px;
-  height: 239px;
+  height: 271px;
   display: flex;
   position: relative;
+  flex-grow: 1;
   flex-direction: column;
-  flex-shrink: 0;
   padding: 32px 16px 12px;
 }
 .person5 > :global(.__wab_flex-container) {
@@ -2165,101 +2148,35 @@
         rgba(0, 0, 0, 0.33) 147.61%
       )
       0% 0% / 100% 100% no-repeat,
-    url("./images/person5.jpg") center center / cover no-repeat,
+    url("./images/person3.jpg") center center / cover no-repeat,
     rgba(255, 255, 255, 1);
-  width: 202px;
-  height: 239px;
+  height: 271px;
   display: flex;
   position: relative;
+  flex-grow: 1;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  flex-shrink: 0;
   padding: 32px 16px 12px;
 }
-.frame21 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+@media (min-width: 0px) and (max-width: 768px) {
+  .person5 {
+    width: 100%;
+    height: 239px;
+    min-width: 0;
+  }
 }
-.text__osF9C {
-  display: block;
-  font-size: 18px;
-  text-align: center;
-  font-family: "Golos Text";
-  font-weight: 600;
-  letter-spacing: 0em;
-  line-height: 28px;
-  color: rgba(222, 222, 222, 1);
-  position: relative;
+@media (min-width: 0px) and (max-width: 768px) {
+  .person5 > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
 }
-.text__sdNfr {
-  display: block;
-  font-size: 12px;
-  text-align: center;
-  font-family: "Golos Text";
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 16px;
-  color: rgba(222, 222, 222, 1);
-  position: relative;
-}
-.person6 {
-  background: linear-gradient(
-        180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
-      )
-      0% 0% / 100% 100% no-repeat,
-    url("./images/person6.jpg") center center / cover no-repeat,
-    rgba(255, 255, 255, 1);
-  width: 202px;
-  height: 239px;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  flex-shrink: 0;
-  padding: 32px 16px 12px;
-}
-.person6 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  margin-top: calc(0px - 10px);
-  height: calc(100% + 10px);
-}
-.person6 > :global(.__wab_flex-container) > *,
-.person6 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.person6 > :global(.__wab_flex-container) > picture > img,
-.person6
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 10px;
-}
-.person6 {
-  background: linear-gradient(
-        180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
-      )
-      0% 0% / 100% 100% no-repeat,
-    url("./images/person6.jpg") center center / cover no-repeat,
-    rgba(255, 255, 255, 1);
-  width: 202px;
-  height: 239px;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  flex-shrink: 0;
-  padding: 32px 16px 12px;
+@media (min-width: 0px) and (max-width: 768px) {
+  .person5 {
+    width: 100%;
+    height: 239px;
+    min-width: 0;
+  }
 }
 .frame22 {
   width: auto;
@@ -2270,7 +2187,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.text___7MGru {
+.text__k5X5B {
   display: block;
   font-size: 18px;
   text-align: center;
@@ -2281,91 +2198,7 @@
   color: rgba(222, 222, 222, 1);
   position: relative;
 }
-.text___4FWty {
-  display: block;
-  font-size: 12px;
-  text-align: center;
-  font-family: "Golos Text";
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 16px;
-  color: rgba(222, 222, 222, 1);
-  position: relative;
-}
-.person7 {
-  background: linear-gradient(
-        180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
-      )
-      0% 0% / 100% 100% no-repeat,
-    url("./images/person7.jpg") center center / cover no-repeat,
-    rgba(255, 255, 255, 1);
-  width: 202px;
-  height: 239px;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  flex-shrink: 0;
-  padding: 32px 16px 12px;
-}
-.person7 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  margin-top: calc(0px - 10px);
-  height: calc(100% + 10px);
-}
-.person7 > :global(.__wab_flex-container) > *,
-.person7 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.person7 > :global(.__wab_flex-container) > picture > img,
-.person7
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 10px;
-}
-.person7 {
-  background: linear-gradient(
-        180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
-      )
-      0% 0% / 100% 100% no-repeat,
-    url("./images/person7.jpg") center center / cover no-repeat,
-    rgba(255, 255, 255, 1);
-  width: 202px;
-  height: 239px;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  flex-shrink: 0;
-  padding: 32px 16px 12px;
-}
-.frame23 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.text__r51Ku {
-  display: block;
-  font-size: 18px;
-  text-align: center;
-  font-family: "Golos Text";
-  font-weight: 600;
-  letter-spacing: 0em;
-  line-height: 28px;
-  color: rgba(222, 222, 222, 1);
-  position: relative;
-}
-.text__kN78U {
+.text__y0VmL {
   display: block;
   font-size: 12px;
   text-align: center;
@@ -2615,6 +2448,9 @@
   ._1 {
     width: 100%;
     height: 245px;
+    background: linear-gradient(0deg, #121212 0%, #e8e8e800 100%) 0% 0% / 100%
+        100% repeat,
+      url("./images/_1.png") -95px -69px / cover no-repeat;
     min-width: 0;
     flex-shrink: 0;
   }
@@ -2714,6 +2550,9 @@
     width: 100%;
     padding-left: 0px;
     height: 245px;
+    background: linear-gradient(0deg, #121212 0%, #e8e8e800 100%) 0% 0% / 100%
+        100% repeat,
+      url("./images/_2.png") -95px -69px / cover no-repeat;
     min-width: 0;
     flex-shrink: 0;
   }
@@ -2814,6 +2653,10 @@
   ._3 {
     width: 100%;
     height: 245px;
+    background: linear-gradient(0deg, #121212 0%, #e8e8e800 100%) 0% 0% / 100%
+        100% repeat,
+      url("./images/_3.png") -95px -69px / cover no-repeat content-box
+        padding-box scroll;
     min-width: 0;
     flex-shrink: 0;
   }

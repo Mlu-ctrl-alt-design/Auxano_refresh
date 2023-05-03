@@ -28,7 +28,6 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: Ybl9MM68MVSW/
 import ZapIcon from "./icons/PlasmicIcon__Zap"; // plasmic-import: jioqPss8S/icon
 import MailIcon from "./icons/PlasmicIcon__Mail"; // plasmic-import: _ML9L86z7M/icon
 import BarChart2Icon from "./icons/PlasmicIcon__BarChart2"; // plasmic-import: SsHUxMu660/icon
-import IconOutlinearrowCircleRightIcon from "./icons/PlasmicIcon__IconOutlinearrowCircleRight"; // plasmic-import: 5zaaodNA-j/icon
 import PlayIcon from "./icons/PlasmicIcon__Play"; // plasmic-import: PfPBwXScCL/icon
 import IconOutlinearrowRight2Icon from "./icons/PlasmicIcon__IconOutlinearrowRight2"; // plasmic-import: 1Aov_gh-ME/icon
 
@@ -881,38 +880,6 @@ function PlasmicHomepage__RenderFunc(props) {
                         </div>
                       </div>
                     </p.Stack>
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"person3"}
-                      data-plasmic-override={overrides.person3}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.person3)}
-                    >
-                      <div
-                        data-plasmic-name={"frame18"}
-                        data-plasmic-override={overrides.frame18}
-                        className={classNames(projectcss.all, sty.frame18)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__eir0G
-                          )}
-                        >
-                          {"First Name"}
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__vsD0R
-                          )}
-                        >
-                          {"Director of something"}
-                        </div>
-                      </div>
-                    </p.Stack>
                   </div>
                 </div>
                 <div
@@ -922,34 +889,35 @@ function PlasmicHomepage__RenderFunc(props) {
                 >
                   <p.Stack
                     as={"div"}
-                    data-plasmic-name={"frame19"}
-                    data-plasmic-override={overrides.frame19}
+                    data-plasmic-name={"person3"}
+                    data-plasmic-override={overrides.person3}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.frame19)}
+                    className={classNames(projectcss.all, sty.person3)}
                   >
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"textButton"}
-                      data-plasmic-override={overrides.textButton}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.textButton)}
+                    <div
+                      data-plasmic-name={"frame18"}
+                      data-plasmic-override={overrides.frame18}
+                      className={classNames(projectcss.all, sty.frame18)}
                     >
                       <div
-                        data-plasmic-name={"text5"}
-                        data-plasmic-override={overrides.text5}
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text5
+                          sty.text__eir0G
                         )}
                       >
-                        {"View Full Team"}
+                        {"First Name"}
                       </div>
-                      <IconOutlinearrowCircleRightIcon
-                        className={classNames(projectcss.all, sty.svg__bvK)}
-                        role={"img"}
-                      />
-                    </p.Stack>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__vsD0R
+                        )}
+                      >
+                        {"Director of something"}
+                      </div>
+                    </div>
                   </p.Stack>
                   <p.Stack
                     as={"div"}
@@ -959,15 +927,15 @@ function PlasmicHomepage__RenderFunc(props) {
                     className={classNames(projectcss.all, sty.person4)}
                   >
                     <div
-                      data-plasmic-name={"frame20"}
-                      data-plasmic-override={overrides.frame20}
-                      className={classNames(projectcss.all, sty.frame20)}
+                      data-plasmic-name={"frame21"}
+                      data-plasmic-override={overrides.frame21}
+                      className={classNames(projectcss.all, sty.frame21)}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__wLtKl
+                          sty.text__tnkhj
                         )}
                       >
                         {"First Name"}
@@ -976,7 +944,7 @@ function PlasmicHomepage__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__bwcxp
+                          sty.text__rjEbA
                         )}
                       >
                         {"Director of something"}
@@ -991,38 +959,6 @@ function PlasmicHomepage__RenderFunc(props) {
                     className={classNames(projectcss.all, sty.person5)}
                   >
                     <div
-                      data-plasmic-name={"frame21"}
-                      data-plasmic-override={overrides.frame21}
-                      className={classNames(projectcss.all, sty.frame21)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__osF9C
-                        )}
-                      >
-                        {"First Name"}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__sdNfr
-                        )}
-                      >
-                        {"Director of something"}
-                      </div>
-                    </div>
-                  </p.Stack>
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"person6"}
-                    data-plasmic-override={overrides.person6}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.person6)}
-                  >
-                    <div
                       data-plasmic-name={"frame22"}
                       data-plasmic-override={overrides.frame22}
                       className={classNames(projectcss.all, sty.frame22)}
@@ -1031,7 +967,7 @@ function PlasmicHomepage__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text___7MGru
+                          sty.text__k5X5B
                         )}
                       >
                         {"First Name"}
@@ -1040,39 +976,7 @@ function PlasmicHomepage__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text___4FWty
-                        )}
-                      >
-                        {"Director of something"}
-                      </div>
-                    </div>
-                  </p.Stack>
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"person7"}
-                    data-plasmic-override={overrides.person7}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.person7)}
-                  >
-                    <div
-                      data-plasmic-name={"frame23"}
-                      data-plasmic-override={overrides.frame23}
-                      className={classNames(projectcss.all, sty.frame23)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__r51Ku
-                        )}
-                      >
-                        {"First Name"}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__kN78U
+                          sty.text__y0VmL
                         )}
                       >
                         {"Director of something"}
@@ -1390,20 +1294,13 @@ const PlasmicDescendants = {
     "frame16",
     "person2",
     "frame17",
+    "bottom",
     "person3",
     "frame18",
-    "bottom",
-    "frame19",
-    "textButton",
-    "text5",
     "person4",
-    "frame20",
-    "person5",
     "frame21",
-    "person6",
+    "person5",
     "frame22",
-    "person7",
-    "frame23",
     "testimonial",
     "frame26",
     "frame25",
@@ -1600,20 +1497,13 @@ const PlasmicDescendants = {
     "frame16",
     "person2",
     "frame17",
+    "bottom",
     "person3",
     "frame18",
-    "bottom",
-    "frame19",
-    "textButton",
-    "text5",
     "person4",
-    "frame20",
-    "person5",
     "frame21",
-    "person6",
+    "person5",
     "frame22",
-    "person7",
-    "frame23",
     "testimonial",
     "frame26",
     "frame25",
@@ -1641,20 +1531,13 @@ const PlasmicDescendants = {
     "frame16",
     "person2",
     "frame17",
+    "bottom",
     "person3",
     "frame18",
-    "bottom",
-    "frame19",
-    "textButton",
-    "text5",
     "person4",
-    "frame20",
-    "person5",
     "frame21",
-    "person6",
-    "frame22",
-    "person7",
-    "frame23"
+    "person5",
+    "frame22"
   ],
 
   teamInner: [
@@ -1666,20 +1549,13 @@ const PlasmicDescendants = {
     "frame16",
     "person2",
     "frame17",
+    "bottom",
     "person3",
     "frame18",
-    "bottom",
-    "frame19",
-    "textButton",
-    "text5",
     "person4",
-    "frame20",
-    "person5",
     "frame21",
-    "person6",
-    "frame22",
-    "person7",
-    "frame23"
+    "person5",
+    "frame22"
   ],
 
   top: [
@@ -1689,54 +1565,31 @@ const PlasmicDescendants = {
     "person",
     "frame16",
     "person2",
-    "frame17",
-    "person3",
-    "frame18"
+    "frame17"
   ],
 
   meetTheTeam: ["meetTheTeam"],
-  frame39: [
-    "frame39",
-    "person",
-    "frame16",
-    "person2",
-    "frame17",
-    "person3",
-    "frame18"
-  ],
-
+  frame39: ["frame39", "person", "frame16", "person2", "frame17"],
   person: ["person", "frame16"],
   frame16: ["frame16"],
   person2: ["person2", "frame17"],
   frame17: ["frame17"],
-  person3: ["person3", "frame18"],
-  frame18: ["frame18"],
   bottom: [
     "bottom",
-    "frame19",
-    "textButton",
-    "text5",
+    "person3",
+    "frame18",
     "person4",
-    "frame20",
-    "person5",
     "frame21",
-    "person6",
-    "frame22",
-    "person7",
-    "frame23"
+    "person5",
+    "frame22"
   ],
 
-  frame19: ["frame19", "textButton", "text5"],
-  textButton: ["textButton", "text5"],
-  text5: ["text5"],
-  person4: ["person4", "frame20"],
-  frame20: ["frame20"],
-  person5: ["person5", "frame21"],
+  person3: ["person3", "frame18"],
+  frame18: ["frame18"],
+  person4: ["person4", "frame21"],
   frame21: ["frame21"],
-  person6: ["person6", "frame22"],
+  person5: ["person5", "frame22"],
   frame22: ["frame22"],
-  person7: ["person7", "frame23"],
-  frame23: ["frame23"],
   testimonial: [
     "testimonial",
     "frame26",
@@ -1881,20 +1734,13 @@ export const PlasmicHomepage = Object.assign(
     frame16: makeNodeComponent("frame16"),
     person2: makeNodeComponent("person2"),
     frame17: makeNodeComponent("frame17"),
+    bottom: makeNodeComponent("bottom"),
     person3: makeNodeComponent("person3"),
     frame18: makeNodeComponent("frame18"),
-    bottom: makeNodeComponent("bottom"),
-    frame19: makeNodeComponent("frame19"),
-    textButton: makeNodeComponent("textButton"),
-    text5: makeNodeComponent("text5"),
     person4: makeNodeComponent("person4"),
-    frame20: makeNodeComponent("frame20"),
-    person5: makeNodeComponent("person5"),
     frame21: makeNodeComponent("frame21"),
-    person6: makeNodeComponent("person6"),
+    person5: makeNodeComponent("person5"),
     frame22: makeNodeComponent("frame22"),
-    person7: makeNodeComponent("person7"),
-    frame23: makeNodeComponent("frame23"),
     testimonial: makeNodeComponent("testimonial"),
     frame26: makeNodeComponent("frame26"),
     frame25: makeNodeComponent("frame25"),
