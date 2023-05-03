@@ -1763,7 +1763,8 @@ export const PlasmicHomepage = Object.assign(
     pageMetadata: {
       title: "Home",
       description: "",
-      ogImageSrc: "",
+      ogImageSrc:
+        "https://site-assets.plasmic.app/e0cef257389d1f9582f143a429dcf6cf.png",
       canonical: ""
     }
   }

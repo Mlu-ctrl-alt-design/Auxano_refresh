@@ -1675,13 +1675,14 @@
 .person {
   background: linear-gradient(
         180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
+        #46546833 7%,
+        #4654681a 102%,
+        rgba(0, 0, 0, 0.33) 147%
       )
       0% 0% / 100% 100% no-repeat,
     url("./images/person.jpg") center center / cover no-repeat,
     rgba(255, 255, 255, 1);
-  height: 271px;
+  height: 300px;
   display: flex;
   position: relative;
   flex-grow: 1;
@@ -1711,13 +1712,14 @@
 .person {
   background: linear-gradient(
         180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
+        #46546833 7%,
+        #4654681a 102%,
+        rgba(0, 0, 0, 0.33) 147%
       )
       0% 0% / 100% 100% no-repeat,
     url("./images/person.jpg") center center / cover no-repeat,
     rgba(255, 255, 255, 1);
-  height: 271px;
+  height: 300px;
   display: flex;
   position: relative;
   flex-grow: 1;
@@ -1779,13 +1781,14 @@
 .person2 {
   background: linear-gradient(
         180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
+        #fcfcfc33 7%,
+        #465468 102%,
+        rgba(0, 0, 0, 0.33) 147%
       )
       0% 0% / 100% 100% no-repeat,
     url("./images/person2.jpg") center center / cover no-repeat,
     rgba(255, 255, 255, 1);
-  height: 271px;
+  height: 300px;
   display: flex;
   position: relative;
   flex-grow: 1;
@@ -1815,13 +1818,14 @@
 .person2 {
   background: linear-gradient(
         180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
+        #fcfcfc33 7%,
+        #465468 102%,
+        rgba(0, 0, 0, 0.33) 147%
       )
       0% 0% / 100% 100% no-repeat,
     url("./images/person2.jpg") center center / cover no-repeat,
     rgba(255, 255, 255, 1);
-  height: 271px;
+  height: 300px;
   display: flex;
   position: relative;
   flex-grow: 1;
@@ -1907,14 +1911,9 @@
   }
 }
 .person3 {
-  background: linear-gradient(
-        180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
-      )
+  background: linear-gradient(180deg, #46546833 102%, rgba(0, 0, 0, 0.33) 147%)
       0% 0% / 100% 100% no-repeat,
-    url("./images/person3.jpg") center center / cover no-repeat,
-    rgba(255, 255, 255, 1);
+    url("./images/person3.jpg") center center / cover no-repeat;
   height: 271px;
   display: flex;
   position: relative;
@@ -1940,14 +1939,9 @@
   margin-top: 10px;
 }
 .person3 {
-  background: linear-gradient(
-        180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
-      )
+  background: linear-gradient(180deg, #46546833 102%, rgba(0, 0, 0, 0.33) 147%)
       0% 0% / 100% 100% no-repeat,
-    url("./images/person3.jpg") center center / cover no-repeat,
-    rgba(255, 255, 255, 1);
+    url("./images/person3.jpg") center center / cover no-repeat;
   height: 271px;
   display: flex;
   position: relative;
@@ -2010,8 +2004,9 @@
 .person4 {
   background: linear-gradient(
         180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
+        #cccfd233 7%,
+        #465468 102%,
+        rgba(0, 0, 0, 0.33) 147%
       )
       0% 0% / 100% 100% no-repeat,
     url("./images/person3.jpg") center center / cover no-repeat,
@@ -2043,8 +2038,9 @@
 .person4 {
   background: linear-gradient(
         180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
+        #cccfd233 7%,
+        #465468 102%,
+        rgba(0, 0, 0, 0.33) 147%
       )
       0% 0% / 100% 100% no-repeat,
     url("./images/person3.jpg") center center / cover no-repeat,
@@ -2109,11 +2105,7 @@
   position: relative;
 }
 .person5 {
-  background: linear-gradient(
-        180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
-      )
+  background: linear-gradient(180deg, #46546833 102%, rgba(0, 0, 0, 0.33) 147%)
       0% 0% / 100% 100% no-repeat,
     url("./images/person3.jpg") center center / cover no-repeat,
     rgba(255, 255, 255, 1);
@@ -2142,11 +2134,7 @@
   margin-top: 10px;
 }
 .person5 {
-  background: linear-gradient(
-        180deg,
-        rgba(70, 84, 104, 1) 102.65%,
-        rgba(0, 0, 0, 0.33) 147.61%
-      )
+  background: linear-gradient(180deg, #46546833 102%, rgba(0, 0, 0, 0.33) 147%)
       0% 0% / 100% 100% no-repeat,
     url("./images/person3.jpg") center center / cover no-repeat,
     rgba(255, 255, 255, 1);
