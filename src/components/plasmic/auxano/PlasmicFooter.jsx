@@ -138,68 +138,6 @@ function PlasmicFooter__RenderFunc(props) {
                   >
                     <p.Stack
                       as={"div"}
-                      data-plasmic-name={"inputTextStyle2"}
-                      data-plasmic-override={overrides.inputTextStyle2}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.inputTextStyle2
-                      )}
-                    >
-                      {false ? (
-                        <div
-                          data-plasmic-name={"inputLabel"}
-                          data-plasmic-override={overrides.inputLabel}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.inputLabel
-                          )}
-                        >
-                          {"Email"}
-                        </div>
-                      ) : null}
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame2"}
-                        data-plasmic-override={overrides.frame2}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame2)}
-                      >
-                        {false ? (
-                          <p.Stack
-                            as={"div"}
-                            data-plasmic-name={"icon"}
-                            data-plasmic-override={overrides.icon}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.icon)}
-                          >
-                            <IconOutlineatSymbolIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__v7BsN
-                              )}
-                              role={"img"}
-                            />
-                          </p.Stack>
-                        ) : null}
-                        <div
-                          data-plasmic-name={"enterEmailToGetStarted"}
-                          data-plasmic-override={
-                            overrides.enterEmailToGetStarted
-                          }
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.enterEmailToGetStarted
-                          )}
-                        >
-                          {"First name"}
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-                    <p.Stack
-                      as={"div"}
                       data-plasmic-name={"inputTextStyle3"}
                       data-plasmic-override={overrides.inputTextStyle3}
                       hasGap={true}
@@ -334,19 +272,11 @@ function PlasmicFooter__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.widgwts)}
             >
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame7"}
-                data-plasmic-override={overrides.frame7}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame7)}
-              >
+              {true ? (
                 <p.Stack
                   as={"div"}
-                  data-plasmic-name={"frame8"}
-                  data-plasmic-override={overrides.frame8}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.frame8)}
+                  className={classNames(projectcss.all, sty.freeBox__yccL)}
                 >
                   <p.Stack
                     as={"div"}
@@ -487,14 +417,6 @@ function PlasmicFooter__RenderFunc(props) {
                         : "We’ve mastered ABC's of business rescue, corporate restructure, and turnaround strategy; Let us help you."}
                     </div>
                   </p.Stack>
-                </p.Stack>
-              </p.Stack>
-              {true ? (
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__yccL)}
-                >
                   <p.Stack
                     as={"div"}
                     data-plasmic-name={"frame9"}
@@ -920,11 +842,6 @@ const PlasmicDescendants = {
     "content",
     "frame13",
     "form",
-    "inputTextStyle2",
-    "inputLabel",
-    "frame2",
-    "icon",
-    "enterEmailToGetStarted",
     "inputTextStyle3",
     "inputLabel2",
     "frame5",
@@ -937,8 +854,6 @@ const PlasmicDescendants = {
     "frame12",
     "frame6",
     "widgwts",
-    "frame7",
-    "frame8",
     "logo",
     "logo21",
     "layer2",
@@ -991,11 +906,6 @@ const PlasmicDescendants = {
     "content",
     "frame13",
     "form",
-    "inputTextStyle2",
-    "inputLabel",
-    "frame2",
-    "icon",
-    "enterEmailToGetStarted",
     "inputTextStyle3",
     "inputLabel2",
     "frame5",
@@ -1008,8 +918,6 @@ const PlasmicDescendants = {
     "frame12",
     "frame6",
     "widgwts",
-    "frame7",
-    "frame8",
     "logo",
     "logo21",
     "layer2",
@@ -1061,11 +969,6 @@ const PlasmicDescendants = {
     "content",
     "frame13",
     "form",
-    "inputTextStyle2",
-    "inputLabel",
-    "frame2",
-    "icon",
-    "enterEmailToGetStarted",
     "inputTextStyle3",
     "inputLabel2",
     "frame5",
@@ -1083,11 +986,6 @@ const PlasmicDescendants = {
     "content",
     "frame13",
     "form",
-    "inputTextStyle2",
-    "inputLabel",
-    "frame2",
-    "icon",
-    "enterEmailToGetStarted",
     "inputTextStyle3",
     "inputLabel2",
     "frame5",
@@ -1104,11 +1002,6 @@ const PlasmicDescendants = {
     "content",
     "frame13",
     "form",
-    "inputTextStyle2",
-    "inputLabel",
-    "frame2",
-    "icon",
-    "enterEmailToGetStarted",
     "inputTextStyle3",
     "inputLabel2",
     "frame5",
@@ -1124,11 +1017,6 @@ const PlasmicDescendants = {
     "content",
     "frame13",
     "form",
-    "inputTextStyle2",
-    "inputLabel",
-    "frame2",
-    "icon",
-    "enterEmailToGetStarted",
     "inputTextStyle3",
     "inputLabel2",
     "frame5",
@@ -1143,11 +1031,6 @@ const PlasmicDescendants = {
   frame13: [
     "frame13",
     "form",
-    "inputTextStyle2",
-    "inputLabel",
-    "frame2",
-    "icon",
-    "enterEmailToGetStarted",
     "inputTextStyle3",
     "inputLabel2",
     "frame5",
@@ -1161,11 +1044,6 @@ const PlasmicDescendants = {
 
   form: [
     "form",
-    "inputTextStyle2",
-    "inputLabel",
-    "frame2",
-    "icon",
-    "enterEmailToGetStarted",
     "inputTextStyle3",
     "inputLabel2",
     "frame5",
@@ -1177,18 +1055,6 @@ const PlasmicDescendants = {
     "icon3"
   ],
 
-  inputTextStyle2: [
-    "inputTextStyle2",
-    "inputLabel",
-    "frame2",
-    "icon",
-    "enterEmailToGetStarted"
-  ],
-
-  inputLabel: ["inputLabel"],
-  frame2: ["frame2", "icon", "enterEmailToGetStarted"],
-  icon: ["icon"],
-  enterEmailToGetStarted: ["enterEmailToGetStarted"],
   inputTextStyle3: [
     "inputTextStyle3",
     "inputLabel2",
@@ -1215,8 +1081,6 @@ const PlasmicDescendants = {
     "frame12",
     "frame6",
     "widgwts",
-    "frame7",
-    "frame8",
     "logo",
     "logo21",
     "layer2",
@@ -1264,8 +1128,6 @@ const PlasmicDescendants = {
   frame6: [
     "frame6",
     "widgwts",
-    "frame7",
-    "frame8",
     "logo",
     "logo21",
     "layer2",
@@ -1309,8 +1171,6 @@ const PlasmicDescendants = {
 
   widgwts: [
     "widgwts",
-    "frame7",
-    "frame8",
     "logo",
     "logo21",
     "layer2",
@@ -1352,8 +1212,6 @@ const PlasmicDescendants = {
     "aboutFeaturesWorks20"
   ],
 
-  frame7: ["frame7", "frame8", "logo", "logo21", "layer2", "layer1"],
-  frame8: ["frame8", "logo", "logo21", "layer2", "layer1"],
   logo: ["logo", "logo21", "layer2", "layer1"],
   logo21: ["logo21", "layer2", "layer1"],
   layer2: ["layer2", "layer1"],
@@ -1523,11 +1381,6 @@ export const PlasmicFooter = Object.assign(
     content: makeNodeComponent("content"),
     frame13: makeNodeComponent("frame13"),
     form: makeNodeComponent("form"),
-    inputTextStyle2: makeNodeComponent("inputTextStyle2"),
-    inputLabel: makeNodeComponent("inputLabel"),
-    frame2: makeNodeComponent("frame2"),
-    icon: makeNodeComponent("icon"),
-    enterEmailToGetStarted: makeNodeComponent("enterEmailToGetStarted"),
     inputTextStyle3: makeNodeComponent("inputTextStyle3"),
     inputLabel2: makeNodeComponent("inputLabel2"),
     frame5: makeNodeComponent("frame5"),
@@ -1540,8 +1393,6 @@ export const PlasmicFooter = Object.assign(
     frame12: makeNodeComponent("frame12"),
     frame6: makeNodeComponent("frame6"),
     widgwts: makeNodeComponent("widgwts"),
-    frame7: makeNodeComponent("frame7"),
-    frame8: makeNodeComponent("frame8"),
     logo: makeNodeComponent("logo"),
     logo21: makeNodeComponent("logo21"),
     layer2: makeNodeComponent("layer2"),
