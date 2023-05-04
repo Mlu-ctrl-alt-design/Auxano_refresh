@@ -136,7 +136,18 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToAbout"] = true
                   ? (() => {
-                      const actionArgs = {};
+                      const actionArgs = {
+                        destination: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "navigation",
+                            interactionUuid: "MAOty9dvA",
+                            componentUuid: "NaO7GDEY89",
+                            argName: "destination"
+                          },
+                          () => `/`
+                        )
+                      };
                       return __wrapUserFunction(
                         {
                           type: "InteractionLoc",
@@ -240,7 +251,18 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToAbout"] = true
                   ? (() => {
-                      const actionArgs = {};
+                      const actionArgs = {
+                        destination: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "navigation",
+                            interactionUuid: "asrIT0dkTp",
+                            componentUuid: "NaO7GDEY89",
+                            argName: "destination"
+                          },
+                          () => `/services`
+                        )
+                      };
                       return __wrapUserFunction(
                         {
                           type: "InteractionLoc",
