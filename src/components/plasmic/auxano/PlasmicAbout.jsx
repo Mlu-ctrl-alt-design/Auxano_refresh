@@ -267,7 +267,11 @@ function PlasmicAbout__RenderFunc(props) {
               </p.Stack>
             </p.Stack>
           </section>
-          <div className={classNames(projectcss.all, sty.freeBox__bhSih)}>
+          <div
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(projectcss.all, sty.freeBox)}
+          >
             <p.Stack
               as={"div"}
               data-plasmic-name={"frame37"}
@@ -372,7 +376,6 @@ function PlasmicAbout__RenderFunc(props) {
               />
             </p.Stack>
           </section>
-          <div className={classNames(projectcss.all, sty.freeBox__rSv6V)} />
         </div>
       </div>
     </React.Fragment>
@@ -400,6 +403,7 @@ const PlasmicDescendants = {
     "frame33",
     "rectangle7",
     "rectangle8",
+    "freeBox",
     "frame37",
     "frame36",
     "imageGallery2",
@@ -456,6 +460,19 @@ const PlasmicDescendants = {
   frame33: ["frame33", "rectangle7", "rectangle8"],
   rectangle7: ["rectangle7"],
   rectangle8: ["rectangle8"],
+  freeBox: [
+    "freeBox",
+    "frame37",
+    "frame36",
+    "imageGallery2",
+    "frame38",
+    "rectangle9",
+    "_2",
+    "ourTeam",
+    "button2",
+    "text2"
+  ],
+
   frame37: [
     "frame37",
     "frame36",
@@ -541,6 +558,7 @@ export const PlasmicAbout = Object.assign(
     frame33: makeNodeComponent("frame33"),
     rectangle7: makeNodeComponent("rectangle7"),
     rectangle8: makeNodeComponent("rectangle8"),
+    freeBox: makeNodeComponent("freeBox"),
     frame37: makeNodeComponent("frame37"),
     frame36: makeNodeComponent("frame36"),
     imageGallery2: makeNodeComponent("imageGallery2"),
@@ -557,7 +575,7 @@ export const PlasmicAbout = Object.assign(
     internalArgProps: PlasmicAbout__ArgProps,
     // Page metadata
     pageMetadata: {
-      title: "",
+      title: "About",
       description: "",
       ogImageSrc: "",
       canonical: ""

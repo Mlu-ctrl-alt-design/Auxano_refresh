@@ -136,18 +136,7 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToAbout"] = true
                   ? (() => {
-                      const actionArgs = {
-                        destination: __wrapUserFunction(
-                          {
-                            type: "InteractionArgLoc",
-                            actionName: "navigation",
-                            interactionUuid: "MAOty9dvA",
-                            componentUuid: "NaO7GDEY89",
-                            argName: "destination"
-                          },
-                          () => `/about`
-                        )
-                      };
+                      const actionArgs = {};
                       return __wrapUserFunction(
                         {
                           type: "InteractionLoc",
@@ -199,18 +188,7 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToAbout"] = true
                   ? (() => {
-                      const actionArgs = {
-                        destination: __wrapUserFunction(
-                          {
-                            type: "InteractionArgLoc",
-                            actionName: "navigation",
-                            interactionUuid: "7ikq1LCK8v",
-                            componentUuid: "NaO7GDEY89",
-                            argName: "destination"
-                          },
-                          () => `/about`
-                        )
-                      };
+                      const actionArgs = {};
                       return __wrapUserFunction(
                         {
                           type: "InteractionLoc",
@@ -262,18 +240,7 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToAbout"] = true
                   ? (() => {
-                      const actionArgs = {
-                        destination: __wrapUserFunction(
-                          {
-                            type: "InteractionArgLoc",
-                            actionName: "navigation",
-                            interactionUuid: "asrIT0dkTp",
-                            componentUuid: "NaO7GDEY89",
-                            argName: "destination"
-                          },
-                          () => `/about`
-                        )
-                      };
+                      const actionArgs = {};
                       return __wrapUserFunction(
                         {
                           type: "InteractionLoc",
@@ -325,18 +292,7 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToAbout"] = true
                   ? (() => {
-                      const actionArgs = {
-                        destination: __wrapUserFunction(
-                          {
-                            type: "InteractionArgLoc",
-                            actionName: "navigation",
-                            interactionUuid: "ch4tARe8ux",
-                            componentUuid: "NaO7GDEY89",
-                            argName: "destination"
-                          },
-                          () => `/about`
-                        )
-                      };
+                      const actionArgs = {};
                       return __wrapUserFunction(
                         {
                           type: "InteractionLoc",

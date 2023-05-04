@@ -119,6 +119,19 @@
           "cssFilePath": "plasmic/auxano/PlasmicFooter.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "F3vIIsFda1",
+          "name": "Services",
+          "type": "managed",
+          "projectId": "oGQcGtbFzYohLFbpGrRxL3",
+          "renderModuleFilePath": "plasmic/auxano/PlasmicServices.jsx",
+          "importSpec": {
+            "modulePath": "Services.jsx"
+          },
+          "cssFilePath": "plasmic/auxano/PlasmicServices.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -363,6 +376,41 @@
           "id": "RLU3MExVc8",
           "name": "3",
           "filePath": "plasmic/auxano/images/_3.png"
+        },
+        {
+          "id": "u-Ou0v8fL",
+          "name": "Rectangle 1",
+          "filePath": "plasmic/auxano/images/rectangle1.jpg"
+        },
+        {
+          "id": "9FOCla8lUi",
+          "name": "Rectangle 3",
+          "filePath": "plasmic/auxano/images/rectangle3.jpg"
+        },
+        {
+          "id": "9HpPNnZJzR",
+          "name": "icons8-puzzle 1",
+          "filePath": "plasmic/auxano/images/icons8Puzzle1.svg"
+        },
+        {
+          "id": "c28AOdXBlU",
+          "name": "OfficeBuildingOutline",
+          "filePath": "plasmic/auxano/images/officeBuildingOutline.svg"
+        },
+        {
+          "id": "ka9YbdU2j",
+          "name": "image",
+          "filePath": "plasmic/auxano/images/image.png"
+        },
+        {
+          "id": "82lwB8yii",
+          "name": "icons8-puzzle 2",
+          "filePath": "plasmic/auxano/images/icons8Puzzle2.svg"
+        },
+        {
+          "id": "r4IkxbpYcS",
+          "name": "OfficeBuildingOutline 2",
+          "filePath": "plasmic/auxano/images/officeBuildingOutline2.svg"
         }
       ],
       "indirect": false,
