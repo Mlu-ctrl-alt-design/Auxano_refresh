@@ -14,12 +14,10 @@ import * as ph from "@plasmicapp/react-web/lib/host";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import NavBarFinal from "../../NavBarFinal"; // plasmic-import: Ba2YaKrrpo/component
 import Footer from "../../Footer"; // plasmic-import: 6NjpMkUH8g-/component
-import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_auxano.module.css"; // plasmic-import: oGQcGtbFzYohLFbpGrRxL3/projectcss
 import sty from "./PlasmicAbout.module.css"; // plasmic-import: RdHlrJ1IAu/css
@@ -50,9 +48,6 @@ function PlasmicAbout__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsbmXrKiwboivdw()
-  });
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -151,61 +146,55 @@ function PlasmicAbout__RenderFunc(props) {
                   </div>
                 </p.Stack>
                 <div className={classNames(projectcss.all, sty.columns__pLzo3)}>
-                  <div
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
                     className={classNames(projectcss.all, sty.column__d7Zbx)}
                   >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___6Qk2
+                      )}
+                    >
+                      {
+                        "Unlocking Business Potential \nwith Professional Solutions"
+                      }
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__bgtd
+                      )}
+                    >
+                      {
+                        "The values of Auxano is to provide its customers with a professional, cost effective business solutions by unlocking and improving their operations, providing the growth consulting, Business rescue and restructuring, strategic development, due diligence, business management and financing; tailored to support business performance through outstanding customer service\nOur goal and vision remain steadfast in that we consistently strive to be the leading competitively business consultancy in South Africa.\n\nAuxano is a South African Small to Medium business development firm; developing both the existing and start-up businesses. The consultancy was born and is a product of over 14 years’ experience in business banking from the two leading banks in South Africa. The mainstay of our business strategy entails meeting customer requirements and specifications while ensuring unrivalled post-sale service. Our chief focus is to create energising workplace and imposing environments through economically designed business, financial services and business support."
+                      }
+                    </div>
                     <p.Stack
                       as={"div"}
-                      data-plasmic-name={"_1"}
-                      data-plasmic-override={overrides._1}
+                      data-plasmic-name={"button"}
+                      data-plasmic-override={overrides.button}
                       hasGap={true}
-                      className={classNames(projectcss.all, sty._1)}
+                      className={classNames(projectcss.all, sty.button)}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text___6Qk2
+                          sty.text__lLHrL
                         )}
                       >
-                        {
-                          "Unlocking Business Potential \nwith Professional Solutions"
-                        }
+                        {"Get in touch"}
                       </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__bgtd
-                        )}
-                      >
-                        {
-                          "The values of Auxano is to provide its customers with a professional, cost effective business solutions by unlocking and improving their operations, providing the growth consulting, Business rescue and restructuring, strategic development, due diligence, business management and financing; tailored to support business performance through outstanding customer service\nOur goal and vision remain steadfast in that we consistently strive to be the leading competitively business consultancy in South Africa.\n\nAuxano is a South African Small to Medium business development firm; developing both the existing and start-up businesses. The consultancy was born and is a product of over 14 years’ experience in business banking from the two leading banks in South Africa. The mainstay of our business strategy entails meeting customer requirements and specifications while ensuring unrivalled post-sale service. Our chief focus is to create energising workplace and imposing environments through economically designed business, financial services and business support."
-                        }
-                      </div>
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"button"}
-                        data-plasmic-override={overrides.button}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.button)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__lLHrL
-                          )}
-                        >
-                          {"Get in touch"}
-                        </div>
-                        <Icon2Icon
-                          className={classNames(projectcss.all, sty.svg__e0Rs7)}
-                          role={"img"}
-                        />
-                      </p.Stack>
+                      <Icon2Icon
+                        className={classNames(projectcss.all, sty.svg__e0Rs7)}
+                        role={"img"}
+                      />
                     </p.Stack>
-                  </div>
+                  </p.Stack>
                   <div
                     className={classNames(projectcss.all, sty.column__iJah2)}
                   >
@@ -269,102 +258,72 @@ function PlasmicAbout__RenderFunc(props) {
                   </div>
                 </div>
               </p.Stack>
-            </div>
-          </section>
-          <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
-          >
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"frame37"}
-              data-plasmic-override={overrides.frame37}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.frame37)}
-            >
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame36"}
-                data-plasmic-override={overrides.frame36}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame36)}
-              >
-                <div
-                  data-plasmic-name={"imageGallery2"}
-                  data-plasmic-override={overrides.imageGallery2}
-                  className={classNames(projectcss.all, sty.imageGallery2)}
-                >
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame38"}
-                    data-plasmic-override={overrides.frame38}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame38)}
-                  >
-                    <div
-                      data-plasmic-name={"rectangle9"}
-                      data-plasmic-override={overrides.rectangle9}
-                      className={classNames(projectcss.all, sty.rectangle9)}
-                    />
-                  </p.Stack>
+              <div className={classNames(projectcss.all, sty.columns___9PkT1)}>
+                <div className={classNames(projectcss.all, sty.column__j4J)}>
+                  <div
+                    data-plasmic-name={"rectangle9"}
+                    data-plasmic-override={overrides.rectangle9}
+                    className={classNames(projectcss.all, sty.rectangle9)}
+                  />
                 </div>
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"_2"}
-                  data-plasmic-override={overrides._2}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty._2)}
-                >
-                  <div
-                    data-plasmic-name={"ourTeam"}
-                    data-plasmic-override={overrides.ourTeam}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.ourTeam
-                    )}
-                  >
-                    {"OUR TEAM "}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___118S
-                    )}
-                  >
-                    {
-                      "The company is owned, managed and led by the highly competent entrepreneur and seasonal banker, strategist, economist, researcher and Business Executive Mr. Justice Kudumela, who has innovative – edge and exceptional business skills\nIn driving business development, marketing initiatives and operations, Justice has helped, developed and mentored talented and qualified entrepreneurs from the most part of South Africa, of those he helped, some were privileged to receive an invitation to the white house in Washington DC for their valuable input in business\nWith over fourteen (14) years cumulative experience in the retail and business banking from two biggest banks in South Africa, Justice strives to fulfill client satisfaction through prompt, personalized and attentive service. Justice holds MBA degree, Senior Business Rescue Practitioner, Business Coaching certificate, Banking Degree, FSB accredited, and a member of Institute of Business Advisory SA."
-                    }
-                  </div>
+                <div className={classNames(projectcss.all, sty.column__bmgIf)}>
                   <p.Stack
                     as={"div"}
-                    data-plasmic-name={"button2"}
-                    data-plasmic-override={overrides.button2}
+                    data-plasmic-name={"_2"}
+                    data-plasmic-override={overrides._2}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.button2)}
+                    className={classNames(projectcss.all, sty._2)}
                   >
                     <div
-                      data-plasmic-name={"text2"}
-                      data-plasmic-override={overrides.text2}
+                      data-plasmic-name={"ourTeam"}
+                      data-plasmic-override={overrides.ourTeam}
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text2
+                        sty.ourTeam
                       )}
                     >
-                      {"View full Team"}
+                      {"OUR TEAM "}
                     </div>
-                    <Icon2Icon
-                      className={classNames(projectcss.all, sty.svg__hlzql)}
-                      role={"img"}
-                    />
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__xSzLr
+                      )}
+                    >
+                      {
+                        "The company is owned, managed and led by the highly competent entrepreneur and seasonal banker, strategist, economist, researcher and Business Executive Mr. Justice Kudumela, who has innovative – edge and exceptional business skills\nIn driving business development, marketing initiatives and operations, Justice has helped, developed and mentored talented and qualified entrepreneurs from the most part of South Africa, of those he helped, some were privileged to receive an invitation to the white house in Washington DC for their valuable input in business\nWith over fourteen (14) years cumulative experience in the retail and business banking from two biggest banks in South Africa, Justice strives to fulfill client satisfaction through prompt, personalized and attentive service. Justice holds MBA degree, Senior Business Rescue Practitioner, Business Coaching certificate, Banking Degree, FSB accredited, and a member of Institute of Business Advisory SA."
+                      }
+                    </div>
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"button2"}
+                      data-plasmic-override={overrides.button2}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.button2)}
+                    >
+                      <div
+                        data-plasmic-name={"text2"}
+                        data-plasmic-override={overrides.text2}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text2
+                        )}
+                      >
+                        {"View full Team"}
+                      </div>
+                      <Icon2Icon
+                        className={classNames(projectcss.all, sty.svg__kezOc)}
+                        role={"img"}
+                      />
+                    </p.Stack>
                   </p.Stack>
-                </p.Stack>
-              </p.Stack>
-            </p.Stack>
-          </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <section className={classNames(projectcss.all, sty.section__kiuie)}>
             <p.Stack
               as={"div"}
@@ -395,7 +354,6 @@ const PlasmicDescendants = {
     "content",
     "frame39",
     "frame27",
-    "_1",
     "button",
     "imageGallery",
     "frame32",
@@ -406,11 +364,6 @@ const PlasmicDescendants = {
     "frame33",
     "rectangle7",
     "rectangle8",
-    "freeBox",
-    "frame37",
-    "frame36",
-    "imageGallery2",
-    "frame38",
     "rectangle9",
     "_2",
     "ourTeam",
@@ -426,7 +379,6 @@ const PlasmicDescendants = {
   content: ["content", "frame39"],
   frame39: ["frame39"],
   frame27: ["frame27"],
-  _1: ["_1", "button"],
   button: ["button"],
   imageGallery: [
     "imageGallery",
@@ -448,44 +400,6 @@ const PlasmicDescendants = {
   frame33: ["frame33", "rectangle7", "rectangle8"],
   rectangle7: ["rectangle7"],
   rectangle8: ["rectangle8"],
-  freeBox: [
-    "freeBox",
-    "frame37",
-    "frame36",
-    "imageGallery2",
-    "frame38",
-    "rectangle9",
-    "_2",
-    "ourTeam",
-    "button2",
-    "text2"
-  ],
-
-  frame37: [
-    "frame37",
-    "frame36",
-    "imageGallery2",
-    "frame38",
-    "rectangle9",
-    "_2",
-    "ourTeam",
-    "button2",
-    "text2"
-  ],
-
-  frame36: [
-    "frame36",
-    "imageGallery2",
-    "frame38",
-    "rectangle9",
-    "_2",
-    "ourTeam",
-    "button2",
-    "text2"
-  ],
-
-  imageGallery2: ["imageGallery2", "frame38", "rectangle9"],
-  frame38: ["frame38", "rectangle9"],
   rectangle9: ["rectangle9"],
   _2: ["_2", "ourTeam", "button2", "text2"],
   ourTeam: ["ourTeam"],
@@ -534,7 +448,6 @@ export const PlasmicAbout = Object.assign(
     content: makeNodeComponent("content"),
     frame39: makeNodeComponent("frame39"),
     frame27: makeNodeComponent("frame27"),
-    _1: makeNodeComponent("_1"),
     button: makeNodeComponent("button"),
     imageGallery: makeNodeComponent("imageGallery"),
     frame32: makeNodeComponent("frame32"),
@@ -545,11 +458,6 @@ export const PlasmicAbout = Object.assign(
     frame33: makeNodeComponent("frame33"),
     rectangle7: makeNodeComponent("rectangle7"),
     rectangle8: makeNodeComponent("rectangle8"),
-    freeBox: makeNodeComponent("freeBox"),
-    frame37: makeNodeComponent("frame37"),
-    frame36: makeNodeComponent("frame36"),
-    imageGallery2: makeNodeComponent("imageGallery2"),
-    frame38: makeNodeComponent("frame38"),
     rectangle9: makeNodeComponent("rectangle9"),
     _2: makeNodeComponent("_2"),
     ourTeam: makeNodeComponent("ourTeam"),

@@ -122,9 +122,9 @@ function PlasmicServices__RenderFunc(props) {
                     sty.text__mxoF
                   )}
                 >
-                  {
-                    "Unlocking Business Potential with \nTailored Solutions and the ABC's of Business Rescue"
-                  }
+                  {hasVariant(globalVariants, "screen", "tabletOnly")
+                    ? "Unlocking Business Potential with Tailored Solutions and the ABC's of Business Rescue"
+                    : "Unlocking Business Potential with \nTailored Solutions and the ABC's of Business Rescue"}
                 </div>
               </p.Stack>
             </p.Stack>
@@ -153,20 +153,8 @@ function PlasmicServices__RenderFunc(props) {
                 {"Our Services"}
               </div>
             </p.Stack>
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"frame28"}
-              data-plasmic-override={overrides.frame28}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.frame28)}
-            >
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame23"}
-                data-plasmic-override={overrides.frame23}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame23)}
-              >
+            <div className={classNames(projectcss.all, sty.columns__bxgUt)}>
+              <div className={classNames(projectcss.all, sty.column__gp29)}>
                 <p.Stack
                   as={"div"}
                   data-plasmic-name={"_1"}
@@ -176,7 +164,7 @@ function PlasmicServices__RenderFunc(props) {
                 >
                   <p.PlasmicImg
                     alt={""}
-                    className={classNames(sty.img__cD7PI)}
+                    className={classNames(sty.img__vGhFf)}
                     displayHeight={"35px"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -196,7 +184,7 @@ function PlasmicServices__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__odvRe
+                      sty.text__xZbmV
                     )}
                   >
                     {"BUSINESS RESCUE AND TURN AROUND STRATEGY"}
@@ -205,7 +193,7 @@ function PlasmicServices__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___1Mx58
+                      sty.text__kzIUn
                     )}
                   >
                     {
@@ -223,51 +211,47 @@ function PlasmicServices__RenderFunc(props) {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__wSh25
+                        sty.text__rUxni
                       )}
                     >
                       {"Get in touch"}
                     </div>
                     <Icon2Icon
-                      className={classNames(projectcss.all, sty.svg__o4X0X)}
+                      className={classNames(projectcss.all, sty.svg___9CvC)}
                       role={"img"}
                     />
                   </p.Stack>
                 </p.Stack>
-              </p.Stack>
-              {(
-                hasVariant(globalVariants, "screen", "tabletOnly") ? true : true
-              ) ? (
-                <div
-                  data-plasmic-name={"rectangle1"}
-                  data-plasmic-override={overrides.rectangle1}
-                  className={classNames(projectcss.all, sty.rectangle1)}
-                />
-              ) : null}
-            </p.Stack>
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"frame29"}
-              data-plasmic-override={overrides.frame29}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.frame29)}
-            >
-              {(
-                hasVariant(globalVariants, "screen", "tabletOnly") ? true : true
-              ) ? (
-                <div
-                  data-plasmic-name={"rectangle2"}
-                  data-plasmic-override={overrides.rectangle2}
-                  className={classNames(projectcss.all, sty.rectangle2)}
-                />
-              ) : null}
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame24"}
-                data-plasmic-override={overrides.frame24}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame24)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.column__cEwyk)}>
+                {(
+                  hasVariant(globalVariants, "screen", "tabletOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    data-plasmic-name={"rectangle3"}
+                    data-plasmic-override={overrides.rectangle3}
+                    className={classNames(projectcss.all, sty.rectangle3)}
+                  />
+                ) : null}
+              </div>
+            </div>
+            <div className={classNames(projectcss.all, sty.columns__smo5A)}>
+              <div className={classNames(projectcss.all, sty.column__p6SPk)}>
+                {(
+                  hasVariant(globalVariants, "screen", "tabletOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    data-plasmic-name={"rectangle2"}
+                    data-plasmic-override={overrides.rectangle2}
+                    className={classNames(projectcss.all, sty.rectangle2)}
+                  />
+                ) : null}
+              </div>
+              <div className={classNames(projectcss.all, sty.column__tl7E)}>
                 <p.Stack
                   as={"div"}
                   data-plasmic-name={"_2"}
@@ -277,7 +261,7 @@ function PlasmicServices__RenderFunc(props) {
                 >
                   <p.PlasmicImg
                     alt={""}
-                    className={classNames(sty.img__vXSb6)}
+                    className={classNames(sty.img___2Ku1W)}
                     displayHeight={"35px"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -297,7 +281,7 @@ function PlasmicServices__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__p5Hwy
+                      sty.text__ekXne
                     )}
                   >
                     {"CORPORATE RESTRUCTURING"}
@@ -306,7 +290,7 @@ function PlasmicServices__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__f76F
+                      sty.text__ynE0A
                     )}
                   >
                     {
@@ -332,13 +316,13 @@ function PlasmicServices__RenderFunc(props) {
                       {"Get in touch"}
                     </div>
                     <Icon2Icon
-                      className={classNames(projectcss.all, sty.svg__lUhti)}
+                      className={classNames(projectcss.all, sty.svg__nuFgh)}
                       role={"img"}
                     />
                   </p.Stack>
                 </p.Stack>
-              </p.Stack>
-            </p.Stack>
+              </div>
+            </div>
           </p.Stack>
           <div
             data-plasmic-name={"freeBox"}
@@ -367,14 +351,10 @@ const PlasmicDescendants = {
     "frame39",
     "section",
     "frame27",
-    "frame28",
-    "frame23",
     "_1",
     "button",
-    "rectangle1",
-    "frame29",
+    "rectangle3",
     "rectangle2",
-    "frame24",
     "_2",
     "button2",
     "text2",
@@ -390,28 +370,20 @@ const PlasmicDescendants = {
   section: [
     "section",
     "frame27",
-    "frame28",
-    "frame23",
     "_1",
     "button",
-    "rectangle1",
-    "frame29",
+    "rectangle3",
     "rectangle2",
-    "frame24",
     "_2",
     "button2",
     "text2"
   ],
 
   frame27: ["frame27"],
-  frame28: ["frame28", "frame23", "_1", "button", "rectangle1"],
-  frame23: ["frame23", "_1", "button"],
   _1: ["_1", "button"],
   button: ["button"],
-  rectangle1: ["rectangle1"],
-  frame29: ["frame29", "rectangle2", "frame24", "_2", "button2", "text2"],
+  rectangle3: ["rectangle3"],
   rectangle2: ["rectangle2"],
-  frame24: ["frame24", "_2", "button2", "text2"],
   _2: ["_2", "button2", "text2"],
   button2: ["button2", "text2"],
   text2: ["text2"],
@@ -459,14 +431,10 @@ export const PlasmicServices = Object.assign(
     frame39: makeNodeComponent("frame39"),
     section: makeNodeComponent("section"),
     frame27: makeNodeComponent("frame27"),
-    frame28: makeNodeComponent("frame28"),
-    frame23: makeNodeComponent("frame23"),
     _1: makeNodeComponent("_1"),
     button: makeNodeComponent("button"),
-    rectangle1: makeNodeComponent("rectangle1"),
-    frame29: makeNodeComponent("frame29"),
+    rectangle3: makeNodeComponent("rectangle3"),
     rectangle2: makeNodeComponent("rectangle2"),
-    frame24: makeNodeComponent("frame24"),
     _2: makeNodeComponent("_2"),
     button2: makeNodeComponent("button2"),
     text2: makeNodeComponent("text2"),

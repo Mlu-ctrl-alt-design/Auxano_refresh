@@ -167,7 +167,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   min-width: 0;
-  padding: 8px;
+  padding: 0px;
 }
 .visionSection > :nth-child(1n + 1) {
   width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
@@ -269,6 +269,16 @@
   max-width: 70%;
   min-width: 0;
   padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__kyatI {
+    max-width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .freeBox__kyatI {
+    max-width: 100%;
+  }
 }
 .text__pha7P {
   width: 100%;
@@ -463,8 +473,10 @@
 }
 .content > :global(.__wab_flex-container) {
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-content: stretch;
   margin-left: calc(0px - var(--token-uyB8FyBfU));
   width: calc(100% + var(--token-uyB8FyBfU));
 }
@@ -484,8 +496,10 @@
   position: relative;
   align-self: stretch;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-content: stretch;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .content {
@@ -2115,7 +2129,7 @@
 .person5 {
   background: linear-gradient(180deg, #46546833 102%, rgba(0, 0, 0, 0.33) 147%)
       0% 0% / 100% 100% no-repeat,
-    url("./images/person3.jpg") center center / cover no-repeat,
+    url("./images/person6.jpg") center center / cover no-repeat,
     rgba(255, 255, 255, 1);
   height: 271px;
   display: flex;
@@ -2144,7 +2158,7 @@
 .person5 {
   background: linear-gradient(180deg, #46546833 102%, rgba(0, 0, 0, 0.33) 147%)
       0% 0% / 100% 100% no-repeat,
-    url("./images/person3.jpg") center center / cover no-repeat,
+    url("./images/person6.jpg") center center / cover no-repeat,
     rgba(255, 255, 255, 1);
   height: 271px;
   display: flex;
@@ -2446,7 +2460,7 @@
     height: 245px;
     background: linear-gradient(0deg, #121212 0%, #e8e8e800 100%) 0% 0% / 100%
         100% repeat,
-      url("./images/_1.png") -95px -69px / cover no-repeat;
+      url("./images/_1.png") left 0px top 0px / cover no-repeat;
     min-width: 0;
     flex-shrink: 0;
   }
@@ -2548,7 +2562,7 @@
     height: 245px;
     background: linear-gradient(0deg, #121212 0%, #e8e8e800 100%) 0% 0% / 100%
         100% repeat,
-      url("./images/_2.png") -95px -69px / cover no-repeat;
+      url("./images/_2.png") left 0px top 0px / cover no-repeat;
     min-width: 0;
     flex-shrink: 0;
   }
@@ -2651,8 +2665,8 @@
     height: 245px;
     background: linear-gradient(0deg, #121212 0%, #e8e8e800 100%) 0% 0% / 100%
         100% repeat,
-      url("./images/_3.png") -95px -69px / cover no-repeat content-box
-        padding-box scroll;
+      url("./images/_3.png") left 0px top 0px / cover no-repeat padding-box
+        border-box scroll;
     min-width: 0;
     flex-shrink: 0;
   }

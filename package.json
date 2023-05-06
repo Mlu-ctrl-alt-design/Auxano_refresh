@@ -7,6 +7,7 @@
     "@plasmicapp/host": "^1.0.126",
     "@plasmicapp/react-web": "^0.2.194",
     "@plasmicpkgs/plasmic-nav": "^0.0.96",
+    "@plasmicpkgs/plasmic-wordpress": "^0.0.54",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
