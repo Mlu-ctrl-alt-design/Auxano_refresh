@@ -412,7 +412,7 @@ function PlasmicFooter__RenderFunc(props) {
                         sty.text__bxWy1
                       )}
                     >
-                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                      {hasVariant(globalVariants, "screen", "tabletOnly")
                         ? "We’ve mastered ABC's of business rescue, corporate restructure, and turnaround strategy; Let us help you."
                         : "We’ve mastered ABC's of business rescue, corporate restructure, and turnaround strategy; Let us help you."}
                     </div>

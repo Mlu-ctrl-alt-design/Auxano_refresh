@@ -17,7 +17,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import AuxanoNavbar from "../../AuxanoNavbar"; // plasmic-import: NaO7GDEY89/component
+import NavBarFinal from "../../NavBarFinal"; // plasmic-import: Ba2YaKrrpo/component
 import Footer from "../../Footer"; // plasmic-import: 6NjpMkUH8g-/component
 import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -81,10 +81,10 @@ function PlasmicContact__RenderFunc(props) {
             data-plasmic-override={overrides.header}
             className={classNames(projectcss.all, sty.header)}
           >
-            <AuxanoNavbar
-              data-plasmic-name={"auxanoNavbar"}
-              data-plasmic-override={overrides.auxanoNavbar}
-              className={classNames("__wab_instance", sty.auxanoNavbar)}
+            <NavBarFinal
+              data-plasmic-name={"navBarFinal"}
+              data-plasmic-override={overrides.navBarFinal}
+              className={classNames("__wab_instance", sty.navBarFinal)}
             />
 
             <div
@@ -1028,7 +1028,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "header",
-    "auxanoNavbar",
+    "navBarFinal",
     "frame26",
     "header2",
     "content",
@@ -1105,16 +1105,8 @@ const PlasmicDescendants = {
     "pretoria"
   ],
 
-  header: [
-    "header",
-    "auxanoNavbar",
-    "frame26",
-    "header2",
-    "content",
-    "frame39"
-  ],
-
-  auxanoNavbar: ["auxanoNavbar"],
+  header: ["header", "navBarFinal", "frame26", "header2", "content", "frame39"],
+  navBarFinal: ["navBarFinal"],
   frame26: ["frame26", "header2", "content", "frame39"],
   header2: ["header2", "content", "frame39"],
   content: ["content", "frame39"],
@@ -1586,7 +1578,7 @@ export const PlasmicContact = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
-    auxanoNavbar: makeNodeComponent("auxanoNavbar"),
+    navBarFinal: makeNodeComponent("navBarFinal"),
     frame26: makeNodeComponent("frame26"),
     header2: makeNodeComponent("header2"),
     content: makeNodeComponent("content"),

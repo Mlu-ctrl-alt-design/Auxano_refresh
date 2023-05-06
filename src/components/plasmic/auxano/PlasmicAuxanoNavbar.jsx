@@ -15,9 +15,11 @@ import {
   hasVariant,
   classNames,
   createPlasmicElementProxy,
+  useTrigger,
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Button2 from "../../Button2"; // plasmic-import: puKm7ksVLVR/component
 import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_auxano.module.css"; // plasmic-import: oGQcGtbFzYohLFbpGrRxL3/projectcss
@@ -50,6 +52,14 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const [isRootFocusWithin, triggerRootFocusWithinProps] = useTrigger(
+    "useFocusedWithin",
+    {}
+  );
+
+  const triggers = {
+    focusWithin_root: isRootFocusWithin
+  };
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsbmXrKiwboivdw()
   });
@@ -67,6 +77,7 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
         projectcss.plasmic_tokens,
         sty.root
       )}
+      data-plasmic-trigger-props={[triggerRootFocusWithinProps]}
     >
       <p.Stack
         as={"div"}
@@ -88,18 +99,18 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
             alt={""}
             className={classNames(sty.img)}
             displayHeight={
-              hasVariant(globalVariants, "screen", "mobileOnly")
+              hasVariant(globalVariants, "screen", "tabletOnly")
                 ? "auto"
                 : "auto"
             }
             displayMaxHeight={"none"}
             displayMaxWidth={
-              hasVariant(globalVariants, "screen", "mobileOnly") ? "45%" : "65%"
+              hasVariant(globalVariants, "screen", "tabletOnly") ? "45%" : "65%"
             }
             displayMinHeight={"0"}
             displayMinWidth={"0"}
             displayWidth={
-              hasVariant(globalVariants, "screen", "mobileOnly")
+              hasVariant(globalVariants, "screen", "tabletOnly")
                 ? "auto"
                 : "auto"
             }
@@ -112,11 +123,15 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
             }}
           />
         </p.Stack>
-        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+        {(
+          triggers.focusWithin_root
+            ? true
+            : hasVariant(globalVariants, "screen", "tabletOnly")
+            ? true
+            : true
+        ) ? (
           <MenuAlt01SvgrepoComsvgIcon
-            data-plasmic-name={"svg"}
-            data-plasmic-override={overrides.svg}
-            className={classNames(projectcss.all, sty.svg)}
+            className={classNames(projectcss.all, sty.svg__ljw3C)}
             onClick={async event => {
               const $steps = {};
               $steps["updateStateVariable"] = true
@@ -126,7 +141,7 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                       {
                         type: "InteractionLoc",
                         actionName: "updateVariable",
-                        interactionUuid: "iQn8evcho",
+                        interactionUuid: "nRr250Ocl",
                         componentUuid: "NaO7GDEY89"
                       },
                       () =>
@@ -146,7 +161,7 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                   {
                     type: "InteractionLoc",
                     actionName: "updateVariable",
-                    interactionUuid: "iQn8evcho",
+                    interactionUuid: "nRr250Ocl",
                     componentUuid: "NaO7GDEY89"
                   },
                   $steps["updateStateVariable"]
@@ -156,7 +171,48 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
             role={"img"}
           />
         ) : null}
-        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+        {(hasVariant(globalVariants, "screen", "tabletOnly") ? true : false) ? (
+          <MenuAlt01SvgrepoComsvgIcon
+            className={classNames(projectcss.all, sty.svg__c4LjO)}
+            onClick={async event => {
+              const $steps = {};
+              $steps["runInteractionProp"] = true
+                ? (() => {
+                    const actionArgs = {};
+                    return __wrapUserFunction(
+                      {
+                        type: "InteractionLoc",
+                        actionName: "invokeEventHandler",
+                        interactionUuid: "N6ks2hpKWj",
+                        componentUuid: "NaO7GDEY89"
+                      },
+                      () =>
+                        (({ eventRef, args }) => {
+                          return eventRef?.(...(args ?? []));
+                        })?.apply(null, [actionArgs]),
+                      actionArgs
+                    );
+                  })()
+                : undefined;
+              if (
+                typeof $steps["runInteractionProp"] === "object" &&
+                typeof $steps["runInteractionProp"].then === "function"
+              ) {
+                $steps["runInteractionProp"] = await __wrapUserPromise(
+                  {
+                    type: "InteractionLoc",
+                    actionName: "invokeEventHandler",
+                    interactionUuid: "N6ks2hpKWj",
+                    componentUuid: "NaO7GDEY89"
+                  },
+                  $steps["runInteractionProp"]
+                );
+              }
+            }}
+            role={"img"}
+          />
+        ) : null}
+        {(hasVariant(globalVariants, "screen", "tabletOnly") ? true : true) ? (
           <div
             data-plasmic-name={"linksDesktop"}
             data-plasmic-override={overrides.linksDesktop}
@@ -172,6 +228,7 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                 projectcss.a,
                 sty.linkItem2
               )}
+              href={`/`}
               onClick={async event => {
                 const $steps = {};
                 $steps["goToHomepage"] = true
@@ -239,6 +296,7 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                 projectcss.a,
                 sty.linkItem5
               )}
+              href={`/about`}
               onClick={async event => {
                 const $steps = {};
                 $steps["goToAbout"] = true
@@ -306,6 +364,7 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                 projectcss.a,
                 sty.linkItem7
               )}
+              href={`/services`}
               onClick={async event => {
                 const $steps = {};
                 $steps["goToServices"] = true
@@ -364,46 +423,16 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
               </div>
             </p.Stack>
             <p.Stack
-              as={"div"}
+              as={"a"}
               data-plasmic-name={"linkItem6"}
               data-plasmic-override={overrides.linkItem6}
               hasGap={true}
-              className={classNames(projectcss.all, sty.linkItem6)}
-              onClick={async event => {
-                const $steps = {};
-                $steps["goToAbout"] = true
-                  ? (() => {
-                      const actionArgs = {};
-                      return __wrapUserFunction(
-                        {
-                          type: "InteractionLoc",
-                          actionName: "navigation",
-                          interactionUuid: "ch4tARe8ux",
-                          componentUuid: "NaO7GDEY89"
-                        },
-                        () =>
-                          (({ destination }) => {
-                            location.assign(destination);
-                          })?.apply(null, [actionArgs]),
-                        actionArgs
-                      );
-                    })()
-                  : undefined;
-                if (
-                  typeof $steps["goToAbout"] === "object" &&
-                  typeof $steps["goToAbout"].then === "function"
-                ) {
-                  $steps["goToAbout"] = await __wrapUserPromise(
-                    {
-                      type: "InteractionLoc",
-                      actionName: "navigation",
-                      interactionUuid: "ch4tARe8ux",
-                      componentUuid: "NaO7GDEY89"
-                    },
-                    $steps["goToAbout"]
-                  );
-                }
-              }}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.linkItem6
+              )}
+              href={`/contact`}
             >
               <div
                 className={classNames(
@@ -415,53 +444,34 @@ function PlasmicAuxanoNavbar__RenderFunc(props) {
                 {"Contact"}
               </div>
             </p.Stack>
+            {(
+              hasVariant(globalVariants, "screen", "tabletOnly") ? true : true
+            ) ? (
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"navItems"}
+                data-plasmic-override={overrides.navItems}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navItems)}
+              >
+                <Button2
+                  data-plasmic-name={"button2"}
+                  data-plasmic-override={overrides.button2}
+                  className={classNames("__wab_instance", sty.button2)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__zi4U9
+                    )}
+                  >
+                    {"Let us call you"}
+                  </div>
+                </Button2>
+              </p.Stack>
+            ) : null}
           </div>
-        ) : null}
-        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
-          <p.Stack
-            as={"div"}
-            data-plasmic-name={"navItems"}
-            data-plasmic-override={overrides.navItems}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.navItems)}
-          >
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"button"}
-              data-plasmic-override={overrides.button}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.button)}
-            >
-              <div
-                data-plasmic-name={"getInTouch"}
-                data-plasmic-override={overrides.getInTouch}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.getInTouch
-                )}
-              >
-                {"Get in touch "}
-              </div>
-            </p.Stack>
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"button2"}
-              data-plasmic-override={overrides.button2}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.button2)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__klc5V
-                )}
-              >
-                {"Let us  call you"}
-              </div>
-            </p.Stack>
-          </p.Stack>
         ) : null}
       </p.Stack>
     </div>
@@ -474,15 +484,12 @@ const PlasmicDescendants = {
     "navbar",
     "logo21",
     "img",
-    "svg",
     "linksDesktop",
     "linkItem2",
     "linkItem5",
     "linkItem7",
     "linkItem6",
     "navItems",
-    "button",
-    "getInTouch",
     "button2"
   ],
 
@@ -490,36 +497,32 @@ const PlasmicDescendants = {
     "navbar",
     "logo21",
     "img",
-    "svg",
     "linksDesktop",
     "linkItem2",
     "linkItem5",
     "linkItem7",
     "linkItem6",
     "navItems",
-    "button",
-    "getInTouch",
     "button2"
   ],
 
   logo21: ["logo21", "img"],
   img: ["img"],
-  svg: ["svg"],
   linksDesktop: [
     "linksDesktop",
     "linkItem2",
     "linkItem5",
     "linkItem7",
-    "linkItem6"
+    "linkItem6",
+    "navItems",
+    "button2"
   ],
 
   linkItem2: ["linkItem2"],
   linkItem5: ["linkItem5"],
   linkItem7: ["linkItem7"],
   linkItem6: ["linkItem6"],
-  navItems: ["navItems", "button", "getInTouch", "button2"],
-  button: ["button", "getInTouch"],
-  getInTouch: ["getInTouch"],
+  navItems: ["navItems", "button2"],
   button2: ["button2"]
 };
 
@@ -559,15 +562,12 @@ export const PlasmicAuxanoNavbar = Object.assign(
     navbar: makeNodeComponent("navbar"),
     logo21: makeNodeComponent("logo21"),
     img: makeNodeComponent("img"),
-    svg: makeNodeComponent("svg"),
     linksDesktop: makeNodeComponent("linksDesktop"),
     linkItem2: makeNodeComponent("linkItem2"),
     linkItem5: makeNodeComponent("linkItem5"),
     linkItem7: makeNodeComponent("linkItem7"),
     linkItem6: makeNodeComponent("linkItem6"),
     navItems: makeNodeComponent("navItems"),
-    button: makeNodeComponent("button"),
-    getInTouch: makeNodeComponent("getInTouch"),
     button2: makeNodeComponent("button2"),
     // Metadata about props expected for PlasmicAuxanoNavbar
     internalVariantProps: PlasmicAuxanoNavbar__VariantProps,

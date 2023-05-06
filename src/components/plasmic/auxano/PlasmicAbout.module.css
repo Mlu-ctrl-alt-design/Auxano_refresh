@@ -21,7 +21,7 @@
 :where(.root > *) {
   grid-column: 4;
 }
-.auxanoNavbar:global(.__wab_instance) {
+.navBarFinal:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   width: 100%;

@@ -17,7 +17,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import AuxanoNavbar from "../../AuxanoNavbar"; // plasmic-import: NaO7GDEY89/component
+import NavBarFinal from "../../NavBarFinal"; // plasmic-import: Ba2YaKrrpo/component
 import Footer from "../../Footer"; // plasmic-import: 6NjpMkUH8g-/component
 import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -70,10 +70,10 @@ function PlasmicAbout__RenderFunc(props) {
             sty.root
           )}
         >
-          <AuxanoNavbar
-            data-plasmic-name={"auxanoNavbar"}
-            data-plasmic-override={overrides.auxanoNavbar}
-            className={classNames("__wab_instance", sty.auxanoNavbar)}
+          <NavBarFinal
+            data-plasmic-name={"navBarFinal"}
+            data-plasmic-override={overrides.navBarFinal}
+            className={classNames("__wab_instance", sty.navBarFinal)}
           />
 
           <div
@@ -385,7 +385,7 @@ function PlasmicAbout__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "auxanoNavbar",
+    "navBarFinal",
     "frame26",
     "header",
     "content",
@@ -417,7 +417,7 @@ const PlasmicDescendants = {
     "footer"
   ],
 
-  auxanoNavbar: ["auxanoNavbar"],
+  navBarFinal: ["navBarFinal"],
   frame26: ["frame26", "header", "content", "frame39"],
   header: ["header", "content", "frame39"],
   content: ["content", "frame39"],
@@ -540,7 +540,7 @@ export const PlasmicAbout = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    auxanoNavbar: makeNodeComponent("auxanoNavbar"),
+    navBarFinal: makeNodeComponent("navBarFinal"),
     frame26: makeNodeComponent("frame26"),
     header: makeNodeComponent("header"),
     content: makeNodeComponent("content"),

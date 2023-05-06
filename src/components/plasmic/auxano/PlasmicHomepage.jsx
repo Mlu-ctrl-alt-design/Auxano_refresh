@@ -18,7 +18,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import AuxanoNavbar from "../../AuxanoNavbar"; // plasmic-import: NaO7GDEY89/component
+import NavBarFinal from "../../NavBarFinal"; // plasmic-import: Ba2YaKrrpo/component
 import Button2 from "../../Button2"; // plasmic-import: puKm7ksVLVR/component
 import Footer from "../../Footer"; // plasmic-import: 6NjpMkUH8g-/component
 import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
@@ -76,10 +76,10 @@ function PlasmicHomepage__RenderFunc(props) {
             sty.root
           )}
         >
-          <AuxanoNavbar
-            data-plasmic-name={"auxanoNavbar"}
-            data-plasmic-override={overrides.auxanoNavbar}
-            className={classNames("__wab_instance", sty.auxanoNavbar)}
+          <NavBarFinal
+            data-plasmic-name={"navBarFinal"}
+            data-plasmic-override={overrides.navBarFinal}
+            className={classNames("__wab_instance", sty.navBarFinal)}
           />
 
           <div
@@ -112,7 +112,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.text__rJu1Q
                 )}
               >
-                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                {hasVariant(globalVariants, "screen", "tabletOnly") ? (
                   <React.Fragment>
                     <React.Fragment>{""}</React.Fragment>
                     {
@@ -124,7 +124,7 @@ function PlasmicHomepage__RenderFunc(props) {
                           sty.h3__ywkDu
                         )}
                       >
-                        {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                        {hasVariant(globalVariants, "screen", "tabletOnly") ? (
                           <React.Fragment>
                             <span
                               className={
@@ -238,7 +238,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.text__hO87T
                 )}
               >
-                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                {hasVariant(globalVariants, "screen", "tabletOnly") ? (
                   <React.Fragment>
                     <React.Fragment>{""}</React.Fragment>
                     {
@@ -753,7 +753,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 />
               </p.Stack>
               {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+                hasVariant(globalVariants, "screen", "tabletOnly") ? true : true
               ) ? (
                 <div
                   className={classNames(projectcss.all, sty.column__l6KUx)}
@@ -806,7 +806,7 @@ function PlasmicHomepage__RenderFunc(props) {
                         sty.text__hHtHd
                       )}
                     >
-                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                      {hasVariant(globalVariants, "screen", "tabletOnly")
                         ? "Our goal and vision remain steadfast in that we consistently strive to be the leading competitively business consultancy in South Africa"
                         : "Our goal and vision remain steadfast in that we consistently strive to be the leading competitively business consultancy in South Africa"}
                     </div>
@@ -1246,7 +1246,7 @@ function PlasmicHomepage__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "auxanoNavbar",
+    "navBarFinal",
     "headersection",
     "visionSection",
     "h4",
@@ -1318,7 +1318,7 @@ const PlasmicDescendants = {
     "footer"
   ],
 
-  auxanoNavbar: ["auxanoNavbar"],
+  navBarFinal: ["navBarFinal"],
   headersection: ["headersection"],
   visionSection: ["visionSection", "h4"],
   h4: ["h4"],
@@ -1686,7 +1686,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    auxanoNavbar: makeNodeComponent("auxanoNavbar"),
+    navBarFinal: makeNodeComponent("navBarFinal"),
     headersection: makeNodeComponent("headersection"),
     visionSection: makeNodeComponent("visionSection"),
     h4: makeNodeComponent("h4"),

@@ -18,7 +18,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import AuxanoNavbar from "../../AuxanoNavbar"; // plasmic-import: NaO7GDEY89/component
+import NavBarFinal from "../../NavBarFinal"; // plasmic-import: Ba2YaKrrpo/component
 import Footer from "../../Footer"; // plasmic-import: 6NjpMkUH8g-/component
 import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -73,10 +73,10 @@ function PlasmicServices__RenderFunc(props) {
             sty.services
           )}
         >
-          <AuxanoNavbar
-            data-plasmic-name={"auxanoNavbar"}
-            data-plasmic-override={overrides.auxanoNavbar}
-            className={classNames("__wab_instance", sty.auxanoNavbar)}
+          <NavBarFinal
+            data-plasmic-name={"navBarFinal"}
+            data-plasmic-override={overrides.navBarFinal}
+            className={classNames("__wab_instance", sty.navBarFinal)}
           />
 
           <p.Stack
@@ -186,7 +186,7 @@ function PlasmicServices__RenderFunc(props) {
                 </p.Stack>
               </p.Stack>
               {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+                hasVariant(globalVariants, "screen", "tabletOnly") ? true : true
               ) ? (
                 <div
                   data-plasmic-name={"rectangle1"}
@@ -203,7 +203,7 @@ function PlasmicServices__RenderFunc(props) {
               className={classNames(projectcss.all, sty.frame29)}
             >
               {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+                hasVariant(globalVariants, "screen", "tabletOnly") ? true : true
               ) ? (
                 <div
                   data-plasmic-name={"rectangle2"}
@@ -310,7 +310,7 @@ function PlasmicServices__RenderFunc(props) {
 const PlasmicDescendants = {
   services: [
     "services",
-    "auxanoNavbar",
+    "navBarFinal",
     "section",
     "frame27",
     "frame28",
@@ -328,7 +328,7 @@ const PlasmicDescendants = {
     "footer"
   ],
 
-  auxanoNavbar: ["auxanoNavbar"],
+  navBarFinal: ["navBarFinal"],
   section: [
     "section",
     "frame27",
@@ -394,7 +394,7 @@ export const PlasmicServices = Object.assign(
   makeNodeComponent("services"),
   {
     // Helper components rendering sub-elements
-    auxanoNavbar: makeNodeComponent("auxanoNavbar"),
+    navBarFinal: makeNodeComponent("navBarFinal"),
     section: makeNodeComponent("section"),
     frame27: makeNodeComponent("frame27"),
     frame28: makeNodeComponent("frame28"),

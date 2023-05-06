@@ -145,6 +145,19 @@
           "cssFilePath": "plasmic/auxano/PlasmicContact.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "Ba2YaKrrpo",
+          "name": "NavBarFinal",
+          "type": "managed",
+          "projectId": "oGQcGtbFzYohLFbpGrRxL3",
+          "renderModuleFilePath": "plasmic/auxano/PlasmicNavBarFinal.jsx",
+          "importSpec": {
+            "modulePath": "NavBarFinal.jsx"
+          },
+          "cssFilePath": "plasmic/auxano/PlasmicNavBarFinal.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -493,7 +506,8 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
@@ -503,6 +517,12 @@
         "name": "Screen",
         "projectId": "oGQcGtbFzYohLFbpGrRxL3",
         "contextFilePath": "plasmic/auxano/PlasmicGlobalVariant__Screen.jsx"
+      },
+      {
+        "id": "P7fKQkpYI7",
+        "name": "UnnamedGlobalGroupOfVariants",
+        "projectId": "oGQcGtbFzYohLFbpGrRxL3",
+        "contextFilePath": "plasmic/auxano/PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants.jsx"
       }
     ]
   },

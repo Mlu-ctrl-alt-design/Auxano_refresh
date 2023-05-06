@@ -9,11 +9,9 @@
   min-width: 0;
   min-height: 0;
 }
-.auxanoNavbar:global(.__wab_instance) {
+.navBarFinal:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-  width: 100%;
-  min-width: 0;
 }
 .section {
   background: rgba(255, 255, 255, 1);
