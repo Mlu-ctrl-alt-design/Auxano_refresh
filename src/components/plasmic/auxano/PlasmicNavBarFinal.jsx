@@ -23,7 +23,7 @@ import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_auxano.module.css"; // plasmic-import: oGQcGtbFzYohLFbpGrRxL3/projectcss
 import sty from "./PlasmicNavBarFinal.module.css"; // plasmic-import: Ba2YaKrrpo/css
-import logo212XpngXScDVnNt from "./images/logo212Xpng.png"; // plasmic-import: xScDVn-NT/picture
+import gradient3XpngCpDWjGsnp from "./images/gradient3Xpng.png"; // plasmic-import: cpDWjGSNP/picture
 
 export const PlasmicNavBarFinal__VariantProps = new Array();
 
@@ -80,9 +80,9 @@ function PlasmicNavBarFinal__RenderFunc(props) {
             displayMinWidth={"0"}
             displayWidth={"auto"}
             src={{
-              src: logo212XpngXScDVnNt,
-              fullWidth: 439,
-              fullHeight: 134,
+              src: gradient3XpngCpDWjGsnp,
+              fullWidth: 221,
+              fullHeight: 142,
               aspectRatio: undefined
             }}
           />

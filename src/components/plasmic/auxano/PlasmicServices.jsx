@@ -79,6 +79,56 @@ function PlasmicServices__RenderFunc(props) {
             className={classNames("__wab_instance", sty.navBarFinal)}
           />
 
+          <div
+            data-plasmic-name={"frame26"}
+            data-plasmic-override={overrides.frame26}
+            className={classNames(projectcss.all, sty.frame26)}
+          >
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"header"}
+              data-plasmic-override={overrides.header}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.header)}
+            >
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"content"}
+                data-plasmic-override={overrides.content}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.content)}
+              >
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"frame39"}
+                  data-plasmic-override={overrides.frame39}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.frame39)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__klvHm
+                    )}
+                  >
+                    {"About us."}
+                  </div>
+                </p.Stack>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__mxoF
+                  )}
+                >
+                  {
+                    "Unlocking Business Potential with \nTailored Solutions and the ABC's of Business Rescue"
+                  }
+                </div>
+              </p.Stack>
+            </p.Stack>
+          </div>
           <p.Stack
             as={"div"}
             data-plasmic-name={"section"}
@@ -311,6 +361,10 @@ const PlasmicDescendants = {
   services: [
     "services",
     "navBarFinal",
+    "frame26",
+    "header",
+    "content",
+    "frame39",
     "section",
     "frame27",
     "frame28",
@@ -329,6 +383,10 @@ const PlasmicDescendants = {
   ],
 
   navBarFinal: ["navBarFinal"],
+  frame26: ["frame26", "header", "content", "frame39"],
+  header: ["header", "content", "frame39"],
+  content: ["content", "frame39"],
+  frame39: ["frame39"],
   section: [
     "section",
     "frame27",
@@ -395,6 +453,10 @@ export const PlasmicServices = Object.assign(
   {
     // Helper components rendering sub-elements
     navBarFinal: makeNodeComponent("navBarFinal"),
+    frame26: makeNodeComponent("frame26"),
+    header: makeNodeComponent("header"),
+    content: makeNodeComponent("content"),
+    frame39: makeNodeComponent("frame39"),
     section: makeNodeComponent("section"),
     frame27: makeNodeComponent("frame27"),
     frame28: makeNodeComponent("frame28"),

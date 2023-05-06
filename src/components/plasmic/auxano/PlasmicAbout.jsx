@@ -578,7 +578,7 @@ export const PlasmicAbout = Object.assign(
       title: "About",
       description: "",
       ogImageSrc: "",
-      canonical: ""
+      canonical: "https://auxano-refresh.vercel.app/about"
     }
   }
 );

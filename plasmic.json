@@ -472,6 +472,11 @@
           "id": "r4IkxbpYcS",
           "name": "OfficeBuildingOutline 2",
           "filePath": "plasmic/auxano/images/officeBuildingOutline2.svg"
+        },
+        {
+          "id": "cpDWjGSNP",
+          "name": "Gradient@3x.png",
+          "filePath": "plasmic/auxano/images/gradient3Xpng.png"
         }
       ],
       "indirect": false,
