@@ -21,12 +21,13 @@
       )
       0% 0% / 100% 100% no-repeat,
     url("./images/frame26.jpg") center center / cover no-repeat;
-  width: 1440px;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  min-width: 0;
   padding: 127px 134px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
