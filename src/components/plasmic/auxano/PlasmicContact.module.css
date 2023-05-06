@@ -547,59 +547,19 @@
   min-width: 0;
   padding: 8px;
 }
-.form {
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  width: 100%;
-  min-width: 0;
-  padding: 32px;
-}
-.form > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-width: 0;
-  margin-top: calc(0px - 21px);
-  height: calc(100% + 21px);
-}
-.form > :global(.__wab_flex-container) > *,
-.form > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.form > :global(.__wab_flex-container) > picture > img,
-.form > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
-  margin-top: 21px;
-}
-.form {
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-  min-width: 0;
-  padding: 32px;
-}
 @media (min-width: 0px) and (max-width: 768px) {
-  .form {
-    padding: 16px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .form {
-    padding: 16px;
+  .column__v3HaK {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 .form2:global(.__wab_instance) {
   display: grid;
-  grid-row-gap: 10px;
+  grid-row-gap: 0px;
   max-width: 100%;
   object-fit: cover;
   position: relative;
-  align-self: flex-end;
+  align-self: auto;
   grid-template-columns:
     1fr minmax(0, var(--plsmc-wide-chunk)) var(--plsmc-viewport-gap)
     min(
@@ -619,7 +579,7 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 8px;
+  padding: 0px;
 }
 .freeBox > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -649,7 +609,7 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 8px;
+  padding: 0px;
 }
 .formItem__u42Fz:global(.__wab_instance) {
   max-width: 100%;
@@ -667,6 +627,9 @@
 .input:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
+  height: 44px;
+  border-radius: 8px;
+  border-width: 2px;
 }
 .formItem__eVvM:global(.__wab_instance) {
   max-width: 100%;
@@ -684,6 +647,9 @@
 .input3:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
+  height: 44px;
+  border-radius: 8px;
+  border-width: 2px;
 }
 .formItem___34IgX:global(.__wab_instance) {
   max-width: 100%;
@@ -699,6 +665,9 @@
 .input2:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
+  height: 44px;
+  border-radius: 8px;
+  border-width: 2px;
 }
 .formItem__l1Rtp:global(.__wab_instance) {
   max-width: 100%;
@@ -714,6 +683,9 @@
 .textArea:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
+  height: 96px;
+  border-radius: 8px;
+  border-width: 2px;
 }
 .button:global(.__wab_instance) {
   max-width: 50%;
@@ -723,6 +695,11 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .button:global(.__wab_instance) {
+    max-width: 100%;
+  }
 }
 .text__cbtQa {
   position: relative;
@@ -772,12 +749,12 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .section {
-    padding: 16px;
+    padding: 56px 16px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .section {
-    padding: 16px;
+    padding: 56px 16px;
   }
 }
 .upper2 {
