@@ -127,6 +127,7 @@ function PlasmicNavBarFinal__RenderFunc(props) {
                 sty.link__gHfGj
               )}
               href={`/`}
+              target={"_blank"}
             >
               {"Home"}
             </a>

@@ -266,7 +266,9 @@
   padding: 8px;
 }
 .frame2399 {
-  background: rgba(222, 222, 222, 1);
+  background: linear-gradient(103deg, #ececec 0%, #ececec73 100%) 0% 0% / 100%
+      100% repeat,
+    rgba(222, 222, 222, 1);
   display: flex;
   position: relative;
   align-self: stretch;
@@ -292,7 +294,9 @@
   margin-top: 10px;
 }
 .frame2399 {
-  background: rgba(222, 222, 222, 1);
+  background: linear-gradient(103deg, #ececec 0%, #ececec73 100%) 0% 0% / 100%
+      100% repeat,
+    rgba(222, 222, 222, 1);
   display: flex;
   position: relative;
   align-self: stretch;

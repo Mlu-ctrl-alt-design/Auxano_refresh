@@ -254,7 +254,7 @@ function PlasmicContact__RenderFunc(props) {
               </div>
               <div className={classNames(projectcss.all, sty.column__v3HaK)}>
                 <p.Stack
-                  as={"div"}
+                  as={"form"}
                   data-plasmic-name={"form"}
                   data-plasmic-override={overrides.form}
                   hasGap={true}
