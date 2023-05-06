@@ -687,6 +687,7 @@ function PlasmicHomepage__RenderFunc(props) {
               </div>
               <Button2
                 className={classNames("__wab_instance", sty.button2__t9Auy)}
+                link={`/services`}
               >
                 {"View all our Services"}
               </Button2>
@@ -752,7 +753,10 @@ function PlasmicHomepage__RenderFunc(props) {
                 </div>
                 <Button2
                   className={classNames("__wab_instance", sty.button2___8FNws)}
-                />
+                  link={`/contact`}
+                >
+                  {"Get in touch"}
+                </Button2>
               </p.Stack>
               {(
                 hasVariant(globalVariants, "screen", "tabletOnly") ? true : true

@@ -67,25 +67,25 @@ function PlasmicContact__RenderFunc(props) {
         initFunc: ({ $props, $state, $queries, $ctx }) => undefined
       },
       {
-        path: "input.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
         path: "textArea.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => undefined
       },
       {
-        path: "input3.value",
+        path: "input2.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => undefined
       },
       {
-        path: "input2.value",
+        path: "input.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+      },
+      {
+        path: "input3.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => undefined
@@ -310,119 +310,137 @@ function PlasmicContact__RenderFunc(props) {
                     layout={"vertical"}
                     wrapperCol={{ span: 16, horizontalOnly: true }}
                   >
-                    <FormItemWrapper
-                      className={classNames(
-                        "__wab_instance",
-                        sty.formItem__u42Fz
-                      )}
-                      label={
-                        <div
+                    {true ? (
+                      <p.Stack
+                        as={"div"}
+                        data-plasmic-name={"freeBox"}
+                        data-plasmic-override={overrides.freeBox}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.freeBox)}
+                      >
+                        <FormItemWrapper
                           className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__gz3Wa
+                            "__wab_instance",
+                            sty.formItem__u42Fz
                           )}
+                          label={
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__gz3Wa
+                              )}
+                            >
+                              {"Name"}
+                            </div>
+                          }
+                          name={"name"}
                         >
-                          {"Name"}
-                        </div>
-                      }
-                      name={"name"}
-                    >
-                      {(() => {
-                        const child$Props = {
-                          className: classNames("__wab_instance", sty.input),
-                          onChange:
-                            p.generateStateOnChangePropForCodeComponents(
+                          {(() => {
+                            const child$Props = {
+                              className: classNames(
+                                "__wab_instance",
+                                sty.input
+                              ),
+
+                              onChange:
+                                p.generateStateOnChangePropForCodeComponents(
+                                  $state,
+                                  "value",
+                                  ["input", "value"],
+                                  AntdInput_Helpers
+                                ),
+
+                              value: p.generateStateValueProp($state, [
+                                "input",
+                                "value"
+                              ])
+                            };
+                            p.initializeCodeComponentStates(
                               $state,
-                              "value",
-                              ["input", "value"],
-                              AntdInput_Helpers
-                            ),
+                              [
+                                {
+                                  name: "value",
+                                  plasmicStateName: "input.value"
+                                }
+                              ],
 
-                          value: p.generateStateValueProp($state, [
-                            "input",
-                            "value"
-                          ])
-                        };
-                        p.initializeCodeComponentStates(
-                          $state,
-                          [
-                            {
-                              name: "value",
-                              plasmicStateName: "input.value"
-                            }
-                          ],
+                              [],
+                              AntdInput_Helpers ?? {},
+                              child$Props
+                            );
 
-                          [],
-                          AntdInput_Helpers ?? {},
-                          child$Props
-                        );
-
-                        return (
-                          <AntdInput
-                            data-plasmic-name={"input"}
-                            data-plasmic-override={overrides.input}
-                            {...child$Props}
-                          />
-                        );
-                      })()}
-                    </FormItemWrapper>
-                    <FormItemWrapper
-                      className={classNames(
-                        "__wab_instance",
-                        sty.formItem__eVvM
-                      )}
-                      label={
-                        <div
+                            return (
+                              <AntdInput
+                                data-plasmic-name={"input"}
+                                data-plasmic-override={overrides.input}
+                                {...child$Props}
+                              />
+                            );
+                          })()}
+                        </FormItemWrapper>
+                        <FormItemWrapper
                           className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__omNrs
+                            "__wab_instance",
+                            sty.formItem__eVvM
                           )}
+                          label={
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__omNrs
+                              )}
+                            >
+                              {"Email"}
+                            </div>
+                          }
                         >
-                          {"Email"}
-                        </div>
-                      }
-                    >
-                      {(() => {
-                        const child$Props = {
-                          className: classNames("__wab_instance", sty.input3),
-                          onChange:
-                            p.generateStateOnChangePropForCodeComponents(
+                          {(() => {
+                            const child$Props = {
+                              className: classNames(
+                                "__wab_instance",
+                                sty.input3
+                              ),
+
+                              onChange:
+                                p.generateStateOnChangePropForCodeComponents(
+                                  $state,
+                                  "value",
+                                  ["input3", "value"],
+                                  AntdInput_Helpers
+                                ),
+
+                              value: p.generateStateValueProp($state, [
+                                "input3",
+                                "value"
+                              ])
+                            };
+                            p.initializeCodeComponentStates(
                               $state,
-                              "value",
-                              ["input3", "value"],
-                              AntdInput_Helpers
-                            ),
+                              [
+                                {
+                                  name: "value",
+                                  plasmicStateName: "input3.value"
+                                }
+                              ],
 
-                          value: p.generateStateValueProp($state, [
-                            "input3",
-                            "value"
-                          ])
-                        };
-                        p.initializeCodeComponentStates(
-                          $state,
-                          [
-                            {
-                              name: "value",
-                              plasmicStateName: "input3.value"
-                            }
-                          ],
+                              [],
+                              AntdInput_Helpers ?? {},
+                              child$Props
+                            );
 
-                          [],
-                          AntdInput_Helpers ?? {},
-                          child$Props
-                        );
-
-                        return (
-                          <AntdInput
-                            data-plasmic-name={"input3"}
-                            data-plasmic-override={overrides.input3}
-                            {...child$Props}
-                          />
-                        );
-                      })()}
-                    </FormItemWrapper>
+                            return (
+                              <AntdInput
+                                data-plasmic-name={"input3"}
+                                data-plasmic-override={overrides.input3}
+                                {...child$Props}
+                              />
+                            );
+                          })()}
+                        </FormItemWrapper>
+                      </p.Stack>
+                    ) : null}
                     <FormItemWrapper
                       className={classNames(
                         "__wab_instance",
@@ -763,6 +781,7 @@ const PlasmicDescendants = {
     "mail",
     "form",
     "form2",
+    "freeBox",
     "input",
     "input3",
     "input2",
@@ -797,6 +816,7 @@ const PlasmicDescendants = {
     "mail",
     "form",
     "form2",
+    "freeBox",
     "input",
     "input3",
     "input2",
@@ -824,6 +844,7 @@ const PlasmicDescendants = {
     "mail",
     "form",
     "form2",
+    "freeBox",
     "input",
     "input3",
     "input2",
@@ -836,8 +857,28 @@ const PlasmicDescendants = {
   phone: ["phone"],
   secondPhone: ["secondPhone"],
   mail: ["mail"],
-  form: ["form", "form2", "input", "input3", "input2", "textArea", "button"],
-  form2: ["form2", "input", "input3", "input2", "textArea", "button"],
+  form: [
+    "form",
+    "form2",
+    "freeBox",
+    "input",
+    "input3",
+    "input2",
+    "textArea",
+    "button"
+  ],
+
+  form2: [
+    "form2",
+    "freeBox",
+    "input",
+    "input3",
+    "input2",
+    "textArea",
+    "button"
+  ],
+
+  freeBox: ["freeBox", "input", "input3"],
   input: ["input"],
   input3: ["input3"],
   input2: ["input2"],
@@ -928,6 +969,7 @@ export const PlasmicContact = Object.assign(
     mail: makeNodeComponent("mail"),
     form: makeNodeComponent("form"),
     form2: makeNodeComponent("form2"),
+    freeBox: makeNodeComponent("freeBox"),
     input: makeNodeComponent("input"),
     input3: makeNodeComponent("input3"),
     input2: makeNodeComponent("input2"),
