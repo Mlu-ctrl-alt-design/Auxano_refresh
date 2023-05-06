@@ -126,146 +126,150 @@ function PlasmicAbout__RenderFunc(props) {
               </p.Stack>
             </p.Stack>
           </div>
-          <section className={classNames(projectcss.all, sty.section__kuPeI)}>
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__y7IPg)}
-            >
+          <section className={classNames(projectcss.all, sty.columns__kuPeI)}>
+            <div className={classNames(projectcss.all, sty.column__g1T2X)}>
               <p.Stack
                 as={"div"}
-                data-plasmic-name={"frame27"}
-                data-plasmic-override={overrides.frame27}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.frame27)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___81GA
-                  )}
-                >
-                  {"Our Philosophy"}
-                </div>
-              </p.Stack>
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame35"}
-                data-plasmic-override={overrides.frame35}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame35)}
+                className={classNames(projectcss.all, sty.freeBox__y7IPg)}
               >
                 <p.Stack
                   as={"div"}
-                  data-plasmic-name={"_1"}
-                  data-plasmic-override={overrides._1}
+                  data-plasmic-name={"frame27"}
+                  data-plasmic-override={overrides.frame27}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty._1)}
+                  className={classNames(projectcss.all, sty.frame27)}
                 >
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__dirdA
+                      sty.text___81GA
                     )}
                   >
-                    {
-                      "Unlocking Business Potential \nwith Professional Solutions"
-                    }
+                    {"Our Philosophy"}
                   </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ymaZf
-                    )}
-                  >
-                    {
-                      "The values of Auxano is to provide its customers with a professional, cost effective business solutions by unlocking and improving their operations, providing the growth consulting, Business rescue and restructuring, strategic development, due diligence, business management and financing; tailored to support business performance through outstanding customer service\nOur goal and vision remain steadfast in that we consistently strive to be the leading competitively business consultancy in South Africa.\n\nAuxano is a South African Small to Medium business development firm; developing both the existing and start-up businesses. The consultancy was born and is a product of over 14 years’ experience in business banking from the two leading banks in South Africa. The mainstay of our business strategy entails meeting customer requirements and specifications while ensuring unrivalled post-sale service. Our chief focus is to create energising workplace and imposing environments through economically designed business, financial services and business support."
-                    }
-                  </div>
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"button"}
-                    data-plasmic-override={overrides.button}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.button)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__kWtDb
-                      )}
-                    >
-                      {"Get in touch"}
-                    </div>
-                    <Icon2Icon
-                      className={classNames(projectcss.all, sty.svg__bpM3J)}
-                      role={"img"}
-                    />
-                  </p.Stack>
                 </p.Stack>
-                <div
-                  data-plasmic-name={"imageGallery"}
-                  data-plasmic-override={overrides.imageGallery}
-                  className={classNames(projectcss.all, sty.imageGallery)}
-                >
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame32"}
-                    data-plasmic-override={overrides.frame32}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame32)}
+                <div className={classNames(projectcss.all, sty.columns__pLzo3)}>
+                  <div
+                    className={classNames(projectcss.all, sty.column__d7Zbx)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"_1"}
+                      data-plasmic-override={overrides._1}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty._1)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___6Qk2
+                        )}
+                      >
+                        {
+                          "Unlocking Business Potential \nwith Professional Solutions"
+                        }
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__bgtd
+                        )}
+                      >
+                        {
+                          "The values of Auxano is to provide its customers with a professional, cost effective business solutions by unlocking and improving their operations, providing the growth consulting, Business rescue and restructuring, strategic development, due diligence, business management and financing; tailored to support business performance through outstanding customer service\nOur goal and vision remain steadfast in that we consistently strive to be the leading competitively business consultancy in South Africa.\n\nAuxano is a South African Small to Medium business development firm; developing both the existing and start-up businesses. The consultancy was born and is a product of over 14 years’ experience in business banking from the two leading banks in South Africa. The mainstay of our business strategy entails meeting customer requirements and specifications while ensuring unrivalled post-sale service. Our chief focus is to create energising workplace and imposing environments through economically designed business, financial services and business support."
+                        }
+                      </div>
+                      <p.Stack
+                        as={"div"}
+                        data-plasmic-name={"button"}
+                        data-plasmic-override={overrides.button}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.button)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__lLHrL
+                          )}
+                        >
+                          {"Get in touch"}
+                        </div>
+                        <Icon2Icon
+                          className={classNames(projectcss.all, sty.svg__e0Rs7)}
+                          role={"img"}
+                        />
+                      </p.Stack>
+                    </p.Stack>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column__iJah2)}
                   >
                     <div
-                      data-plasmic-name={"rectangle5"}
-                      data-plasmic-override={overrides.rectangle5}
-                      className={classNames(projectcss.all, sty.rectangle5)}
-                    />
-                  </p.Stack>
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame34"}
-                    data-plasmic-override={overrides.frame34}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame34)}
-                  >
-                    <div
-                      data-plasmic-name={"rectangle4"}
-                      data-plasmic-override={overrides.rectangle4}
-                      className={classNames(projectcss.all, sty.rectangle4)}
-                    />
+                      data-plasmic-name={"imageGallery"}
+                      data-plasmic-override={overrides.imageGallery}
+                      className={classNames(projectcss.all, sty.imageGallery)}
+                    >
+                      <p.Stack
+                        as={"div"}
+                        data-plasmic-name={"frame32"}
+                        data-plasmic-override={overrides.frame32}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.frame32)}
+                      >
+                        <div
+                          data-plasmic-name={"rectangle5"}
+                          data-plasmic-override={overrides.rectangle5}
+                          className={classNames(projectcss.all, sty.rectangle5)}
+                        />
+                      </p.Stack>
+                      <p.Stack
+                        as={"div"}
+                        data-plasmic-name={"frame34"}
+                        data-plasmic-override={overrides.frame34}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.frame34)}
+                      >
+                        <div
+                          data-plasmic-name={"rectangle4"}
+                          data-plasmic-override={overrides.rectangle4}
+                          className={classNames(projectcss.all, sty.rectangle4)}
+                        />
 
-                    <div
-                      data-plasmic-name={"rectangle6"}
-                      data-plasmic-override={overrides.rectangle6}
-                      className={classNames(projectcss.all, sty.rectangle6)}
-                    />
-                  </p.Stack>
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame33"}
-                    data-plasmic-override={overrides.frame33}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame33)}
-                  >
-                    <div
-                      data-plasmic-name={"rectangle7"}
-                      data-plasmic-override={overrides.rectangle7}
-                      className={classNames(projectcss.all, sty.rectangle7)}
-                    />
+                        <div
+                          data-plasmic-name={"rectangle6"}
+                          data-plasmic-override={overrides.rectangle6}
+                          className={classNames(projectcss.all, sty.rectangle6)}
+                        />
+                      </p.Stack>
+                      <p.Stack
+                        as={"div"}
+                        data-plasmic-name={"frame33"}
+                        data-plasmic-override={overrides.frame33}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.frame33)}
+                      >
+                        <div
+                          data-plasmic-name={"rectangle7"}
+                          data-plasmic-override={overrides.rectangle7}
+                          className={classNames(projectcss.all, sty.rectangle7)}
+                        />
 
-                    <div
-                      data-plasmic-name={"rectangle8"}
-                      data-plasmic-override={overrides.rectangle8}
-                      className={classNames(projectcss.all, sty.rectangle8)}
-                    />
-                  </p.Stack>
+                        <div
+                          data-plasmic-name={"rectangle8"}
+                          data-plasmic-override={overrides.rectangle8}
+                          className={classNames(projectcss.all, sty.rectangle8)}
+                        />
+                      </p.Stack>
+                    </div>
+                  </div>
                 </div>
               </p.Stack>
-            </p.Stack>
+            </div>
           </section>
           <div
             data-plasmic-name={"freeBox"}
@@ -391,7 +395,6 @@ const PlasmicDescendants = {
     "content",
     "frame39",
     "frame27",
-    "frame35",
     "_1",
     "button",
     "imageGallery",
@@ -423,21 +426,6 @@ const PlasmicDescendants = {
   content: ["content", "frame39"],
   frame39: ["frame39"],
   frame27: ["frame27"],
-  frame35: [
-    "frame35",
-    "_1",
-    "button",
-    "imageGallery",
-    "frame32",
-    "rectangle5",
-    "frame34",
-    "rectangle4",
-    "rectangle6",
-    "frame33",
-    "rectangle7",
-    "rectangle8"
-  ],
-
   _1: ["_1", "button"],
   button: ["button"],
   imageGallery: [
@@ -546,7 +534,6 @@ export const PlasmicAbout = Object.assign(
     content: makeNodeComponent("content"),
     frame39: makeNodeComponent("frame39"),
     frame27: makeNodeComponent("frame27"),
-    frame35: makeNodeComponent("frame35"),
     _1: makeNodeComponent("_1"),
     button: makeNodeComponent("button"),
     imageGallery: makeNodeComponent("imageGallery"),

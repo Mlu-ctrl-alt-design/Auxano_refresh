@@ -127,7 +127,7 @@ function PlasmicNavBarFinal__RenderFunc(props) {
                 sty.link__gHfGj
               )}
               href={`/`}
-              target={"_blank"}
+              target={undefined}
             >
               {"Home"}
             </a>
@@ -150,7 +150,7 @@ function PlasmicNavBarFinal__RenderFunc(props) {
                 sty.link__lYrGj
               )}
               href={`/services`}
-              target={"_blank"}
+              target={undefined}
             >
               {"Services"}
             </a>
