@@ -133,7 +133,6 @@
   justify-content: flex-start;
   margin-left: calc(0px - 10px);
   width: calc(100% + 10px);
-  --plsmc-col-gap: 10px;
 }
 .frame39 > :global(.__wab_flex-container) > *,
 .frame39 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -260,7 +259,6 @@
   justify-content: flex-start;
   margin-left: calc(0px - 10px);
   width: calc(100% + 10px);
-  --plsmc-col-gap: 10px;
 }
 .frame27 > :global(.__wab_flex-container) > *,
 .frame27 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -307,7 +305,6 @@
   justify-content: flex-start;
   margin-left: calc(0px - 29px);
   width: calc(100% + 29px);
-  --plsmc-col-gap: 29px;
 }
 .frame35 > :global(.__wab_flex-container) > *,
 .frame35 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -341,7 +338,6 @@
     flex-direction: column;
     margin-left: calc(0px - 0px);
     width: calc(100% + 0px);
-    --plsmc-col-gap: 0px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -438,7 +434,6 @@
   justify-content: center;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
-  --plsmc-col-gap: 8px;
 }
 .button > :global(.__wab_flex-container) > *,
 .button > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -719,7 +714,6 @@
     justify-content: flex-start;
     margin-left: calc(0px - 0px);
     width: calc(100% + 0px);
-    --plsmc-col-gap: 0px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -760,7 +754,6 @@
   min-width: 0;
   margin-left: calc(0px - 29px);
   width: calc(100% + 29px);
-  --plsmc-col-gap: 29px;
 }
 .frame36 > :global(.__wab_flex-container) > *,
 .frame36 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -797,7 +790,6 @@
     flex-direction: column;
     margin-left: calc(0px - 0px);
     width: calc(100% + 0px);
-    --plsmc-col-gap: 0px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -990,7 +982,6 @@
   justify-content: center;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
-  --plsmc-col-gap: 8px;
 }
 .button2 > :global(.__wab_flex-container) > *,
 .button2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,

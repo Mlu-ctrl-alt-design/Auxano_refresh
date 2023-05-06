@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.273",
+    "@plasmicapp/cli": "^0.1.274",
     "@plasmicapp/host": "^1.0.126",
     "@plasmicapp/react-web": "^0.2.194",
     "@plasmicpkgs/plasmic-nav": "^0.0.96",

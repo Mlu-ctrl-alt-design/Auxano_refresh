@@ -22,14 +22,14 @@
   min-width: 0;
   padding: 0px;
 }
-.img {
+.img__o0KVz {
   object-fit: cover;
   height: 40px;
 }
-.img > picture > img {
+.img__o0KVz > picture > img {
   object-fit: cover;
 }
-.img > :global(.__wab_img-spacer) > img {
+.img__o0KVz > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .img__zu6UJ {

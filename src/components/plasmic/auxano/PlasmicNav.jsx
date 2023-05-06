@@ -64,10 +64,8 @@ function PlasmicNav__RenderFunc(props) {
           href={"#"}
         >
           <p.PlasmicImg
-            data-plasmic-name={"img"}
-            data-plasmic-override={overrides.img}
             alt={""}
-            className={classNames(sty.img)}
+            className={classNames(sty.img__o0KVz)}
             displayHeight={"40px"}
             displayMaxHeight={"none"}
             displayMaxWidth={"none"}
@@ -161,8 +159,7 @@ function PlasmicNav__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img"],
-  img: ["img"]
+  root: ["root"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -198,7 +195,6 @@ export const PlasmicNav = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    img: makeNodeComponent("img"),
     // Metadata about props expected for PlasmicNav
     internalVariantProps: PlasmicNav__VariantProps,
     internalArgProps: PlasmicNav__ArgProps

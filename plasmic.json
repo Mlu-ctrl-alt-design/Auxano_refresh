@@ -132,6 +132,19 @@
           "cssFilePath": "plasmic/auxano/PlasmicServices.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "m0O9QXIre9",
+          "name": "Contact",
+          "type": "managed",
+          "projectId": "oGQcGtbFzYohLFbpGrRxL3",
+          "renderModuleFilePath": "plasmic/auxano/PlasmicContact.jsx",
+          "importSpec": {
+            "modulePath": "Contact.jsx"
+          },
+          "cssFilePath": "plasmic/auxano/PlasmicContact.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -254,6 +267,41 @@
           "id": "1Aov_gh-ME",
           "name": "IconOutlinearrowRight2Icon",
           "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__IconOutlinearrowRight2.jsx"
+        },
+        {
+          "id": "4byTu4Is8",
+          "name": "IconOutlinephoneIcon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__IconOutlinephone.jsx"
+        },
+        {
+          "id": "ZFatQPHDzg",
+          "name": "IconOutlinedeviceMobileIcon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__IconOutlinedeviceMobile.jsx"
+        },
+        {
+          "id": "6-caiXs_Q5",
+          "name": "IconOutlinemailIcon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__IconOutlinemail.jsx"
+        },
+        {
+          "id": "PcFk174NMj",
+          "name": "IconOutlineinformationCircleIcon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__IconOutlineinformationCircle.jsx"
+        },
+        {
+          "id": "II4CvDQeE0",
+          "name": "IconSolidcheveronDownIcon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__IconSolidcheveronDown.jsx"
+        },
+        {
+          "id": "iPsMxTJ0PS",
+          "name": "Line10Icon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__Line10.jsx"
+        },
+        {
+          "id": "lBDlZ1FMhR",
+          "name": "Line11Icon",
+          "moduleFilePath": "plasmic/auxano/icons/PlasmicIcon__Line11.jsx"
         }
       ],
       "images": [
@@ -445,8 +493,7 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     }
   ],
   "globalVariants": {
@@ -460,6 +507,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.273",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.273/dist/plasmic.schema.json"
+  "cliVersion": "0.1.274",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.274/dist/plasmic.schema.json"
 }

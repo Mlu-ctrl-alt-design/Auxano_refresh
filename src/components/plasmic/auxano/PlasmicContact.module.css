@@ -1,0 +1,2197 @@
+.root {
+  display: grid;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-content: flex-start;
+  justify-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  min-height: 0;
+  grid-template-columns:
+    1fr minmax(0, var(--plsmc-wide-chunk)) var(--plsmc-viewport-gap)
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    var(--plsmc-viewport-gap) minmax(0, var(--plsmc-wide-chunk)) 1fr;
+}
+:where(.root > *) {
+  grid-column: 4;
+}
+.header {
+  display: grid;
+  position: relative;
+  align-content: flex-start;
+  justify-items: center;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-template-columns:
+    1fr minmax(0, var(--plsmc-wide-chunk)) var(--plsmc-viewport-gap)
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    var(--plsmc-viewport-gap) minmax(0, var(--plsmc-wide-chunk)) 1fr;
+  padding: 8px 0;
+}
+:where(.header > *) {
+  grid-column: 4;
+}
+.auxanoNavbar:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.frame26 {
+  background: linear-gradient(
+        112.83deg,
+        rgba(70, 84, 104, 1) 22.81%,
+        rgba(0, 0, 0, 0) 77.85%
+      )
+      0% 0% / 100% 100% no-repeat,
+    url("./images/frame26.jpg") center center / cover no-repeat;
+  width: 1440px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 127px 134px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .frame26 {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding: 24px 32px;
+  }
+}
+.header2 {
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.header2 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 64px);
+  height: calc(100% + 64px);
+}
+.header2 > :global(.__wab_flex-container) > *,
+.header2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.header2 > :global(.__wab_flex-container) > picture > img,
+.header2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 64px;
+}
+.header2 {
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+}
+.content > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 24px);
+  height: calc(100% + 24px);
+}
+.content > :global(.__wab_flex-container) > *,
+.content > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.content > :global(.__wab_flex-container) > picture > img,
+.content
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 24px;
+}
+.content {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame39 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  border-radius: 12px;
+  padding: 10px;
+}
+.frame39 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.frame39 > :global(.__wab_flex-container) > *,
+.frame39 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame39 > :global(.__wab_flex-container) > picture > img,
+.frame39
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.frame39 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 12px;
+  padding: 10px;
+}
+.text__nQ4Vb {
+  display: block;
+  font-size: 14px;
+  font-family: "Golos Text";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+.text__cDI {
+  display: block;
+  font-size: 36px;
+  font-family: "Syne", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 40px;
+  align-self: stretch;
+  position: relative;
+  color: var(--token-_SJKE-afz);
+}
+.body {
+  display: grid;
+  position: relative;
+  align-content: flex-start;
+  justify-items: center;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-template-columns:
+    1fr minmax(0, var(--plsmc-wide-chunk)) var(--plsmc-viewport-gap)
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    var(--plsmc-viewport-gap) minmax(0, var(--plsmc-wide-chunk)) 1fr;
+  padding: 8px 0;
+}
+:where(.body > *) {
+  grid-column: 4;
+}
+.columns {
+  --plsmc-rc-col-gap: 0px;
+}
+.columns {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  align-items: stretch;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 8px;
+}
+.columns > :nth-child(2n + 1) {
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+}
+.columns > :nth-child(2n + 2) {
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .columns {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .columns > :nth-child(1n + 1) {
+    width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
+  }
+}
+.column__e1IW {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.frame2399 {
+  background: rgba(222, 222, 222, 1);
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 32px;
+}
+.frame2399 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
+}
+.frame2399 > :global(.__wab_flex-container) > *,
+.frame2399 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame2399 > :global(.__wab_flex-container) > picture > img,
+.frame2399
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 10px;
+}
+.frame2399 {
+  background: rgba(222, 222, 222, 1);
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .frame2399 {
+    padding: 16px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .frame2399 {
+    padding: 16px;
+  }
+}
+.upper {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.upper > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.upper > :global(.__wab_flex-container) > *,
+.upper > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.upper > :global(.__wab_flex-container) > picture > img,
+.upper > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: 16px;
+}
+.upper {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.text__guUjB {
+  display: block;
+  font-size: 30px;
+  font-family: "Golos Text";
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 36px;
+  color: rgba(95, 95, 95, 1);
+  position: relative;
+}
+.text__vgrrx {
+  display: block;
+  font-size: 18px;
+  font-family: "Golos Text";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 28px;
+  color: rgba(95, 95, 95, 1);
+  position: relative;
+  width: 396px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__vgrrx {
+    width: 100%;
+    min-width: 0;
+  }
+}
+.phone {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  padding: 10px;
+}
+.phone > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.phone > :global(.__wab_flex-container) > *,
+.phone > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.phone > :global(.__wab_flex-container) > picture > img,
+.phone > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 10px;
+}
+.phone {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.svg___374Oe {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #0f172a;
+  width: 24px;
+  height: 24px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.text___07Yfj {
+  display: block;
+  font-size: 16px;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(95, 95, 95, 1);
+  position: relative;
+}
+.secondPhone {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  padding: 10px;
+}
+.secondPhone > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.secondPhone > :global(.__wab_flex-container) > *,
+.secondPhone > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.secondPhone > :global(.__wab_flex-container) > picture > img,
+.secondPhone
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.secondPhone {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.svg__wpC9G {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #0f172a;
+  width: 24px;
+  height: 24px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.text___0MefW {
+  display: block;
+  font-size: 16px;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(95, 95, 95, 1);
+  position: relative;
+}
+.mail {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  padding: 10px;
+}
+.mail > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.mail > :global(.__wab_flex-container) > *,
+.mail > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.mail > :global(.__wab_flex-container) > picture > img,
+.mail > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 10px;
+}
+.mail {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.svg___4KgUa {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #0f172a;
+  width: 24px;
+  height: 24px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.text___5RXnT {
+  display: block;
+  font-size: 18px;
+  text-decoration-line: underline;
+  font-family: "Golos Text";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 28px;
+  color: rgba(95, 95, 95, 1);
+  position: relative;
+}
+.column__v3HaK {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.form {
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  padding: 32px;
+}
+.form > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 21px);
+  height: calc(100% + 21px);
+}
+.form > :global(.__wab_flex-container) > *,
+.form > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.form > :global(.__wab_flex-container) > picture > img,
+.form > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: 21px;
+}
+.form {
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  min-width: 0;
+  padding: 32px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .form {
+    padding: 16px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .form {
+    padding: 16px;
+  }
+}
+.formRow {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  min-width: 0;
+}
+.formRow > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-left: calc(0px - 21px);
+  width: calc(100% + 21px);
+}
+.formRow > :global(.__wab_flex-container) > *,
+.formRow > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.formRow > :global(.__wab_flex-container) > picture > img,
+.formRow
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 21px;
+}
+.formRow {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .formRow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .formRow > :global(.__wab_flex-container) {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-width: 0;
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .formRow > :global(.__wab_flex-container) > *,
+  .formRow > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .formRow > :global(.__wab_flex-container) > picture > img,
+  .formRow
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .formRow {
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+  }
+}
+.inputWithLabel {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-width: 0;
+}
+.inputWithLabel > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 4px);
+  height: calc(100% + 4px);
+}
+.inputWithLabel > :global(.__wab_flex-container) > *,
+.inputWithLabel > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.inputWithLabel > :global(.__wab_flex-container) > picture > img,
+.inputWithLabel
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 4px;
+}
+.inputWithLabel {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .inputWithLabel {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .inputWithLabel > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .inputWithLabel {
+    width: 100%;
+    min-width: 0;
+  }
+}
+.inputText {
+  display: block;
+  font-size: 14px;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(70, 84, 104, 1);
+  position: relative;
+}
+.basicInput {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(147, 162, 183, 1);
+  height: 44px;
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.inputText2 {
+  display: block;
+  font-size: 16px;
+  font-family: "Golos Text";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(147, 162, 183, 1);
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  bottom: 10px;
+}
+.text__v31C {
+  display: block;
+  font-size: 12px;
+  font-family: "Golos Text";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 16px;
+  color: rgba(147, 162, 183, 1);
+  align-self: stretch;
+  position: relative;
+}
+.frame2398 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+}
+.frame2398 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: calc(0px - 6px);
+  height: calc(100% + 6px);
+}
+.frame2398 > :global(.__wab_flex-container) > *,
+.frame2398 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame2398 > :global(.__wab_flex-container) > picture > img,
+.frame2398
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 6px;
+}
+.frame2398 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.passwordStrengthBar {
+  height: 4px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.passwordStrengthBar > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 2px);
+  width: calc(100% + 2px);
+}
+.passwordStrengthBar > :global(.__wab_flex-container) > *,
+.passwordStrengthBar
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.passwordStrengthBar > :global(.__wab_flex-container) > picture > img,
+.passwordStrengthBar
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 2px;
+}
+.passwordStrengthBar {
+  height: 4px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.rectangle140 {
+  background: rgba(224, 28, 71, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.rectangle141 {
+  background: rgba(225, 231, 239, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.rectangle142 {
+  background: rgba(225, 231, 239, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.rectangle143 {
+  background: rgba(225, 231, 239, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.frame2397 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.frame2397 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.frame2397 > :global(.__wab_flex-container) > *,
+.frame2397 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame2397 > :global(.__wab_flex-container) > picture > img,
+.frame2397
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.frame2397 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.inputText3 {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 16px;
+  color: rgba(224, 28, 71, 1);
+  position: relative;
+}
+.svg__hilBd {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #94a3b8;
+  width: 14px;
+  height: 14px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.inputWithLabel2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-width: 0;
+}
+.inputWithLabel2 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 4px);
+  height: calc(100% + 4px);
+}
+.inputWithLabel2 > :global(.__wab_flex-container) > *,
+.inputWithLabel2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.inputWithLabel2 > :global(.__wab_flex-container) > picture > img,
+.inputWithLabel2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 4px;
+}
+.inputWithLabel2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .inputWithLabel2 {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .inputWithLabel2 > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .inputWithLabel2 {
+    width: 100%;
+    min-width: 0;
+  }
+}
+.inputText4 {
+  display: block;
+  font-size: 14px;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(70, 84, 104, 1);
+  position: relative;
+}
+.basicInput2 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(147, 162, 183, 1);
+  height: 44px;
+  display: block;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  min-width: 0;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .basicInput2 {
+    width: auto;
+  }
+}
+.inputText5 {
+  display: block;
+  font-size: 16px;
+  font-family: "Golos Text";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(147, 162, 183, 1);
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  bottom: 10px;
+}
+.text__iFokc {
+  display: block;
+  font-size: 12px;
+  font-family: "Golos Text";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 16px;
+  color: rgba(147, 162, 183, 1);
+  align-self: stretch;
+  position: relative;
+}
+.frame2400 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+}
+.frame2400 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: calc(0px - 6px);
+  height: calc(100% + 6px);
+}
+.frame2400 > :global(.__wab_flex-container) > *,
+.frame2400 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame2400 > :global(.__wab_flex-container) > picture > img,
+.frame2400
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 6px;
+}
+.frame2400 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.passwordStrengthBar2 {
+  height: 4px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.passwordStrengthBar2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 2px);
+  width: calc(100% + 2px);
+}
+.passwordStrengthBar2 > :global(.__wab_flex-container) > *,
+.passwordStrengthBar2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.passwordStrengthBar2 > :global(.__wab_flex-container) > picture > img,
+.passwordStrengthBar2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 2px;
+}
+.passwordStrengthBar2 {
+  height: 4px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.rectangle144 {
+  background: rgba(224, 28, 71, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.rectangle145 {
+  background: rgba(225, 231, 239, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.rectangle146 {
+  background: rgba(225, 231, 239, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.rectangle147 {
+  background: rgba(225, 231, 239, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.frame2401 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.frame2401 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.frame2401 > :global(.__wab_flex-container) > *,
+.frame2401 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame2401 > :global(.__wab_flex-container) > picture > img,
+.frame2401
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.frame2401 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.inputText6 {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 16px;
+  color: rgba(224, 28, 71, 1);
+  position: relative;
+}
+.svg__mfXHt {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #94a3b8;
+  width: 14px;
+  height: 14px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.inputWithLabel3 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+}
+.inputWithLabel3 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 4px);
+  height: calc(100% + 4px);
+}
+.inputWithLabel3 > :global(.__wab_flex-container) > *,
+.inputWithLabel3 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.inputWithLabel3 > :global(.__wab_flex-container) > picture > img,
+.inputWithLabel3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 4px;
+}
+.inputWithLabel3 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.inputText7 {
+  display: block;
+  font-size: 14px;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(70, 84, 104, 1);
+  position: relative;
+}
+.dropdown {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(147, 162, 183, 1);
+  height: 44px;
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.inputText8 {
+  display: block;
+  font-size: 16px;
+  font-family: "Golos Text";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(147, 162, 183, 1);
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  bottom: 10px;
+}
+.svg__a6BtL {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #94a3b8;
+  width: 20px;
+  height: 20px;
+  display: block;
+  top: 12px;
+  right: 8px;
+  overflow: hidden;
+}
+.text__vTeoX {
+  display: block;
+  font-size: 12px;
+  font-family: "Golos Text";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 16px;
+  color: rgba(147, 162, 183, 1);
+  align-self: stretch;
+  position: relative;
+}
+.frame2402 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+}
+.frame2402 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: calc(0px - 6px);
+  height: calc(100% + 6px);
+}
+.frame2402 > :global(.__wab_flex-container) > *,
+.frame2402 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame2402 > :global(.__wab_flex-container) > picture > img,
+.frame2402
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 6px;
+}
+.frame2402 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.passwordStrengthBar3 {
+  height: 4px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.passwordStrengthBar3 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 2px);
+  width: calc(100% + 2px);
+}
+.passwordStrengthBar3 > :global(.__wab_flex-container) > *,
+.passwordStrengthBar3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.passwordStrengthBar3 > :global(.__wab_flex-container) > picture > img,
+.passwordStrengthBar3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 2px;
+}
+.passwordStrengthBar3 {
+  height: 4px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.rectangle148 {
+  background: rgba(224, 28, 71, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.rectangle149 {
+  background: rgba(225, 231, 239, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.rectangle150 {
+  background: rgba(225, 231, 239, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.rectangle151 {
+  background: rgba(225, 231, 239, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.frame2403 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.frame2403 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.frame2403 > :global(.__wab_flex-container) > *,
+.frame2403 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame2403 > :global(.__wab_flex-container) > picture > img,
+.frame2403
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.frame2403 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.inputText9 {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 16px;
+  color: rgba(224, 28, 71, 1);
+  position: relative;
+}
+.svg___6Tp1 {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #94a3b8;
+  width: 14px;
+  height: 14px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.inputWithLabel4 {
+  height: 204px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.inputWithLabel4 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 4px);
+  height: calc(100% + 4px);
+}
+.inputWithLabel4 > :global(.__wab_flex-container) > *,
+.inputWithLabel4 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.inputWithLabel4 > :global(.__wab_flex-container) > picture > img,
+.inputWithLabel4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 4px;
+}
+.inputWithLabel4 {
+  height: 204px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.inputText10 {
+  display: block;
+  font-size: 14px;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(70, 84, 104, 1);
+  position: relative;
+}
+.textareaInput {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(147, 162, 183, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 8px;
+}
+.inputText11 {
+  display: block;
+  font-size: 16px;
+  font-family: "Golos Text";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(147, 162, 183, 1);
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+.svg__yvXe {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #64748b;
+  transform: scale(1.0005563452399868, 0.9998487389133986)
+    rotate(-45.040491710229254deg) skew(-0.04046307398010047deg, 0deg);
+  width: 8px;
+  height: 1px;
+  display: block;
+  transform-origin: top left;
+  right: 2px;
+  bottom: 4px;
+}
+.svg__ospiB {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #64748b;
+  transform: scale(1.0005563452399868, 0.9998487389133986)
+    rotate(-45.040491710229254deg) skew(-0.04046307398010047deg, 0deg);
+  width: 4px;
+  height: 1px;
+  display: block;
+  transform-origin: top left;
+  right: 3px;
+  bottom: 4px;
+}
+.text__cnqUw {
+  display: block;
+  font-size: 12px;
+  font-family: "Golos Text";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 16px;
+  color: rgba(147, 162, 183, 1);
+  align-self: stretch;
+  position: relative;
+}
+.frame2404 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+}
+.frame2404 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: calc(0px - 6px);
+  height: calc(100% + 6px);
+}
+.frame2404 > :global(.__wab_flex-container) > *,
+.frame2404 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame2404 > :global(.__wab_flex-container) > picture > img,
+.frame2404
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 6px;
+}
+.frame2404 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.passwordStrengthBar4 {
+  height: 4px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.passwordStrengthBar4 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 2px);
+  width: calc(100% + 2px);
+}
+.passwordStrengthBar4 > :global(.__wab_flex-container) > *,
+.passwordStrengthBar4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.passwordStrengthBar4 > :global(.__wab_flex-container) > picture > img,
+.passwordStrengthBar4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 2px;
+}
+.passwordStrengthBar4 {
+  height: 4px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.rectangle152 {
+  background: rgba(224, 28, 71, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.rectangle153 {
+  background: rgba(225, 231, 239, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.rectangle154 {
+  background: rgba(225, 231, 239, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.rectangle155 {
+  background: rgba(225, 231, 239, 1);
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.frame2405 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.frame2405 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.frame2405 > :global(.__wab_flex-container) > *,
+.frame2405 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame2405 > :global(.__wab_flex-container) > picture > img,
+.frame2405
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.frame2405 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.inputText12 {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 16px;
+  color: rgba(224, 28, 71, 1);
+  position: relative;
+}
+.svg__e6DXg {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #94a3b8;
+  width: 14px;
+  height: 14px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame2406 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+}
+.frame2406 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
+}
+.frame2406 > :global(.__wab_flex-container) > *,
+.frame2406 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame2406 > :global(.__wab_flex-container) > picture > img,
+.frame2406
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 10px;
+}
+.frame2406 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.button {
+  background: rgba(210, 96, 51, 1);
+  width: 180px;
+  height: 44px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+  flex-shrink: 0;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+.button > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.button > :global(.__wab_flex-container) > *,
+.button > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.button > :global(.__wab_flex-container) > picture > img,
+.button
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.button {
+  background: rgba(210, 96, 51, 1);
+  width: 180px;
+  height: 44px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+.text__ztvY4 {
+  display: block;
+  font-size: 16px;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+.section {
+  background: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 48px;
+}
+.section > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 24px);
+  height: calc(100% + 24px);
+}
+.section > :global(.__wab_flex-container) > *,
+.section > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.section > :global(.__wab_flex-container) > picture > img,
+.section
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 24px;
+}
+.section {
+  background: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 48px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .section {
+    padding: 16px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .section {
+    padding: 16px;
+  }
+}
+.upper2 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+}
+.upper2 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.upper2 > :global(.__wab_flex-container) > *,
+.upper2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.upper2 > :global(.__wab_flex-container) > picture > img,
+.upper2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+.upper2 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.text__bz8NH {
+  display: block;
+  font-size: 30px;
+  font-family: "Golos Text";
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 36px;
+  color: rgba(95, 95, 95, 1);
+  position: relative;
+}
+.text___09SYs {
+  display: block;
+  font-size: 18px;
+  font-family: "Golos Text";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 28px;
+  color: rgba(95, 95, 95, 1);
+  position: relative;
+}
+.addresses {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  padding: 48px 12px;
+}
+.addresses > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  margin-left: calc(0px - 64px);
+  width: calc(100% + 64px);
+  margin-top: calc(0px - 64px);
+  height: calc(100% + 64px);
+}
+.addresses > :global(.__wab_flex-container) > *,
+.addresses > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.addresses > :global(.__wab_flex-container) > picture > img,
+.addresses
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 64px;
+  margin-top: 64px;
+}
+.addresses {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  padding: 48px 12px;
+}
+.nelspruit {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 16px;
+}
+.nelspruit > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.nelspruit > :global(.__wab_flex-container) > *,
+.nelspruit > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.nelspruit > :global(.__wab_flex-container) > picture > img,
+.nelspruit
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+.nelspruit {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px;
+}
+.nelspruit2 {
+  position: relative;
+  width: 114px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.text__g3BYs {
+  display: block;
+  font-size: 24px;
+  font-family: "Golos Text";
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 32px;
+  color: rgba(25, 26, 27, 1);
+}
+.text__hmGsb {
+  display: block;
+  font-size: 16px;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(158, 158, 158, 1);
+  position: relative;
+}
+.headoffice {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 16px;
+}
+.headoffice > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.headoffice > :global(.__wab_flex-container) > *,
+.headoffice > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.headoffice > :global(.__wab_flex-container) > picture > img,
+.headoffice
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+.headoffice {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px;
+}
+.headOfficeJhb {
+  position: relative;
+  width: 216px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.text__deJRd {
+  display: block;
+  font-size: 24px;
+  font-family: "Golos Text";
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 32px;
+  color: rgba(25, 26, 27, 1);
+}
+.text__sb6Tx {
+  display: block;
+  font-size: 16px;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(158, 158, 158, 1);
+  position: relative;
+}
+.polokwane {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 16px;
+}
+.polokwane > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.polokwane > :global(.__wab_flex-container) > *,
+.polokwane > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.polokwane > :global(.__wab_flex-container) > picture > img,
+.polokwane
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+.polokwane {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px;
+}
+.polokwane2 {
+  position: relative;
+  width: 137px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.text___6Io5U {
+  display: block;
+  font-size: 24px;
+  font-family: "Golos Text";
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 32px;
+  color: rgba(25, 26, 27, 1);
+}
+.text__s9NYp {
+  display: block;
+  font-size: 16px;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(158, 158, 158, 1);
+  position: relative;
+}
+.pta {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 16px;
+}
+.pta > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.pta > :global(.__wab_flex-container) > *,
+.pta > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.pta > :global(.__wab_flex-container) > picture > img,
+.pta > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: 16px;
+}
+.pta {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px;
+}
+.pretoria {
+  position: relative;
+  width: 98px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.text__kBdCm {
+  display: block;
+  font-size: 24px;
+  font-family: "Golos Text";
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 32px;
+  color: rgba(25, 26, 27, 1);
+}
+.text__bMrpy {
+  display: block;
+  font-size: 16px;
+  font-family: "Golos Text";
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(158, 158, 158, 1);
+  position: relative;
+}
+.section__geRga {
+  display: grid;
+  position: relative;
+  align-content: flex-start;
+  justify-items: center;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-template-columns:
+    1fr minmax(0, var(--plsmc-wide-chunk)) var(--plsmc-viewport-gap)
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    var(--plsmc-viewport-gap) minmax(0, var(--plsmc-wide-chunk)) 1fr;
+  padding: 8px 0;
+}
+:where(.section__geRga > *) {
+  grid-column: 4;
+}
+.footer__nE2:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
