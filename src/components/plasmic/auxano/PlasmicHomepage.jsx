@@ -23,6 +23,7 @@ import Button2 from "../../Button2"; // plasmic-import: puKm7ksVLVR/component
 import Footer from "../../Footer"; // plasmic-import: 6NjpMkUH8g-/component
 import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_auxano.module.css"; // plasmic-import: oGQcGtbFzYohLFbpGrRxL3/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: Ybl9MM68MVSW/css
 import ZapIcon from "./icons/PlasmicIcon__Zap"; // plasmic-import: jioqPss8S/icon
@@ -73,6 +74,7 @@ function PlasmicHomepage__RenderFunc(props) {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >

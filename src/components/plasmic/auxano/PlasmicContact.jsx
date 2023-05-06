@@ -14,22 +14,24 @@ import * as ph from "@plasmicapp/react-web/lib/host";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import NavBarFinal from "../../NavBarFinal"; // plasmic-import: Ba2YaKrrpo/component
+import { FormWrapper } from "@plasmicpkgs/antd5/skinny/registerForm"; // plasmic-import: TgJFzUZpvQ/codeComponent
+import { FormItemWrapper } from "@plasmicpkgs/antd5/skinny/registerForm"; // plasmic-import: EYHwZh9ILg/codeComponent
+import { AntdInput } from "@plasmicpkgs/antd5/skinny/registerInput"; // plasmic-import: Vf5hntD2SZ5/codeComponent
+import { inputHelpers as AntdInput_Helpers } from "@plasmicpkgs/antd5/skinny/registerInput"; // plasmic-import: Vf5hntD2SZ5/codeComponentHelper
+import { AntdTextArea } from "@plasmicpkgs/antd5/skinny/registerInput"; // plasmic-import: pTzGlMptTxd/codeComponent
+import { inputHelpers as AntdTextArea_Helpers } from "@plasmicpkgs/antd5/skinny/registerInput"; // plasmic-import: pTzGlMptTxd/codeComponentHelper
+import { AntdButton } from "@plasmicpkgs/antd5/skinny/registerButton"; // plasmic-import: bx9Xzvf5_eu/codeComponent
 import Footer from "../../Footer"; // plasmic-import: 6NjpMkUH8g-/component
-import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_auxano.module.css"; // plasmic-import: oGQcGtbFzYohLFbpGrRxL3/projectcss
 import sty from "./PlasmicContact.module.css"; // plasmic-import: m0O9QXIre9/css
 import IconOutlinephoneIcon from "./icons/PlasmicIcon__IconOutlinephone"; // plasmic-import: 4byTu4Is8/icon
 import IconOutlinedeviceMobileIcon from "./icons/PlasmicIcon__IconOutlinedeviceMobile"; // plasmic-import: ZFatQPHDzg/icon
 import IconOutlinemailIcon from "./icons/PlasmicIcon__IconOutlinemail"; // plasmic-import: 6-caiXs_Q5/icon
-import IconOutlineinformationCircleIcon from "./icons/PlasmicIcon__IconOutlineinformationCircle"; // plasmic-import: PcFk174NMj/icon
-import IconSolidcheveronDownIcon from "./icons/PlasmicIcon__IconSolidcheveronDown"; // plasmic-import: II4CvDQeE0/icon
-import Line10Icon from "./icons/PlasmicIcon__Line10"; // plasmic-import: iPsMxTJ0PS/icon
-import Line11Icon from "./icons/PlasmicIcon__Line11"; // plasmic-import: lBDlZ1FMhR/icon
 
 export const PlasmicContact__VariantProps = new Array();
 
@@ -56,9 +58,44 @@ function PlasmicContact__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsbmXrKiwboivdw()
-  });
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "form2.value",
+        type: "private",
+        variableType: "object",
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+      },
+      {
+        path: "input.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+      },
+      {
+        path: "textArea.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+      },
+      {
+        path: "input3.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+      },
+      {
+        path: "input2.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+      }
+    ],
+
+    [$props, $ctx]
+  );
+
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -73,6 +110,7 @@ function PlasmicContact__RenderFunc(props) {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -260,581 +298,264 @@ function PlasmicContact__RenderFunc(props) {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.form)}
                 >
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"formRow"}
-                    data-plasmic-override={overrides.formRow}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.formRow)}
+                  <FormWrapper
+                    data-plasmic-name={"form2"}
+                    data-plasmic-override={overrides.form2}
+                    className={classNames("__wab_instance", sty.form2)}
+                    extendedOnValuesChange={p.generateStateOnChangeProp(
+                      $state,
+                      ["form2", "value"]
+                    )}
+                    labelCol={{ span: 8, horizontalOnly: true }}
+                    layout={"vertical"}
+                    wrapperCol={{ span: 16, horizontalOnly: true }}
                   >
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"inputWithLabel"}
-                      data-plasmic-override={overrides.inputWithLabel}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.inputWithLabel)}
+                    <FormItemWrapper
+                      className={classNames(
+                        "__wab_instance",
+                        sty.formItem__u42Fz
+                      )}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__gz3Wa
+                          )}
+                        >
+                          {"Name"}
+                        </div>
+                      }
+                      name={"name"}
                     >
-                      <div
-                        data-plasmic-name={"inputText"}
-                        data-plasmic-override={overrides.inputText}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.inputText
-                        )}
-                      >
-                        {"Name"}
-                      </div>
-                      <div
-                        data-plasmic-name={"basicInput"}
-                        data-plasmic-override={overrides.basicInput}
-                        className={classNames(projectcss.all, sty.basicInput)}
-                      >
-                        <div
-                          data-plasmic-name={"inputText2"}
-                          data-plasmic-override={overrides.inputText2}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.inputText2
-                          )}
-                        >
-                          {"Placeholder"}
-                        </div>
-                      </div>
-                      {false ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__v31C
-                          )}
-                        >
-                          {"Validation text"}
-                        </div>
-                      ) : null}
-                      {false ? (
-                        <p.Stack
-                          as={"div"}
-                          data-plasmic-name={"frame2398"}
-                          data-plasmic-override={overrides.frame2398}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.frame2398)}
-                        >
-                          <p.Stack
-                            as={"div"}
-                            data-plasmic-name={"passwordStrengthBar"}
-                            data-plasmic-override={
-                              overrides.passwordStrengthBar
+                      {(() => {
+                        const child$Props = {
+                          className: classNames("__wab_instance", sty.input),
+                          onChange:
+                            p.generateStateOnChangePropForCodeComponents(
+                              $state,
+                              "value",
+                              ["input", "value"],
+                              AntdInput_Helpers
+                            ),
+
+                          value: p.generateStateValueProp($state, [
+                            "input",
+                            "value"
+                          ])
+                        };
+                        p.initializeCodeComponentStates(
+                          $state,
+                          [
+                            {
+                              name: "value",
+                              plasmicStateName: "input.value"
                             }
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.passwordStrengthBar
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"rectangle140"}
-                              data-plasmic-override={overrides.rectangle140}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle140
-                              )}
-                            />
+                          ],
 
-                            <div
-                              data-plasmic-name={"rectangle141"}
-                              data-plasmic-override={overrides.rectangle141}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle141
-                              )}
-                            />
+                          [],
+                          AntdInput_Helpers ?? {},
+                          child$Props
+                        );
 
-                            <div
-                              data-plasmic-name={"rectangle142"}
-                              data-plasmic-override={overrides.rectangle142}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle142
-                              )}
-                            />
-
-                            <div
-                              data-plasmic-name={"rectangle143"}
-                              data-plasmic-override={overrides.rectangle143}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle143
-                              )}
-                            />
-                          </p.Stack>
-                          <p.Stack
-                            as={"div"}
-                            data-plasmic-name={"frame2397"}
-                            data-plasmic-override={overrides.frame2397}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.frame2397
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"inputText3"}
-                              data-plasmic-override={overrides.inputText3}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.inputText3
-                              )}
-                            >
-                              {"Weak"}
-                            </div>
-                            <IconOutlineinformationCircleIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__hilBd
-                              )}
-                              role={"img"}
-                            />
-                          </p.Stack>
-                        </p.Stack>
-                      ) : null}
-                    </p.Stack>
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"inputWithLabel2"}
-                      data-plasmic-override={overrides.inputWithLabel2}
-                      hasGap={true}
+                        return (
+                          <AntdInput
+                            data-plasmic-name={"input"}
+                            data-plasmic-override={overrides.input}
+                            {...child$Props}
+                          />
+                        );
+                      })()}
+                    </FormItemWrapper>
+                    <FormItemWrapper
                       className={classNames(
-                        projectcss.all,
-                        sty.inputWithLabel2
+                        "__wab_instance",
+                        sty.formItem__eVvM
                       )}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__omNrs
+                          )}
+                        >
+                          {"Email"}
+                        </div>
+                      }
                     >
-                      <div
-                        data-plasmic-name={"inputText4"}
-                        data-plasmic-override={overrides.inputText4}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.inputText4
-                        )}
-                      >
-                        {"Email"}
-                      </div>
-                      <div
-                        data-plasmic-name={"basicInput2"}
-                        data-plasmic-override={overrides.basicInput2}
-                        className={classNames(projectcss.all, sty.basicInput2)}
-                      >
-                        <div
-                          data-plasmic-name={"inputText5"}
-                          data-plasmic-override={overrides.inputText5}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.inputText5
-                          )}
-                        >
-                          {"Placeholder"}
-                        </div>
-                      </div>
-                      {false ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__iFokc
-                          )}
-                        >
-                          {"Validation text"}
-                        </div>
-                      ) : null}
-                      {false ? (
-                        <p.Stack
-                          as={"div"}
-                          data-plasmic-name={"frame2400"}
-                          data-plasmic-override={overrides.frame2400}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.frame2400)}
-                        >
-                          <p.Stack
-                            as={"div"}
-                            data-plasmic-name={"passwordStrengthBar2"}
-                            data-plasmic-override={
-                              overrides.passwordStrengthBar2
+                      {(() => {
+                        const child$Props = {
+                          className: classNames("__wab_instance", sty.input3),
+                          onChange:
+                            p.generateStateOnChangePropForCodeComponents(
+                              $state,
+                              "value",
+                              ["input3", "value"],
+                              AntdInput_Helpers
+                            ),
+
+                          value: p.generateStateValueProp($state, [
+                            "input3",
+                            "value"
+                          ])
+                        };
+                        p.initializeCodeComponentStates(
+                          $state,
+                          [
+                            {
+                              name: "value",
+                              plasmicStateName: "input3.value"
                             }
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.passwordStrengthBar2
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"rectangle144"}
-                              data-plasmic-override={overrides.rectangle144}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle144
-                              )}
-                            />
+                          ],
 
-                            <div
-                              data-plasmic-name={"rectangle145"}
-                              data-plasmic-override={overrides.rectangle145}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle145
-                              )}
-                            />
+                          [],
+                          AntdInput_Helpers ?? {},
+                          child$Props
+                        );
 
-                            <div
-                              data-plasmic-name={"rectangle146"}
-                              data-plasmic-override={overrides.rectangle146}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle146
-                              )}
-                            />
-
-                            <div
-                              data-plasmic-name={"rectangle147"}
-                              data-plasmic-override={overrides.rectangle147}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle147
-                              )}
-                            />
-                          </p.Stack>
-                          <p.Stack
-                            as={"div"}
-                            data-plasmic-name={"frame2401"}
-                            data-plasmic-override={overrides.frame2401}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.frame2401
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"inputText6"}
-                              data-plasmic-override={overrides.inputText6}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.inputText6
-                              )}
-                            >
-                              {"Weak"}
-                            </div>
-                            <IconOutlineinformationCircleIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__mfXHt
-                              )}
-                              role={"img"}
-                            />
-                          </p.Stack>
-                        </p.Stack>
-                      ) : null}
-                    </p.Stack>
-                  </p.Stack>
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"inputWithLabel3"}
-                    data-plasmic-override={overrides.inputWithLabel3}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.inputWithLabel3)}
-                  >
-                    <div
-                      data-plasmic-name={"inputText7"}
-                      data-plasmic-override={overrides.inputText7}
+                        return (
+                          <AntdInput
+                            data-plasmic-name={"input3"}
+                            data-plasmic-override={overrides.input3}
+                            {...child$Props}
+                          />
+                        );
+                      })()}
+                    </FormItemWrapper>
+                    <FormItemWrapper
                       className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.inputText7
+                        "__wab_instance",
+                        sty.formItem___34IgX
                       )}
-                    >
-                      {"How can we help you?"}
-                    </div>
-                    <div
-                      data-plasmic-name={"dropdown"}
-                      data-plasmic-override={overrides.dropdown}
-                      className={classNames(projectcss.all, sty.dropdown)}
-                    >
-                      <div
-                        data-plasmic-name={"inputText8"}
-                        data-plasmic-override={overrides.inputText8}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.inputText8
-                        )}
-                      >
-                        {"Choose value"}
-                      </div>
-                      <IconSolidcheveronDownIcon
-                        className={classNames(projectcss.all, sty.svg__a6BtL)}
-                        role={"img"}
-                      />
-                    </div>
-                    {false ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__vTeoX
-                        )}
-                      >
-                        {"Validation text"}
-                      </div>
-                    ) : null}
-                    {false ? (
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame2402"}
-                        data-plasmic-override={overrides.frame2402}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame2402)}
-                      >
-                        <p.Stack
-                          as={"div"}
-                          data-plasmic-name={"passwordStrengthBar3"}
-                          data-plasmic-override={overrides.passwordStrengthBar3}
-                          hasGap={true}
+                      label={
+                        <div
                           className={classNames(
                             projectcss.all,
-                            sty.passwordStrengthBar3
+                            projectcss.__wab_text,
+                            sty.text__as3Vl
                           )}
                         >
-                          <div
-                            data-plasmic-name={"rectangle148"}
-                            data-plasmic-override={overrides.rectangle148}
-                            className={classNames(
-                              projectcss.all,
-                              sty.rectangle148
-                            )}
-                          />
+                          {"How can we help you ?"}
+                        </div>
+                      }
+                    >
+                      {(() => {
+                        const child$Props = {
+                          className: classNames("__wab_instance", sty.input2),
+                          onChange:
+                            p.generateStateOnChangePropForCodeComponents(
+                              $state,
+                              "value",
+                              ["input2", "value"],
+                              AntdInput_Helpers
+                            ),
 
-                          <div
-                            data-plasmic-name={"rectangle149"}
-                            data-plasmic-override={overrides.rectangle149}
-                            className={classNames(
-                              projectcss.all,
-                              sty.rectangle149
-                            )}
-                          />
+                          value: p.generateStateValueProp($state, [
+                            "input2",
+                            "value"
+                          ])
+                        };
+                        p.initializeCodeComponentStates(
+                          $state,
+                          [
+                            {
+                              name: "value",
+                              plasmicStateName: "input2.value"
+                            }
+                          ],
 
-                          <div
-                            data-plasmic-name={"rectangle150"}
-                            data-plasmic-override={overrides.rectangle150}
-                            className={classNames(
-                              projectcss.all,
-                              sty.rectangle150
-                            )}
-                          />
+                          [],
+                          AntdInput_Helpers ?? {},
+                          child$Props
+                        );
 
-                          <div
-                            data-plasmic-name={"rectangle151"}
-                            data-plasmic-override={overrides.rectangle151}
-                            className={classNames(
-                              projectcss.all,
-                              sty.rectangle151
-                            )}
+                        return (
+                          <AntdInput
+                            data-plasmic-name={"input2"}
+                            data-plasmic-override={overrides.input2}
+                            {...child$Props}
                           />
-                        </p.Stack>
-                        <p.Stack
-                          as={"div"}
-                          data-plasmic-name={"frame2403"}
-                          data-plasmic-override={overrides.frame2403}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.frame2403)}
-                        >
-                          <div
-                            data-plasmic-name={"inputText9"}
-                            data-plasmic-override={overrides.inputText9}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.inputText9
-                            )}
-                          >
-                            {"Weak"}
-                          </div>
-                          <IconOutlineinformationCircleIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg___6Tp1
-                            )}
-                            role={"img"}
-                          />
-                        </p.Stack>
-                      </p.Stack>
-                    ) : null}
-                  </p.Stack>
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"inputWithLabel4"}
-                    data-plasmic-override={overrides.inputWithLabel4}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.inputWithLabel4)}
-                  >
-                    <div
-                      data-plasmic-name={"inputText10"}
-                      data-plasmic-override={overrides.inputText10}
+                        );
+                      })()}
+                    </FormItemWrapper>
+                    <FormItemWrapper
                       className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.inputText10
+                        "__wab_instance",
+                        sty.formItem__l1Rtp
                       )}
-                    >
-                      {"Any details"}
-                    </div>
-                    <div
-                      data-plasmic-name={"textareaInput"}
-                      data-plasmic-override={overrides.textareaInput}
-                      className={classNames(projectcss.all, sty.textareaInput)}
-                    >
-                      <div
-                        data-plasmic-name={"inputText11"}
-                        data-plasmic-override={overrides.inputText11}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.inputText11
-                        )}
-                      >
-                        {"Placeholder"}
-                      </div>
-                      <Line10Icon
-                        className={classNames(projectcss.all, sty.svg__yvXe)}
-                        role={"img"}
-                      />
-
-                      <Line11Icon
-                        className={classNames(projectcss.all, sty.svg__ospiB)}
-                        role={"img"}
-                      />
-                    </div>
-                    {false ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__cnqUw
-                        )}
-                      >
-                        {"Validation text"}
-                      </div>
-                    ) : null}
-                    {false ? (
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame2404"}
-                        data-plasmic-override={overrides.frame2404}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame2404)}
-                      >
-                        <p.Stack
-                          as={"div"}
-                          data-plasmic-name={"passwordStrengthBar4"}
-                          data-plasmic-override={overrides.passwordStrengthBar4}
-                          hasGap={true}
+                      label={
+                        <div
                           className={classNames(
                             projectcss.all,
-                            sty.passwordStrengthBar4
+                            projectcss.__wab_text,
+                            sty.text__l53YS
                           )}
                         >
-                          <div
-                            data-plasmic-name={"rectangle152"}
-                            data-plasmic-override={overrides.rectangle152}
-                            className={classNames(
-                              projectcss.all,
-                              sty.rectangle152
-                            )}
-                          />
+                          {"Message"}
+                        </div>
+                      }
+                      name={"message"}
+                    >
+                      {(() => {
+                        const child$Props = {
+                          className: classNames("__wab_instance", sty.textArea),
+                          onChange:
+                            p.generateStateOnChangePropForCodeComponents(
+                              $state,
+                              "value",
+                              ["textArea", "value"],
+                              AntdTextArea_Helpers
+                            ),
 
-                          <div
-                            data-plasmic-name={"rectangle153"}
-                            data-plasmic-override={overrides.rectangle153}
-                            className={classNames(
-                              projectcss.all,
-                              sty.rectangle153
-                            )}
-                          />
+                          value: p.generateStateValueProp($state, [
+                            "textArea",
+                            "value"
+                          ])
+                        };
+                        p.initializeCodeComponentStates(
+                          $state,
+                          [
+                            {
+                              name: "value",
+                              plasmicStateName: "textArea.value"
+                            }
+                          ],
 
-                          <div
-                            data-plasmic-name={"rectangle154"}
-                            data-plasmic-override={overrides.rectangle154}
-                            className={classNames(
-                              projectcss.all,
-                              sty.rectangle154
-                            )}
-                          />
+                          [],
+                          AntdTextArea_Helpers ?? {},
+                          child$Props
+                        );
 
-                          <div
-                            data-plasmic-name={"rectangle155"}
-                            data-plasmic-override={overrides.rectangle155}
-                            className={classNames(
-                              projectcss.all,
-                              sty.rectangle155
-                            )}
+                        return (
+                          <AntdTextArea
+                            data-plasmic-name={"textArea"}
+                            data-plasmic-override={overrides.textArea}
+                            {...child$Props}
                           />
-                        </p.Stack>
-                        <p.Stack
-                          as={"div"}
-                          data-plasmic-name={"frame2405"}
-                          data-plasmic-override={overrides.frame2405}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.frame2405)}
-                        >
-                          <div
-                            data-plasmic-name={"inputText12"}
-                            data-plasmic-override={overrides.inputText12}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.inputText12
-                            )}
-                          >
-                            {"Weak"}
-                          </div>
-                          <IconOutlineinformationCircleIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__e6DXg
-                            )}
-                            role={"img"}
-                          />
-                        </p.Stack>
-                      </p.Stack>
-                    ) : null}
-                  </p.Stack>
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame2406"}
-                    data-plasmic-override={overrides.frame2406}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame2406)}
-                  >
-                    <p.Stack
-                      as={"div"}
+                        );
+                      })()}
+                    </FormItemWrapper>
+                    <AntdButton
                       data-plasmic-name={"button"}
                       data-plasmic-override={overrides.button}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.button)}
+                      className={classNames("__wab_instance", sty.button)}
+                      shape={"default"}
+                      size={"large"}
+                      submitsForm={true}
+                      type={"primary"}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__ztvY4
+                          sty.text__cbtQa
                         )}
                       >
-                        {"Send"}
+                        {"Submit"}
                       </div>
-                    </p.Stack>
-                  </p.Stack>
+                    </AntdButton>
+                  </FormWrapper>
                 </p.Stack>
               </div>
             </div>
@@ -1041,56 +762,11 @@ const PlasmicDescendants = {
     "secondPhone",
     "mail",
     "form",
-    "formRow",
-    "inputWithLabel",
-    "inputText",
-    "basicInput",
-    "inputText2",
-    "frame2398",
-    "passwordStrengthBar",
-    "rectangle140",
-    "rectangle141",
-    "rectangle142",
-    "rectangle143",
-    "frame2397",
-    "inputText3",
-    "inputWithLabel2",
-    "inputText4",
-    "basicInput2",
-    "inputText5",
-    "frame2400",
-    "passwordStrengthBar2",
-    "rectangle144",
-    "rectangle145",
-    "rectangle146",
-    "rectangle147",
-    "frame2401",
-    "inputText6",
-    "inputWithLabel3",
-    "inputText7",
-    "dropdown",
-    "inputText8",
-    "frame2402",
-    "passwordStrengthBar3",
-    "rectangle148",
-    "rectangle149",
-    "rectangle150",
-    "rectangle151",
-    "frame2403",
-    "inputText9",
-    "inputWithLabel4",
-    "inputText10",
-    "textareaInput",
-    "inputText11",
-    "frame2404",
-    "passwordStrengthBar4",
-    "rectangle152",
-    "rectangle153",
-    "rectangle154",
-    "rectangle155",
-    "frame2405",
-    "inputText12",
-    "frame2406",
+    "form2",
+    "input",
+    "input3",
+    "input2",
+    "textArea",
     "button",
     "section",
     "upper2",
@@ -1120,56 +796,11 @@ const PlasmicDescendants = {
     "secondPhone",
     "mail",
     "form",
-    "formRow",
-    "inputWithLabel",
-    "inputText",
-    "basicInput",
-    "inputText2",
-    "frame2398",
-    "passwordStrengthBar",
-    "rectangle140",
-    "rectangle141",
-    "rectangle142",
-    "rectangle143",
-    "frame2397",
-    "inputText3",
-    "inputWithLabel2",
-    "inputText4",
-    "basicInput2",
-    "inputText5",
-    "frame2400",
-    "passwordStrengthBar2",
-    "rectangle144",
-    "rectangle145",
-    "rectangle146",
-    "rectangle147",
-    "frame2401",
-    "inputText6",
-    "inputWithLabel3",
-    "inputText7",
-    "dropdown",
-    "inputText8",
-    "frame2402",
-    "passwordStrengthBar3",
-    "rectangle148",
-    "rectangle149",
-    "rectangle150",
-    "rectangle151",
-    "frame2403",
-    "inputText9",
-    "inputWithLabel4",
-    "inputText10",
-    "textareaInput",
-    "inputText11",
-    "frame2404",
-    "passwordStrengthBar4",
-    "rectangle152",
-    "rectangle153",
-    "rectangle154",
-    "rectangle155",
-    "frame2405",
-    "inputText12",
-    "frame2406",
+    "form2",
+    "input",
+    "input3",
+    "input2",
+    "textArea",
     "button",
     "section",
     "upper2",
@@ -1192,56 +823,11 @@ const PlasmicDescendants = {
     "secondPhone",
     "mail",
     "form",
-    "formRow",
-    "inputWithLabel",
-    "inputText",
-    "basicInput",
-    "inputText2",
-    "frame2398",
-    "passwordStrengthBar",
-    "rectangle140",
-    "rectangle141",
-    "rectangle142",
-    "rectangle143",
-    "frame2397",
-    "inputText3",
-    "inputWithLabel2",
-    "inputText4",
-    "basicInput2",
-    "inputText5",
-    "frame2400",
-    "passwordStrengthBar2",
-    "rectangle144",
-    "rectangle145",
-    "rectangle146",
-    "rectangle147",
-    "frame2401",
-    "inputText6",
-    "inputWithLabel3",
-    "inputText7",
-    "dropdown",
-    "inputText8",
-    "frame2402",
-    "passwordStrengthBar3",
-    "rectangle148",
-    "rectangle149",
-    "rectangle150",
-    "rectangle151",
-    "frame2403",
-    "inputText9",
-    "inputWithLabel4",
-    "inputText10",
-    "textareaInput",
-    "inputText11",
-    "frame2404",
-    "passwordStrengthBar4",
-    "rectangle152",
-    "rectangle153",
-    "rectangle154",
-    "rectangle155",
-    "frame2405",
-    "inputText12",
-    "frame2406",
+    "form2",
+    "input",
+    "input3",
+    "input2",
+    "textArea",
     "button"
   ],
 
@@ -1250,262 +836,12 @@ const PlasmicDescendants = {
   phone: ["phone"],
   secondPhone: ["secondPhone"],
   mail: ["mail"],
-  form: [
-    "form",
-    "formRow",
-    "inputWithLabel",
-    "inputText",
-    "basicInput",
-    "inputText2",
-    "frame2398",
-    "passwordStrengthBar",
-    "rectangle140",
-    "rectangle141",
-    "rectangle142",
-    "rectangle143",
-    "frame2397",
-    "inputText3",
-    "inputWithLabel2",
-    "inputText4",
-    "basicInput2",
-    "inputText5",
-    "frame2400",
-    "passwordStrengthBar2",
-    "rectangle144",
-    "rectangle145",
-    "rectangle146",
-    "rectangle147",
-    "frame2401",
-    "inputText6",
-    "inputWithLabel3",
-    "inputText7",
-    "dropdown",
-    "inputText8",
-    "frame2402",
-    "passwordStrengthBar3",
-    "rectangle148",
-    "rectangle149",
-    "rectangle150",
-    "rectangle151",
-    "frame2403",
-    "inputText9",
-    "inputWithLabel4",
-    "inputText10",
-    "textareaInput",
-    "inputText11",
-    "frame2404",
-    "passwordStrengthBar4",
-    "rectangle152",
-    "rectangle153",
-    "rectangle154",
-    "rectangle155",
-    "frame2405",
-    "inputText12",
-    "frame2406",
-    "button"
-  ],
-
-  formRow: [
-    "formRow",
-    "inputWithLabel",
-    "inputText",
-    "basicInput",
-    "inputText2",
-    "frame2398",
-    "passwordStrengthBar",
-    "rectangle140",
-    "rectangle141",
-    "rectangle142",
-    "rectangle143",
-    "frame2397",
-    "inputText3",
-    "inputWithLabel2",
-    "inputText4",
-    "basicInput2",
-    "inputText5",
-    "frame2400",
-    "passwordStrengthBar2",
-    "rectangle144",
-    "rectangle145",
-    "rectangle146",
-    "rectangle147",
-    "frame2401",
-    "inputText6"
-  ],
-
-  inputWithLabel: [
-    "inputWithLabel",
-    "inputText",
-    "basicInput",
-    "inputText2",
-    "frame2398",
-    "passwordStrengthBar",
-    "rectangle140",
-    "rectangle141",
-    "rectangle142",
-    "rectangle143",
-    "frame2397",
-    "inputText3"
-  ],
-
-  inputText: ["inputText"],
-  basicInput: ["basicInput", "inputText2"],
-  inputText2: ["inputText2"],
-  frame2398: [
-    "frame2398",
-    "passwordStrengthBar",
-    "rectangle140",
-    "rectangle141",
-    "rectangle142",
-    "rectangle143",
-    "frame2397",
-    "inputText3"
-  ],
-
-  passwordStrengthBar: [
-    "passwordStrengthBar",
-    "rectangle140",
-    "rectangle141",
-    "rectangle142",
-    "rectangle143"
-  ],
-
-  rectangle140: ["rectangle140"],
-  rectangle141: ["rectangle141"],
-  rectangle142: ["rectangle142"],
-  rectangle143: ["rectangle143"],
-  frame2397: ["frame2397", "inputText3"],
-  inputText3: ["inputText3"],
-  inputWithLabel2: [
-    "inputWithLabel2",
-    "inputText4",
-    "basicInput2",
-    "inputText5",
-    "frame2400",
-    "passwordStrengthBar2",
-    "rectangle144",
-    "rectangle145",
-    "rectangle146",
-    "rectangle147",
-    "frame2401",
-    "inputText6"
-  ],
-
-  inputText4: ["inputText4"],
-  basicInput2: ["basicInput2", "inputText5"],
-  inputText5: ["inputText5"],
-  frame2400: [
-    "frame2400",
-    "passwordStrengthBar2",
-    "rectangle144",
-    "rectangle145",
-    "rectangle146",
-    "rectangle147",
-    "frame2401",
-    "inputText6"
-  ],
-
-  passwordStrengthBar2: [
-    "passwordStrengthBar2",
-    "rectangle144",
-    "rectangle145",
-    "rectangle146",
-    "rectangle147"
-  ],
-
-  rectangle144: ["rectangle144"],
-  rectangle145: ["rectangle145"],
-  rectangle146: ["rectangle146"],
-  rectangle147: ["rectangle147"],
-  frame2401: ["frame2401", "inputText6"],
-  inputText6: ["inputText6"],
-  inputWithLabel3: [
-    "inputWithLabel3",
-    "inputText7",
-    "dropdown",
-    "inputText8",
-    "frame2402",
-    "passwordStrengthBar3",
-    "rectangle148",
-    "rectangle149",
-    "rectangle150",
-    "rectangle151",
-    "frame2403",
-    "inputText9"
-  ],
-
-  inputText7: ["inputText7"],
-  dropdown: ["dropdown", "inputText8"],
-  inputText8: ["inputText8"],
-  frame2402: [
-    "frame2402",
-    "passwordStrengthBar3",
-    "rectangle148",
-    "rectangle149",
-    "rectangle150",
-    "rectangle151",
-    "frame2403",
-    "inputText9"
-  ],
-
-  passwordStrengthBar3: [
-    "passwordStrengthBar3",
-    "rectangle148",
-    "rectangle149",
-    "rectangle150",
-    "rectangle151"
-  ],
-
-  rectangle148: ["rectangle148"],
-  rectangle149: ["rectangle149"],
-  rectangle150: ["rectangle150"],
-  rectangle151: ["rectangle151"],
-  frame2403: ["frame2403", "inputText9"],
-  inputText9: ["inputText9"],
-  inputWithLabel4: [
-    "inputWithLabel4",
-    "inputText10",
-    "textareaInput",
-    "inputText11",
-    "frame2404",
-    "passwordStrengthBar4",
-    "rectangle152",
-    "rectangle153",
-    "rectangle154",
-    "rectangle155",
-    "frame2405",
-    "inputText12"
-  ],
-
-  inputText10: ["inputText10"],
-  textareaInput: ["textareaInput", "inputText11"],
-  inputText11: ["inputText11"],
-  frame2404: [
-    "frame2404",
-    "passwordStrengthBar4",
-    "rectangle152",
-    "rectangle153",
-    "rectangle154",
-    "rectangle155",
-    "frame2405",
-    "inputText12"
-  ],
-
-  passwordStrengthBar4: [
-    "passwordStrengthBar4",
-    "rectangle152",
-    "rectangle153",
-    "rectangle154",
-    "rectangle155"
-  ],
-
-  rectangle152: ["rectangle152"],
-  rectangle153: ["rectangle153"],
-  rectangle154: ["rectangle154"],
-  rectangle155: ["rectangle155"],
-  frame2405: ["frame2405", "inputText12"],
-  inputText12: ["inputText12"],
-  frame2406: ["frame2406", "button"],
+  form: ["form", "form2", "input", "input3", "input2", "textArea", "button"],
+  form2: ["form2", "input", "input3", "input2", "textArea", "button"],
+  input: ["input"],
+  input3: ["input3"],
+  input2: ["input2"],
+  textArea: ["textArea"],
   button: ["button"],
   section: [
     "section",
@@ -1591,56 +927,11 @@ export const PlasmicContact = Object.assign(
     secondPhone: makeNodeComponent("secondPhone"),
     mail: makeNodeComponent("mail"),
     form: makeNodeComponent("form"),
-    formRow: makeNodeComponent("formRow"),
-    inputWithLabel: makeNodeComponent("inputWithLabel"),
-    inputText: makeNodeComponent("inputText"),
-    basicInput: makeNodeComponent("basicInput"),
-    inputText2: makeNodeComponent("inputText2"),
-    frame2398: makeNodeComponent("frame2398"),
-    passwordStrengthBar: makeNodeComponent("passwordStrengthBar"),
-    rectangle140: makeNodeComponent("rectangle140"),
-    rectangle141: makeNodeComponent("rectangle141"),
-    rectangle142: makeNodeComponent("rectangle142"),
-    rectangle143: makeNodeComponent("rectangle143"),
-    frame2397: makeNodeComponent("frame2397"),
-    inputText3: makeNodeComponent("inputText3"),
-    inputWithLabel2: makeNodeComponent("inputWithLabel2"),
-    inputText4: makeNodeComponent("inputText4"),
-    basicInput2: makeNodeComponent("basicInput2"),
-    inputText5: makeNodeComponent("inputText5"),
-    frame2400: makeNodeComponent("frame2400"),
-    passwordStrengthBar2: makeNodeComponent("passwordStrengthBar2"),
-    rectangle144: makeNodeComponent("rectangle144"),
-    rectangle145: makeNodeComponent("rectangle145"),
-    rectangle146: makeNodeComponent("rectangle146"),
-    rectangle147: makeNodeComponent("rectangle147"),
-    frame2401: makeNodeComponent("frame2401"),
-    inputText6: makeNodeComponent("inputText6"),
-    inputWithLabel3: makeNodeComponent("inputWithLabel3"),
-    inputText7: makeNodeComponent("inputText7"),
-    dropdown: makeNodeComponent("dropdown"),
-    inputText8: makeNodeComponent("inputText8"),
-    frame2402: makeNodeComponent("frame2402"),
-    passwordStrengthBar3: makeNodeComponent("passwordStrengthBar3"),
-    rectangle148: makeNodeComponent("rectangle148"),
-    rectangle149: makeNodeComponent("rectangle149"),
-    rectangle150: makeNodeComponent("rectangle150"),
-    rectangle151: makeNodeComponent("rectangle151"),
-    frame2403: makeNodeComponent("frame2403"),
-    inputText9: makeNodeComponent("inputText9"),
-    inputWithLabel4: makeNodeComponent("inputWithLabel4"),
-    inputText10: makeNodeComponent("inputText10"),
-    textareaInput: makeNodeComponent("textareaInput"),
-    inputText11: makeNodeComponent("inputText11"),
-    frame2404: makeNodeComponent("frame2404"),
-    passwordStrengthBar4: makeNodeComponent("passwordStrengthBar4"),
-    rectangle152: makeNodeComponent("rectangle152"),
-    rectangle153: makeNodeComponent("rectangle153"),
-    rectangle154: makeNodeComponent("rectangle154"),
-    rectangle155: makeNodeComponent("rectangle155"),
-    frame2405: makeNodeComponent("frame2405"),
-    inputText12: makeNodeComponent("inputText12"),
-    frame2406: makeNodeComponent("frame2406"),
+    form2: makeNodeComponent("form2"),
+    input: makeNodeComponent("input"),
+    input3: makeNodeComponent("input3"),
+    input2: makeNodeComponent("input2"),
+    textArea: makeNodeComponent("textArea"),
     button: makeNodeComponent("button"),
     section: makeNodeComponent("section"),
     upper2: makeNodeComponent("upper2"),

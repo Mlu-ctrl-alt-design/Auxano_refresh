@@ -20,6 +20,7 @@ import {
 } from "@plasmicapp/react-web";
 import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_auxano.module.css"; // plasmic-import: oGQcGtbFzYohLFbpGrRxL3/projectcss
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: 6NjpMkUH8g-/css
 import IconOutlineatSymbolIcon from "./icons/PlasmicIcon__IconOutlineatSymbol"; // plasmic-import: kpU_nZgOJW/icon
@@ -77,6 +78,7 @@ function PlasmicFooter__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.footer
       )}
     >
