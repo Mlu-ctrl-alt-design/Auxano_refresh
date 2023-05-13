@@ -1,9 +1,9 @@
 import React from "react";
-import Homepage from './components/Homepage.jsx';
+import Routes from './Routes'
 
 function Index() {
   return (
-   <Homepage />
+   <Routes />
   )
 }
 
