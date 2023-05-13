@@ -255,6 +255,124 @@ function PlasmicFooter__RenderFunc(props) {
         </p.Stack>
         <p.Stack
           as={"div"}
+          data-plasmic-name={"logo"}
+          data-plasmic-override={overrides.logo}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.logo)}
+        >
+          <p.Stack
+            as={"div"}
+            data-plasmic-name={"logo21"}
+            data-plasmic-override={overrides.logo21}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.logo21)}
+          >
+            <div
+              data-plasmic-name={"layer2"}
+              data-plasmic-override={overrides.layer2}
+              className={classNames(projectcss.all, sty.layer2)}
+            >
+              <div
+                data-plasmic-name={"layer1"}
+                data-plasmic-override={overrides.layer1}
+                className={classNames(projectcss.all, sty.layer1)}
+              >
+                <VectorIcon
+                  className={classNames(projectcss.all, sty.svg__fqnwO)}
+                  role={"img"}
+                />
+
+                <Vector2Icon
+                  className={classNames(projectcss.all, sty.svg__vSiFl)}
+                  role={"img"}
+                />
+
+                <Vector3Icon
+                  className={classNames(projectcss.all, sty.svg__pxmoe)}
+                  role={"img"}
+                />
+
+                <Vector4Icon
+                  className={classNames(projectcss.all, sty.svg__htB0V)}
+                  role={"img"}
+                />
+
+                <Vector5Icon
+                  className={classNames(projectcss.all, sty.svg__gUxuM)}
+                  role={"img"}
+                />
+
+                <Vector6Icon
+                  className={classNames(projectcss.all, sty.svg__lhoP)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__db1ZX
+                  )}
+                >
+                  {"BUSINESS CONSULTING"}
+                </div>
+                <Vector7Icon
+                  className={classNames(projectcss.all, sty.svg__nvpy)}
+                  role={"img"}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__tYgd3)}
+                  displayHeight={"45px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"38px"}
+                  loading={"lazy"}
+                  src={{
+                    src: vector1053NCxLRcA,
+                    fullWidth: 38,
+                    fullHeight: 45,
+                    aspectRatio: 0.844444
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___00DdR)}
+                  displayHeight={"67px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"42px"}
+                  loading={"lazy"}
+                  src={{
+                    src: vector11HvPQaGEjAa,
+                    fullWidth: 42,
+                    fullHeight: 67,
+                    aspectRatio: 0.626866
+                  }}
+                />
+              </div>
+            </div>
+          </p.Stack>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__bxWy1
+            )}
+          >
+            {hasVariant(globalVariants, "screen", "tabletOnly")
+              ? "We’ve mastered ABC's of business rescue, corporate restructure, and turnaround strategy; Let us help you."
+              : "We’ve mastered ABC's of business rescue, corporate restructure, and turnaround strategy; Let us help you."}
+          </div>
+        </p.Stack>
+        <p.Stack
+          as={"div"}
           data-plasmic-name={"frame12"}
           data-plasmic-override={overrides.frame12}
           hasGap={true}
@@ -280,145 +398,6 @@ function PlasmicFooter__RenderFunc(props) {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox__yccL)}
                 >
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"logo"}
-                    data-plasmic-override={overrides.logo}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.logo)}
-                  >
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"logo21"}
-                      data-plasmic-override={overrides.logo21}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.logo21)}
-                    >
-                      <div
-                        data-plasmic-name={"layer2"}
-                        data-plasmic-override={overrides.layer2}
-                        className={classNames(projectcss.all, sty.layer2)}
-                      >
-                        <div
-                          data-plasmic-name={"layer1"}
-                          data-plasmic-override={overrides.layer1}
-                          className={classNames(projectcss.all, sty.layer1)}
-                        >
-                          <VectorIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__fqnwO
-                            )}
-                            role={"img"}
-                          />
-
-                          <Vector2Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__vSiFl
-                            )}
-                            role={"img"}
-                          />
-
-                          <Vector3Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__pxmoe
-                            )}
-                            role={"img"}
-                          />
-
-                          <Vector4Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__htB0V
-                            )}
-                            role={"img"}
-                          />
-
-                          <Vector5Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__gUxuM
-                            )}
-                            role={"img"}
-                          />
-
-                          <Vector6Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__lhoP
-                            )}
-                            role={"img"}
-                          />
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__db1ZX
-                            )}
-                          >
-                            {"BUSINESS CONSULTING"}
-                          </div>
-                          <Vector7Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__nvpy
-                            )}
-                            role={"img"}
-                          />
-
-                          <p.PlasmicImg
-                            alt={""}
-                            className={classNames(sty.img__tYgd3)}
-                            displayHeight={"45px"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"38px"}
-                            loading={"lazy"}
-                            src={{
-                              src: vector1053NCxLRcA,
-                              fullWidth: 38,
-                              fullHeight: 45,
-                              aspectRatio: 0.844444
-                            }}
-                          />
-
-                          <p.PlasmicImg
-                            alt={""}
-                            className={classNames(sty.img___00DdR)}
-                            displayHeight={"67px"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"42px"}
-                            loading={"lazy"}
-                            src={{
-                              src: vector11HvPQaGEjAa,
-                              fullWidth: 42,
-                              fullHeight: 67,
-                              aspectRatio: 0.626866
-                            }}
-                          />
-                        </div>
-                      </div>
-                    </p.Stack>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__bxWy1
-                      )}
-                    >
-                      {hasVariant(globalVariants, "screen", "tabletOnly")
-                        ? "We’ve mastered ABC's of business rescue, corporate restructure, and turnaround strategy; Let us help you."
-                        : "We’ve mastered ABC's of business rescue, corporate restructure, and turnaround strategy; Let us help you."}
-                    </div>
-                  </p.Stack>
                   <p.Stack
                     as={"div"}
                     data-plasmic-name={"frame9"}
@@ -853,13 +832,13 @@ const PlasmicDescendants = {
     "frame1",
     "buttonName",
     "icon3",
-    "frame12",
-    "frame6",
-    "widgwts",
     "logo",
     "logo21",
     "layer2",
     "layer1",
+    "frame12",
+    "frame6",
+    "widgwts",
     "frame9",
     "widget2",
     "helpMenu",
@@ -917,13 +896,13 @@ const PlasmicDescendants = {
     "frame1",
     "buttonName",
     "icon3",
-    "frame12",
-    "frame6",
-    "widgwts",
     "logo",
     "logo21",
     "layer2",
     "layer1",
+    "frame12",
+    "frame6",
+    "widgwts",
     "frame9",
     "widget2",
     "helpMenu",
@@ -1079,14 +1058,14 @@ const PlasmicDescendants = {
   frame1: ["frame1", "buttonName", "icon3"],
   buttonName: ["buttonName"],
   icon3: ["icon3"],
+  logo: ["logo", "logo21", "layer2", "layer1"],
+  logo21: ["logo21", "layer2", "layer1"],
+  layer2: ["layer2", "layer1"],
+  layer1: ["layer1"],
   frame12: [
     "frame12",
     "frame6",
     "widgwts",
-    "logo",
-    "logo21",
-    "layer2",
-    "layer1",
     "frame9",
     "widget2",
     "helpMenu",
@@ -1130,10 +1109,6 @@ const PlasmicDescendants = {
   frame6: [
     "frame6",
     "widgwts",
-    "logo",
-    "logo21",
-    "layer2",
-    "layer1",
     "frame9",
     "widget2",
     "helpMenu",
@@ -1173,10 +1148,6 @@ const PlasmicDescendants = {
 
   widgwts: [
     "widgwts",
-    "logo",
-    "logo21",
-    "layer2",
-    "layer1",
     "frame9",
     "widget2",
     "helpMenu",
@@ -1214,10 +1185,6 @@ const PlasmicDescendants = {
     "aboutFeaturesWorks20"
   ],
 
-  logo: ["logo", "logo21", "layer2", "layer1"],
-  logo21: ["logo21", "layer2", "layer1"],
-  layer2: ["layer2", "layer1"],
-  layer1: ["layer1"],
   frame9: [
     "frame9",
     "widget2",
@@ -1392,13 +1359,13 @@ export const PlasmicFooter = Object.assign(
     frame1: makeNodeComponent("frame1"),
     buttonName: makeNodeComponent("buttonName"),
     icon3: makeNodeComponent("icon3"),
-    frame12: makeNodeComponent("frame12"),
-    frame6: makeNodeComponent("frame6"),
-    widgwts: makeNodeComponent("widgwts"),
     logo: makeNodeComponent("logo"),
     logo21: makeNodeComponent("logo21"),
     layer2: makeNodeComponent("layer2"),
     layer1: makeNodeComponent("layer1"),
+    frame12: makeNodeComponent("frame12"),
+    frame6: makeNodeComponent("frame6"),
+    widgwts: makeNodeComponent("widgwts"),
     frame9: makeNodeComponent("frame9"),
     widget2: makeNodeComponent("widget2"),
     helpMenu: makeNodeComponent("helpMenu"),

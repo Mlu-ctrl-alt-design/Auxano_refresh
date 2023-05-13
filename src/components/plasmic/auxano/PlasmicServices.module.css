@@ -61,15 +61,6 @@
   > img {
   margin-top: 64px;
 }
-.header {
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 .content {
   height: auto;
   display: flex;
@@ -93,15 +84,6 @@
   > picture
   > img {
   margin-top: 24px;
-}
-.content {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 .frame39 {
   width: auto;
@@ -129,21 +111,10 @@
   > img {
   margin-left: 10px;
 }
-.frame39 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border-radius: 12px;
-  padding: 10px;
-}
 .text__klvHm {
   display: block;
   font-size: 14px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 20px;
@@ -200,22 +171,6 @@
   > img {
   margin-top: 48px;
 }
-.section {
-  background: rgba(255, 255, 255, 1);
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-width: 0;
-  padding: 64px 128px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .section {
-    padding: 24px 16px;
-  }
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .section {
     padding: 24px 16px;
@@ -246,20 +201,10 @@
   > img {
   margin-left: 10px;
 }
-.frame27 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 10px;
-}
 .text__dUtOo {
   display: block;
   font-size: 36px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 40px;
@@ -336,18 +281,6 @@
 ._1 > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 24px;
 }
-._1 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border-radius: 8px;
-  padding: 24px;
-  border: 2px solid var(--token-kIXZiwkj8);
-}
 @media (min-width: 0px) and (max-width: 768px) {
   ._1 {
     width: 100%;
@@ -356,12 +289,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   ._1 > :global(.__wab_flex-container) {
-    min-width: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  ._1 {
-    width: 100%;
     min-width: 0;
   }
 }
@@ -383,7 +310,7 @@
 .text__xZbmV {
   display: block;
   font-size: 24px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 32px;
@@ -399,7 +326,7 @@
 .text__kzIUn {
   display: block;
   font-size: 16px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 24px;
@@ -451,29 +378,10 @@
   > img {
   margin-left: 8px;
 }
-.button {
-  background: linear-gradient(
-      180deg,
-      rgba(176, 80, 36, 1) 0%,
-      rgba(225, 113, 36, 1) 99%
-    )
-    0% 0% / 100% 100% no-repeat;
-  width: auto;
-  height: 44px;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  border-radius: 4px;
-  padding: 10px 16px;
-}
 .text__rUxni {
   display: block;
   font-size: 16px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 24px;
@@ -614,20 +522,6 @@
 ._2 > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 24px;
 }
-._2 {
-  filter: drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1))
-    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.059));
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border-radius: 8px;
-  padding: 24px;
-  border: 3px solid var(--token-kIXZiwkj8);
-}
 @media (min-width: 0px) and (max-width: 768px) {
   ._2 {
     width: 100%;
@@ -637,13 +531,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   ._2 > :global(.__wab_flex-container) {
-    min-width: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  ._2 {
-    width: 100%;
-    max-width: 100%;
     min-width: 0;
   }
 }
@@ -666,7 +553,7 @@
 .text__ekXne {
   display: block;
   font-size: 24px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 32px;
@@ -678,7 +565,7 @@
 .text__ynE0A {
   display: block;
   font-size: 16px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 24px;
@@ -730,29 +617,10 @@
   > img {
   margin-left: 8px;
 }
-.button2 {
-  background: linear-gradient(
-      180deg,
-      rgba(176, 80, 36, 1) 0%,
-      rgba(225, 113, 36, 1) 99%
-    )
-    0% 0% / 100% 100% no-repeat;
-  width: auto;
-  height: 44px;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  border-radius: 4px;
-  padding: 10px 16px;
-}
 .text2 {
   display: block;
   font-size: 16px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 24px;

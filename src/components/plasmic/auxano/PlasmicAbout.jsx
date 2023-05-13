@@ -12,12 +12,15 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/react-web/lib/host";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import NavBarFinal from "../../NavBarFinal"; // plasmic-import: Ba2YaKrrpo/component
 import Footer from "../../Footer"; // plasmic-import: 6NjpMkUH8g-/component
+import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_auxano.module.css"; // plasmic-import: oGQcGtbFzYohLFbpGrRxL3/projectcss
@@ -49,6 +52,9 @@ function PlasmicAbout__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsbmXrKiwboivdw()
+  });
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -205,19 +211,28 @@ function PlasmicAbout__RenderFunc(props) {
                       data-plasmic-override={overrides.imageGallery}
                       className={classNames(projectcss.all, sty.imageGallery)}
                     >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame32"}
-                        data-plasmic-override={overrides.frame32}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame32)}
-                      >
-                        <div
-                          data-plasmic-name={"rectangle5"}
-                          data-plasmic-override={overrides.rectangle5}
-                          className={classNames(projectcss.all, sty.rectangle5)}
-                        />
-                      </p.Stack>
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <p.Stack
+                          as={"div"}
+                          data-plasmic-name={"frame32"}
+                          data-plasmic-override={overrides.frame32}
+                          hasGap={true}
+                          className={classNames(projectcss.all, sty.frame32)}
+                        >
+                          <div
+                            data-plasmic-name={"rectangle5"}
+                            data-plasmic-override={overrides.rectangle5}
+                            className={classNames(
+                              projectcss.all,
+                              sty.rectangle5
+                            )}
+                          />
+                        </p.Stack>
+                      ) : null}
                       <p.Stack
                         as={"div"}
                         data-plasmic-name={"frame34"}

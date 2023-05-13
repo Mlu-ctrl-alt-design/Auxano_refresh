@@ -98,15 +98,6 @@
   > img {
   margin-top: 64px;
 }
-.header2 {
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 .content {
   height: auto;
   display: flex;
@@ -130,15 +121,6 @@
   > picture
   > img {
   margin-top: 24px;
-}
-.content {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 .frame39 {
   width: auto;
@@ -166,21 +148,10 @@
   > img {
   margin-left: 10px;
 }
-.frame39 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border-radius: 12px;
-  padding: 10px;
-}
 .text__nQ4Vb {
   display: block;
   font-size: 14px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 20px;
@@ -295,24 +266,6 @@
   > img {
   margin-top: 10px;
 }
-.frame2399 {
-  background: linear-gradient(103deg, #ececec 0%, #ececec73 100%) 0% 0% / 100%
-      100% repeat,
-    rgba(222, 222, 222, 1);
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 32px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame2399 {
-    padding: 16px;
-  }
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame2399 {
     padding: 16px;
@@ -338,19 +291,10 @@
 .upper > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 16px;
 }
-.upper {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 .text__guUjB {
   display: block;
   font-size: 30px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 36px;
@@ -360,7 +304,7 @@
 .text__vgrrx {
   display: block;
   font-size: 18px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 28px;
@@ -395,16 +339,6 @@
 .phone > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 10px;
 }
-.phone {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 10px;
-}
 .svg___374Oe {
   position: relative;
   object-fit: cover;
@@ -419,7 +353,7 @@
 .text___07Yfj {
   display: block;
   font-size: 16px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 24px;
@@ -451,16 +385,6 @@
   > img {
   margin-left: 10px;
 }
-.secondPhone {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 10px;
-}
 .svg__wpC9G {
   position: relative;
   object-fit: cover;
@@ -475,7 +399,7 @@
 .text___0MefW {
   display: block;
   font-size: 16px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 24px;
@@ -503,16 +427,6 @@
 .mail > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 10px;
 }
-.mail {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 10px;
-}
 .svg___4KgUa {
   position: relative;
   object-fit: cover;
@@ -528,7 +442,7 @@
   display: block;
   font-size: 18px;
   text-decoration-line: underline;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 28px;
@@ -598,18 +512,6 @@
   > picture
   > img {
   margin-left: 24px;
-}
-.freeBox {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-  padding: 0px;
 }
 .formItem__u42Fz:global(.__wab_instance) {
   max-width: 100%;
@@ -735,23 +637,6 @@
   > img {
   margin-top: 24px;
 }
-.section {
-  background: rgba(255, 255, 255, 1);
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  grid-column-start: 1;
-  grid-column-end: -1;
-  padding: 48px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .section {
-    padding: 56px 16px;
-  }
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .section {
     padding: 56px 16px;
@@ -781,19 +666,10 @@
   > img {
   margin-top: 16px;
 }
-.upper2 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 .text__bz8NH {
   display: block;
   font-size: 30px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 36px;
@@ -803,7 +679,7 @@
 .text___09SYs {
   display: block;
   font-size: 18px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 28px;
@@ -840,18 +716,6 @@
   margin-left: 64px;
   margin-top: 64px;
 }
-.addresses {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: space-evenly;
-  padding: 48px 12px;
-}
 .nelspruit {
   width: auto;
   height: auto;
@@ -877,16 +741,6 @@
   > img {
   margin-top: 16px;
 }
-.nelspruit {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 16px;
-}
 .nelspruit2 {
   position: relative;
   width: 114px;
@@ -899,7 +753,7 @@
 .text__g3BYs {
   display: block;
   font-size: 24px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 32px;
@@ -908,7 +762,7 @@
 .text__hmGsb {
   display: block;
   font-size: 16px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 24px;
@@ -940,16 +794,6 @@
   > img {
   margin-top: 16px;
 }
-.headoffice {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 16px;
-}
 .headOfficeJhb {
   position: relative;
   width: 216px;
@@ -962,7 +806,7 @@
 .text__deJRd {
   display: block;
   font-size: 24px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 32px;
@@ -971,7 +815,7 @@
 .text__sb6Tx {
   display: block;
   font-size: 16px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 24px;
@@ -1003,16 +847,6 @@
   > img {
   margin-top: 16px;
 }
-.polokwane {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 16px;
-}
 .polokwane2 {
   position: relative;
   width: 137px;
@@ -1025,7 +859,7 @@
 .text___6Io5U {
   display: block;
   font-size: 24px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 32px;
@@ -1034,7 +868,7 @@
 .text__s9NYp {
   display: block;
   font-size: 16px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 24px;
@@ -1062,16 +896,6 @@
 .pta > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 16px;
 }
-.pta {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 16px;
-}
 .pretoria {
   position: relative;
   width: 98px;
@@ -1084,7 +908,7 @@
 .text__kBdCm {
   display: block;
   font-size: 24px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 32px;
@@ -1093,7 +917,7 @@
 .text__bMrpy {
   display: block;
   font-size: 16px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 24px;

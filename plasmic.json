@@ -511,8 +511,7 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "kmmGrmCVRJPgZ5NNJMDQ4v",
@@ -541,8 +540,7 @@
           "name": "WordpressProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-wordpress"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -713,8 +711,7 @@
           "name": "UploadWrapper",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerUpload"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     }
   ],
   "globalVariants": {
@@ -734,6 +731,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.274",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.274/dist/plasmic.schema.json"
+  "cliVersion": "0.1.275",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.275/dist/plasmic.schema.json"
 }

@@ -80,18 +80,6 @@
   > img {
   margin-top: var(--token-uyB8FyBfU);
 }
-.column__leZ2A {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  min-width: 0;
-  padding: 8px;
-}
 .freeBox__cuWbo {
   display: flex;
   position: relative;
@@ -215,24 +203,6 @@
   > img {
   margin-top: 32px;
 }
-.column__ehnGh {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: center;
-  align-items: center;
-  background: var(--token-xWnLbHkzL);
-  min-width: 0;
-  padding: 64px 128px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .column__ehnGh {
-    padding: 24px 16px;
-  }
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .column__ehnGh {
     padding: 24px 16px;
@@ -348,23 +318,6 @@
   > img {
   margin-top: 64px;
 }
-.featuresSection {
-  background: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 32px 24px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .featuresSection {
-    width: auto;
-    padding: 32px 24px;
-  }
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .featuresSection {
     width: auto;
@@ -397,22 +350,11 @@
   > img {
   margin-top: 16px;
 }
-.container {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 32px;
-  padding-right: 32px;
-}
 .heading {
   display: block;
   font-size: 30px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 36px;
@@ -424,7 +366,7 @@
   display: block;
   font-size: 16px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 24px;
@@ -455,15 +397,6 @@
   > img {
   margin-top: 96px;
 }
-.container2 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
 .content {
   height: auto;
   display: flex;
@@ -489,17 +422,6 @@
   > picture
   > img {
   margin-left: var(--token-uyB8FyBfU);
-}
-.content {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  align-content: stretch;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .content {
@@ -529,14 +451,6 @@
     > img {
     margin-left: 0px;
     margin-top: var(--token-uyB8FyBfU);
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
   }
 }
 .freeBox__v6Okf {
@@ -576,16 +490,6 @@
   > picture
   > img {
   margin-top: 20px;
-}
-.featureText {
-  height: auto;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .featureText > :global(.__wab_flex-container) {
@@ -658,20 +562,11 @@
   > img {
   margin-top: 8px;
 }
-.textAndSupportingText {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
 .text__a3Sh {
   display: block;
   font-size: 24px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 32px;
@@ -683,7 +578,7 @@
   display: block;
   font-size: 16px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 24px;
@@ -717,17 +612,6 @@
   > picture
   > img {
   margin-top: 20px;
-}
-.featureText2 {
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .featureText2 > :global(.__wab_flex-container) {
@@ -800,20 +684,11 @@
   > img {
   margin-top: 8px;
 }
-.textAndSupportingText2 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
 .text2 {
   display: block;
   font-size: 24px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 32px;
@@ -825,7 +700,7 @@
   display: block;
   font-size: 16px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 24px;
@@ -870,16 +745,6 @@
   > picture
   > img {
   margin-top: 20px;
-}
-.featureText3 {
-  height: auto;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .featureText3 > :global(.__wab_flex-container) {
@@ -952,20 +817,11 @@
   > img {
   margin-top: 8px;
 }
-.textAndSupportingText3 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
 .text3 {
   display: block;
   font-size: 24px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 32px;
@@ -977,7 +833,7 @@
   display: block;
   font-size: 16px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 24px;
@@ -1018,15 +874,6 @@
   > img {
   margin-left: 8px;
 }
-.buttonBase {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
 .arrowRight {
   width: 20px;
   height: 20px;
@@ -1061,17 +908,6 @@
   > picture
   > img {
   margin-top: 20px;
-}
-.featureText4 {
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .featureText4 > :global(.__wab_flex-container) {
@@ -1168,20 +1004,11 @@
   > img {
   margin-top: 8px;
 }
-.textAndSupportingText4 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
 .text4 {
   display: block;
   font-size: 24px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 32px;
@@ -1193,7 +1020,7 @@
   display: block;
   font-size: 16px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 24px;
@@ -1230,25 +1057,6 @@
   > picture
   > img {
   margin-top: 48px;
-}
-.servicesSection {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  background: linear-gradient(180deg, var(--token-kIXZiwkj8) 0%, #d96c25 100%)
-    0% 0% / 100% 100% repeat;
-  min-width: 0;
-  padding: 64px 128px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .servicesSection {
-    padding: 32px 24px;
-  }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .servicesSection {
@@ -1334,18 +1142,6 @@
 .columns {
   --plsmc-rc-col-gap: 0px;
 }
-.columns {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: auto;
-  align-items: stretch;
-  flex-shrink: 1;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  min-width: 0;
-  padding: 8px;
-}
 .columns > :global(.__wab_flex-container) > :nth-child(2n + 1) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
 }
@@ -1382,15 +1178,6 @@
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .columns {
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-width: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
   .columns > :global(.__wab_flex-container) > :nth-child(1n + 1) {
     width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
   }
@@ -1424,20 +1211,6 @@
   > picture
   > img {
   margin-top: 24px;
-}
-.column__uYw0O {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  min-width: 0;
-  border-radius: 8px;
-  padding: 24px;
-  border: 3px solid var(--token-_SJKE-afz);
 }
 .text__ralEc {
   position: relative;
@@ -1536,26 +1309,6 @@
   > img {
   margin-top: 10px;
 }
-.teamSection {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  grid-column-start: 2;
-  grid-column-end: -2;
-  padding: 64px 0px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .teamSection {
-    width: 100%;
-    justify-self: flex-start;
-    grid-column-start: 1;
-    grid-column-end: -1;
-    padding: 24px;
-  }
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .teamSection {
     width: 100%;
@@ -1623,24 +1376,6 @@
   > img {
   margin-top: 24px;
 }
-.meetTheTeam {
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  max-width: 50%;
-  min-width: 0;
-  padding: 24px 8px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .meetTheTeam {
-    max-width: 100%;
-  }
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .meetTheTeam {
     max-width: 100%;
@@ -1649,7 +1384,7 @@
 .text___17PH {
   display: block;
   font-size: 30px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 36px;
@@ -1661,7 +1396,7 @@
 .text__hHtHd {
   display: block;
   font-size: 16px;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 24px;
@@ -1731,27 +1466,6 @@
   > img {
   margin-top: 10px;
 }
-.person {
-  background: linear-gradient(
-        180deg,
-        #46546833 7%,
-        #4654681a 102%,
-        rgba(0, 0, 0, 0.33) 147%
-      )
-      0% 0% / 100% 100% no-repeat,
-    url("./images/person.jpg") center center / cover no-repeat,
-    rgba(255, 255, 255, 1);
-  height: 300px;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  width: 100%;
-  min-width: 0;
-  padding: 32px 16px 12px;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .person {
     width: 100%;
@@ -1760,12 +1474,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .person > :global(.__wab_flex-container) {
-    min-width: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .person {
-    width: 100%;
     min-width: 0;
   }
 }
@@ -1782,7 +1490,7 @@
   display: block;
   font-size: 18px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 28px;
@@ -1793,7 +1501,7 @@
   display: block;
   font-size: 12px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 16px;
@@ -1837,27 +1545,6 @@
   > img {
   margin-top: 10px;
 }
-.person2 {
-  background: linear-gradient(
-        180deg,
-        #fcfcfc33 7%,
-        #465468 102%,
-        rgba(0, 0, 0, 0.33) 147%
-      )
-      0% 0% / 100% 100% no-repeat,
-    url("./images/person2.jpg") center center / cover no-repeat,
-    rgba(255, 255, 255, 1);
-  height: 300px;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  width: 100%;
-  min-width: 0;
-  padding: 32px 16px 12px;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .person2 {
     width: 100%;
@@ -1866,12 +1553,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .person2 > :global(.__wab_flex-container) {
-    min-width: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .person2 {
-    width: 100%;
     min-width: 0;
   }
 }
@@ -1888,7 +1569,7 @@
   display: block;
   font-size: 18px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 28px;
@@ -1899,7 +1580,7 @@
   display: block;
   font-size: 12px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 16px;
@@ -1960,19 +1641,6 @@
   > img {
   margin-top: 10px;
 }
-.person3 {
-  background: linear-gradient(180deg, #46546833 102%, rgba(0, 0, 0, 0.33) 147%)
-      0% 0% / 100% 100% no-repeat,
-    url("./images/person3.jpg") center center / cover no-repeat;
-  height: 271px;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 32px 16px 12px;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .person3 {
     width: 100%;
@@ -1982,13 +1650,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .person3 > :global(.__wab_flex-container) {
-    min-width: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .person3 {
-    width: 100%;
-    height: 239px;
     min-width: 0;
   }
 }
@@ -2005,7 +1666,7 @@
   display: block;
   font-size: 18px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 28px;
@@ -2016,7 +1677,7 @@
   display: block;
   font-size: 12px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 16px;
@@ -2057,25 +1718,6 @@
   > img {
   margin-top: 10px;
 }
-.person4 {
-  background: linear-gradient(
-        180deg,
-        #cccfd233 7%,
-        #465468 102%,
-        rgba(0, 0, 0, 0.33) 147%
-      )
-      0% 0% / 100% 100% no-repeat,
-    url("./images/person3.jpg") center center / cover no-repeat,
-    rgba(255, 255, 255, 1);
-  height: 271px;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 32px 16px 12px;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .person4 {
     width: 100%;
@@ -2085,13 +1727,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .person4 > :global(.__wab_flex-container) {
-    min-width: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .person4 {
-    width: 100%;
-    height: 239px;
     min-width: 0;
   }
 }
@@ -2108,7 +1743,7 @@
   display: block;
   font-size: 18px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 28px;
@@ -2119,7 +1754,7 @@
   display: block;
   font-size: 12px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 16px;
@@ -2155,20 +1790,6 @@
   > img {
   margin-top: 10px;
 }
-.person5 {
-  background: linear-gradient(180deg, #46546833 102%, rgba(0, 0, 0, 0.33) 147%)
-      0% 0% / 100% 100% no-repeat,
-    url("./images/person6.jpg") center center / cover no-repeat,
-    rgba(255, 255, 255, 1);
-  height: 271px;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 32px 16px 12px;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .person5 {
     width: 100%;
@@ -2178,13 +1799,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .person5 > :global(.__wab_flex-container) {
-    min-width: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .person5 {
-    width: 100%;
-    height: 239px;
     min-width: 0;
   }
 }
@@ -2201,7 +1815,7 @@
   display: block;
   font-size: 18px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 28px;
@@ -2212,7 +1826,7 @@
   display: block;
   font-size: 12px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 16px;
@@ -2244,24 +1858,6 @@
   > picture
   > img {
   margin-top: 10px;
-}
-.testimonial {
-  background: rgba(255, 255, 255, 1);
-  width: 1440px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .testimonial {
-    width: 100%;
-    grid-column-start: 2;
-    grid-column-end: -2;
-  }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .testimonial {
@@ -2295,16 +1891,6 @@
   > img {
   margin-top: 52px;
 }
-.frame26 {
-  background: rgba(255, 255, 255, 1);
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
 .frame25 {
   height: auto;
   display: flex;
@@ -2330,21 +1916,11 @@
   > img {
   margin-top: 10px;
 }
-.frame25 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 10px;
-}
 .text__cFwF {
   display: block;
   font-size: 36px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 40px;
@@ -2356,7 +1932,7 @@
   display: block;
   font-size: 16px;
   text-align: center;
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 24px;
@@ -2388,18 +1964,6 @@
 .list > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 24px;
 }
-.list {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding-right: 128px;
-  padding-left: 128px;
-  min-width: 0;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .list {
     padding-right: 24px;
@@ -2428,14 +1992,6 @@
     > img {
     margin-left: 0px;
     margin-top: var(--token-uyB8FyBfU);
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .list {
-    padding-right: 24px;
-    padding-left: 24px;
-    display: flex;
-    flex-direction: column;
   }
 }
 ._1 {
@@ -2776,17 +2332,6 @@
   > img {
   margin-top: 10px;
 }
-.buttonPrimaryWithIcon {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  padding: 16px;
-}
 .frame1 {
   width: auto;
   height: auto;
@@ -2810,15 +2355,6 @@
   > picture
   > img {
   margin-left: 9px;
-}
-.frame1 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 .seeAllReviews {
   display: block;
@@ -2862,20 +2398,6 @@
 .icon > :global(.__wab_flex-container) > picture > img,
 .icon > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 10px;
-}
-.icon {
-  transform: scale(1.0005563452399868, 0.9998487389133986)
-    rotate(-45.040491710229254deg) skew(-0.04046307398010047deg, 0deg);
-  width: auto;
-  height: auto;
-  display: flex;
-  transform-origin: top left;
-  position: absolute;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  left: 0px;
-  top: 13px;
 }
 .svg__frkdn {
   position: relative;
