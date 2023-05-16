@@ -180,6 +180,7 @@ function PlasmicHomepage__RenderFunc(props) {
               </div>
               <Button2
                 className={classNames("__wab_instance", sty.button2__aoojX)}
+                submitsForm={true}
               >
                 <div
                   className={classNames(
@@ -688,6 +689,7 @@ function PlasmicHomepage__RenderFunc(props) {
               <Button2
                 className={classNames("__wab_instance", sty.button2__t9Auy)}
                 link={`/services`}
+                submitsForm={true}
               >
                 {"View all our Services"}
               </Button2>
@@ -754,6 +756,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 <Button2
                   className={classNames("__wab_instance", sty.button2___8FNws)}
                   link={`/contact`}
+                  submitsForm={true}
                 >
                   {"Get in touch"}
                 </Button2>

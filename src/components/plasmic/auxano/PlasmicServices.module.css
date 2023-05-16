@@ -336,7 +336,8 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .text__kzIUn {
-    width: 644px;
+    width: 100%;
+    min-width: 0;
   }
 }
 @media (max-width: 375px) {
@@ -575,7 +576,8 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .text__ynE0A {
-    width: 648px;
+    width: 100%;
+    min-width: 0;
   }
 }
 @media (max-width: 375px) {

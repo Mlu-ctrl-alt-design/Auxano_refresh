@@ -129,7 +129,9 @@ function PlasmicFooter__RenderFunc(props) {
                       sty.text__eewQe
                     )}
                   >
-                    {"Subscribe to our newsletter"}
+                    {hasVariant(globalVariants, "screen", "tabletOnly")
+                      ? "Subscribe to our newsletter"
+                      : "Subscribe to our newsletter"}
                   </div>
                   <p.Stack
                     as={"div"}
