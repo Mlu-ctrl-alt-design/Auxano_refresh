@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.275",
+    "@plasmicapp/cli": "^0.1.284",
     "@plasmicapp/host": "^1.0.126",
     "@plasmicapp/react-web": "^0.2.194",
     "@plasmicpkgs/antd5": "^0.0.55",
+    "@plasmicpkgs/plasmic-cms": "^0.0.192",
     "@plasmicpkgs/plasmic-nav": "^0.0.96",
     "@plasmicpkgs/plasmic-wordpress": "^0.0.54",
     "@testing-library/jest-dom": "^5.16.5",

@@ -345,6 +345,9 @@ function PlasmicContact__RenderFunc(props) {
                                 startIndex,
                                 deleteCount
                               }) => {
+                                if (!variable) {
+                                  return;
+                                }
                                 const { objRoot, variablePath } = variable;
                                 p.set(objRoot, variablePath, value);
                                 return value;
@@ -381,7 +384,7 @@ function PlasmicContact__RenderFunc(props) {
                       <FormItemWrapper
                         className={classNames(
                           "__wab_instance",
-                          sty.formItem__u42Fz
+                          sty.formField__u42Fz
                         )}
                         label={
                           <div
@@ -438,7 +441,7 @@ function PlasmicContact__RenderFunc(props) {
                       <FormItemWrapper
                         className={classNames(
                           "__wab_instance",
-                          sty.formItem__eVvM
+                          sty.formField__eVvM
                         )}
                         label={
                           <div
@@ -496,7 +499,7 @@ function PlasmicContact__RenderFunc(props) {
                   <FormItemWrapper
                     className={classNames(
                       "__wab_instance",
-                      sty.formItem___34IgX
+                      sty.formField___34IgX
                     )}
                     label={
                       <div
@@ -551,7 +554,7 @@ function PlasmicContact__RenderFunc(props) {
                   <FormItemWrapper
                     className={classNames(
                       "__wab_instance",
-                      sty.formItem__l1Rtp
+                      sty.formField__l1Rtp
                     )}
                     label={
                       <div

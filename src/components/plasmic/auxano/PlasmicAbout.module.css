@@ -113,8 +113,9 @@
   display: flex;
   position: relative;
   flex-direction: row;
-  border-radius: 12px;
+  border-radius: 12px 0px;
   padding: 10px;
+  border: 1px solid var(--token-xWnLbHkzL);
 }
 .frame39 > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -417,6 +418,7 @@
     flex-wrap: nowrap;
     align-items: stretch;
     align-content: stretch;
+    display: none;
   }
 }
 .imageGallery {
@@ -621,9 +623,10 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .rectangle9 {
-    width: 628px;
+    width: 100%;
     padding-right: 462px;
     margin-right: 0px;
+    min-width: 0;
   }
 }
 @media (max-width: 375px) {

@@ -6,9 +6,15 @@
 import * as React from "react";
 import { WordpressProvider } from "@plasmicpkgs/plasmic-wordpress"; // plasmic-import: ABVULPU3AuC/codeComponent
 import { AntdConfigProvider } from "@plasmicpkgs/antd5/skinny/registerConfigProvider"; // plasmic-import: DmrLLHGTjGTE/codeComponent
+import { CmsCredentialsProvider } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: OREVbGCcgN/codeComponent
 
 export default function GlobalContextsProvider(props) {
-  const { children, wordpressProviderProps, antdConfigProviderProps } = props;
+  const {
+    children,
+    wordpressProviderProps,
+    antdConfigProviderProps,
+    cmsCredentialsProviderProps
+  } = props;
   return (
     <WordpressProvider
       {...wordpressProviderProps}
@@ -43,7 +49,9 @@ export default function GlobalContextsProvider(props) {
         colorPrimary={
           antdConfigProviderProps && "colorPrimary" in antdConfigProviderProps
             ? antdConfigProviderProps.colorPrimary
-            : "#1677ff"
+            : true
+            ? "#D36134"
+            : undefined
         }
         colorSuccess={
           antdConfigProviderProps && "colorSuccess" in antdConfigProviderProps
@@ -92,10 +100,37 @@ export default function GlobalContextsProvider(props) {
         wireframe={
           antdConfigProviderProps && "wireframe" in antdConfigProviderProps
             ? antdConfigProviderProps.wireframe
-            : true
+            : false
         }
       >
-        {children}
+        <CmsCredentialsProvider
+          {...cmsCredentialsProviderProps}
+          databaseId={
+            cmsCredentialsProviderProps &&
+            "databaseId" in cmsCredentialsProviderProps
+              ? cmsCredentialsProviderProps.databaseId
+              : "6ZRsr243grCKP4MisTiY9N"
+          }
+          databaseToken={
+            cmsCredentialsProviderProps &&
+            "databaseToken" in cmsCredentialsProviderProps
+              ? cmsCredentialsProviderProps.databaseToken
+              : "kuzcPjtPIb2UrtN6m7SvDm3boly72NXougpXO3Eyg5iVkux2ZrXKXMXR6VQbbh6gu7sS6WqDpovg8Qzo3TA"
+          }
+          host={
+            cmsCredentialsProviderProps && "host" in cmsCredentialsProviderProps
+              ? cmsCredentialsProviderProps.host
+              : "https://studio.plasmic.app"
+          }
+          locale={
+            cmsCredentialsProviderProps &&
+            "locale" in cmsCredentialsProviderProps
+              ? cmsCredentialsProviderProps.locale
+              : undefined
+          }
+        >
+          {children}
+        </CmsCredentialsProvider>
       </AntdConfigProvider>
     </WordpressProvider>
   );

@@ -203,76 +203,94 @@ function PlasmicAbout__RenderFunc(props) {
                       />
                     </p.Stack>
                   </p.Stack>
-                  <div
-                    className={classNames(projectcss.all, sty.column__iJah2)}
-                  >
+                  {(
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
                     <div
-                      data-plasmic-name={"imageGallery"}
-                      data-plasmic-override={overrides.imageGallery}
-                      className={classNames(projectcss.all, sty.imageGallery)}
+                      className={classNames(projectcss.all, sty.column__iJah2)}
                     >
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : true
-                      ) ? (
+                      <div
+                        data-plasmic-name={"imageGallery"}
+                        data-plasmic-override={overrides.imageGallery}
+                        className={classNames(projectcss.all, sty.imageGallery)}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <p.Stack
+                            as={"div"}
+                            data-plasmic-name={"frame32"}
+                            data-plasmic-override={overrides.frame32}
+                            hasGap={true}
+                            className={classNames(projectcss.all, sty.frame32)}
+                          >
+                            <div
+                              data-plasmic-name={"rectangle5"}
+                              data-plasmic-override={overrides.rectangle5}
+                              className={classNames(
+                                projectcss.all,
+                                sty.rectangle5
+                              )}
+                            />
+                          </p.Stack>
+                        ) : null}
                         <p.Stack
                           as={"div"}
-                          data-plasmic-name={"frame32"}
-                          data-plasmic-override={overrides.frame32}
+                          data-plasmic-name={"frame34"}
+                          data-plasmic-override={overrides.frame34}
                           hasGap={true}
-                          className={classNames(projectcss.all, sty.frame32)}
+                          className={classNames(projectcss.all, sty.frame34)}
                         >
                           <div
-                            data-plasmic-name={"rectangle5"}
-                            data-plasmic-override={overrides.rectangle5}
+                            data-plasmic-name={"rectangle4"}
+                            data-plasmic-override={overrides.rectangle4}
                             className={classNames(
                               projectcss.all,
-                              sty.rectangle5
+                              sty.rectangle4
+                            )}
+                          />
+
+                          <div
+                            data-plasmic-name={"rectangle6"}
+                            data-plasmic-override={overrides.rectangle6}
+                            className={classNames(
+                              projectcss.all,
+                              sty.rectangle6
                             )}
                           />
                         </p.Stack>
-                      ) : null}
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame34"}
-                        data-plasmic-override={overrides.frame34}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame34)}
-                      >
-                        <div
-                          data-plasmic-name={"rectangle4"}
-                          data-plasmic-override={overrides.rectangle4}
-                          className={classNames(projectcss.all, sty.rectangle4)}
-                        />
+                        <p.Stack
+                          as={"div"}
+                          data-plasmic-name={"frame33"}
+                          data-plasmic-override={overrides.frame33}
+                          hasGap={true}
+                          className={classNames(projectcss.all, sty.frame33)}
+                        >
+                          <div
+                            data-plasmic-name={"rectangle7"}
+                            data-plasmic-override={overrides.rectangle7}
+                            className={classNames(
+                              projectcss.all,
+                              sty.rectangle7
+                            )}
+                          />
 
-                        <div
-                          data-plasmic-name={"rectangle6"}
-                          data-plasmic-override={overrides.rectangle6}
-                          className={classNames(projectcss.all, sty.rectangle6)}
-                        />
-                      </p.Stack>
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame33"}
-                        data-plasmic-override={overrides.frame33}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame33)}
-                      >
-                        <div
-                          data-plasmic-name={"rectangle7"}
-                          data-plasmic-override={overrides.rectangle7}
-                          className={classNames(projectcss.all, sty.rectangle7)}
-                        />
-
-                        <div
-                          data-plasmic-name={"rectangle8"}
-                          data-plasmic-override={overrides.rectangle8}
-                          className={classNames(projectcss.all, sty.rectangle8)}
-                        />
-                      </p.Stack>
+                          <div
+                            data-plasmic-name={"rectangle8"}
+                            data-plasmic-override={overrides.rectangle8}
+                            className={classNames(
+                              projectcss.all,
+                              sty.rectangle8
+                            )}
+                          />
+                        </p.Stack>
+                      </div>
                     </div>
-                  </div>
+                  ) : null}
                 </div>
               </p.Stack>
               <div className={classNames(projectcss.all, sty.columns___9PkT1)}>

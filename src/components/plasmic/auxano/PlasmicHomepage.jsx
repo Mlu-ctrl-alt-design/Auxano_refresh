@@ -20,6 +20,9 @@ import {
 } from "@plasmicapp/react-web";
 import NavBarFinal from "../../NavBarFinal"; // plasmic-import: Ba2YaKrrpo/component
 import Button2 from "../../Button2"; // plasmic-import: puKm7ksVLVR/component
+import Image from "../../Image"; // plasmic-import: 3-6KTLpsgf/component
+import { CmsQueryRepeater } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: 8N9-WfZSaq/codeComponent
+import { CmsRowField } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: w6HdOz-Pcn/codeComponent
 import Footer from "../../Footer"; // plasmic-import: 6NjpMkUH8g-/component
 import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -29,8 +32,8 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: Ybl9MM68MVSW/
 import ZapIcon from "./icons/PlasmicIcon__Zap"; // plasmic-import: jioqPss8S/icon
 import MailIcon from "./icons/PlasmicIcon__Mail"; // plasmic-import: _ML9L86z7M/icon
 import BarChart2Icon from "./icons/PlasmicIcon__BarChart2"; // plasmic-import: SsHUxMu660/icon
-import PlayIcon from "./icons/PlasmicIcon__Play"; // plasmic-import: PfPBwXScCL/icon
 import IconOutlinearrowRight2Icon from "./icons/PlasmicIcon__IconOutlinearrowRight2"; // plasmic-import: 1Aov_gh-ME/icon
+import gradient3XpngCpDWjGsnp from "./images/gradient3Xpng.png"; // plasmic-import: cpDWjGSNP/picture
 
 export const PlasmicHomepage__VariantProps = new Array();
 
@@ -706,6 +709,26 @@ function PlasmicHomepage__RenderFunc(props) {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__uYw0O)}
               >
+                <p.PlasmicImg
+                  data-plasmic-name={"img"}
+                  data-plasmic-override={overrides.img}
+                  alt={""}
+                  className={classNames(sty.img)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"25%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: gradient3XpngCpDWjGsnp,
+                    fullWidth: 221,
+                    fullHeight: 142,
+                    aspectRatio: undefined
+                  }}
+                />
+
                 <div
                   className={classNames(
                     projectcss.all,
@@ -825,38 +848,12 @@ function PlasmicHomepage__RenderFunc(props) {
                     data-plasmic-override={overrides.frame39}
                     className={classNames(projectcss.all, sty.frame39)}
                   >
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"person"}
-                      data-plasmic-override={overrides.person}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.person)}
-                    >
-                      <div
-                        data-plasmic-name={"frame16"}
-                        data-plasmic-override={overrides.frame16}
-                        className={classNames(projectcss.all, sty.frame16)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___9Rt0J
-                          )}
-                        >
-                          {"First Name"}
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___5OTyz
-                          )}
-                        >
-                          {"Director of something"}
-                        </div>
-                      </div>
-                    </p.Stack>
+                    <Image
+                      data-plasmic-name={"image"}
+                      data-plasmic-override={overrides.image}
+                      className={classNames("__wab_instance", sty.image)}
+                    />
+
                     <p.Stack
                       as={"div"}
                       data-plasmic-name={"person2"}
@@ -1039,161 +1036,6 @@ function PlasmicHomepage__RenderFunc(props) {
                 </p.Stack>
                 <p.Stack
                   as={"div"}
-                  data-plasmic-name={"list"}
-                  data-plasmic-override={overrides.list}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.list)}
-                >
-                  <div
-                    data-plasmic-name={"_1"}
-                    data-plasmic-override={overrides._1}
-                    className={classNames(projectcss.all, sty._1)}
-                  >
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__weGzk
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            data-plasmic-name={"testimonialName"}
-                            data-plasmic-override={overrides.testimonialName}
-                            className={classNames(
-                              projectcss.all,
-                              sty.testimonialName
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__ynRsw
-                              )}
-                            >
-                              {"Albert Flores"}
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__uqRPf
-                              )}
-                            >
-                              {"Founder of GearUp"}
-                            </div>
-                          </div>
-                        ) : null}
-                        <PlayIcon
-                          className={classNames(projectcss.all, sty.svg__oNHh8)}
-                          role={"img"}
-                        />
-                      </div>
-                    ) : null}
-                  </div>
-                  <div
-                    data-plasmic-name={"_2"}
-                    data-plasmic-override={overrides._2}
-                    className={classNames(projectcss.all, sty._2)}
-                  >
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__ePMnG
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            data-plasmic-name={"testimonialName2"}
-                            data-plasmic-override={overrides.testimonialName2}
-                            className={classNames(
-                              projectcss.all,
-                              sty.testimonialName2
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__pv3P
-                              )}
-                            >
-                              {"Albert Flores"}
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__svbBm
-                              )}
-                            >
-                              {"Founder of GearUp"}
-                            </div>
-                          </div>
-                        ) : null}
-                        <PlayIcon
-                          className={classNames(projectcss.all, sty.svg__m1CMw)}
-                          role={"img"}
-                        />
-                      </div>
-                    ) : null}
-                  </div>
-                  <div
-                    data-plasmic-name={"_3"}
-                    data-plasmic-override={overrides._3}
-                    className={classNames(projectcss.all, sty._3)}
-                  >
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__xNaTj
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            data-plasmic-name={"testimonialName3"}
-                            data-plasmic-override={overrides.testimonialName3}
-                            className={classNames(
-                              projectcss.all,
-                              sty.testimonialName3
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__sajv
-                              )}
-                            >
-                              {"Albert Flores"}
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___0Y5GF
-                              )}
-                            >
-                              {"Founder of GearUp"}
-                            </div>
-                          </div>
-                        ) : null}
-                        <PlayIcon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___17RjZ
-                          )}
-                          role={"img"}
-                        />
-                      </div>
-                    ) : null}
-                  </div>
-                </p.Stack>
-                <p.Stack
-                  as={"div"}
                   data-plasmic-name={"buttonPrimaryWithIcon"}
                   data-plasmic-override={overrides.buttonPrimaryWithIcon}
                   hasGap={true}
@@ -1240,6 +1082,103 @@ function PlasmicHomepage__RenderFunc(props) {
                 </p.Stack>
               </p.Stack>
             </p.Stack>
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__iRctg)}>
+                <CmsQueryRepeater
+                  data-plasmic-name={"cmsDataFetcher"}
+                  data-plasmic-override={overrides.cmsDataFetcher}
+                  className={classNames("__wab_instance", sty.cmsDataFetcher)}
+                  desc={false}
+                  emptyMessage={
+                    <ph.DataCtxReader>
+                      {$ctx => (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__af5Of
+                          )}
+                        >
+                          {"No matching published entries found."}
+                        </div>
+                      )}
+                    </ph.DataCtxReader>
+                  }
+                  filterField={"_id"}
+                  forceEmptyState={false}
+                  forceLoadingState={false}
+                  limit={3}
+                  loadingMessage={
+                    <ph.DataCtxReader>
+                      {$ctx => (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__o24J
+                          )}
+                        >
+                          {"Loading..."}
+                        </div>
+                      )}
+                    </ph.DataCtxReader>
+                  }
+                  noAutoRepeat={false}
+                  noLayout={false}
+                  table={"testimonials"}
+                  useDraft={false}
+                >
+                  <ph.DataCtxReader>
+                    {$ctx => (
+                      <React.Fragment>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__jImqZ
+                          )}
+                        >
+                          <CmsRowField
+                            className={classNames(
+                              "__wab_instance",
+                              sty.cmsEntryField__iuPcm
+                            )}
+                          />
+
+                          <CmsRowField
+                            className={classNames(
+                              "__wab_instance",
+                              sty.cmsEntryField__nesH7
+                            )}
+                            field={"content"}
+                          />
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__sb5K
+                          )}
+                        >
+                          <CmsRowField
+                            className={classNames(
+                              "__wab_instance",
+                              sty.cmsEntryField__nzwMf
+                            )}
+                          />
+
+                          <CmsRowField
+                            className={classNames(
+                              "__wab_instance",
+                              sty.cmsEntryField__zxfDs
+                            )}
+                            field={"content"}
+                          />
+                        </div>
+                      </React.Fragment>
+                    )}
+                  </ph.DataCtxReader>
+                </CmsQueryRepeater>
+              </div>
+            ) : null}
             <Footer
               data-plasmic-name={"footer"}
               data-plasmic-override={overrides.footer}
@@ -1292,6 +1231,7 @@ const PlasmicDescendants = {
     "titleSection",
     "h2",
     "columns",
+    "img",
     "h5",
     "section",
     "teamSection",
@@ -1299,8 +1239,7 @@ const PlasmicDescendants = {
     "top",
     "meetTheTeam",
     "frame39",
-    "person",
-    "frame16",
+    "image",
     "person2",
     "frame17",
     "bottom",
@@ -1313,17 +1252,11 @@ const PlasmicDescendants = {
     "testimonial",
     "frame26",
     "frame25",
-    "list",
-    "_1",
-    "testimonialName",
-    "_2",
-    "testimonialName2",
-    "_3",
-    "testimonialName3",
     "buttonPrimaryWithIcon",
     "frame1",
     "seeAllReviews",
     "icon",
+    "cmsDataFetcher",
     "footer"
   ],
 
@@ -1490,10 +1423,19 @@ const PlasmicDescendants = {
 
   text4: ["text4"],
   supportingText5: ["supportingText5"],
-  servicesSection: ["servicesSection", "titleSection", "h2", "columns", "h5"],
+  servicesSection: [
+    "servicesSection",
+    "titleSection",
+    "h2",
+    "columns",
+    "img",
+    "h5"
+  ],
+
   titleSection: ["titleSection", "h2"],
   h2: ["h2"],
-  columns: ["columns", "h5"],
+  columns: ["columns", "img", "h5"],
+  img: ["img"],
   h5: ["h5"],
   section: [
     "section",
@@ -1502,8 +1444,7 @@ const PlasmicDescendants = {
     "top",
     "meetTheTeam",
     "frame39",
-    "person",
-    "frame16",
+    "image",
     "person2",
     "frame17",
     "bottom",
@@ -1516,17 +1457,11 @@ const PlasmicDescendants = {
     "testimonial",
     "frame26",
     "frame25",
-    "list",
-    "_1",
-    "testimonialName",
-    "_2",
-    "testimonialName2",
-    "_3",
-    "testimonialName3",
     "buttonPrimaryWithIcon",
     "frame1",
     "seeAllReviews",
     "icon",
+    "cmsDataFetcher",
     "footer"
   ],
 
@@ -1536,8 +1471,7 @@ const PlasmicDescendants = {
     "top",
     "meetTheTeam",
     "frame39",
-    "person",
-    "frame16",
+    "image",
     "person2",
     "frame17",
     "bottom",
@@ -1554,8 +1488,7 @@ const PlasmicDescendants = {
     "top",
     "meetTheTeam",
     "frame39",
-    "person",
-    "frame16",
+    "image",
     "person2",
     "frame17",
     "bottom",
@@ -1567,20 +1500,10 @@ const PlasmicDescendants = {
     "frame22"
   ],
 
-  top: [
-    "top",
-    "meetTheTeam",
-    "frame39",
-    "person",
-    "frame16",
-    "person2",
-    "frame17"
-  ],
-
+  top: ["top", "meetTheTeam", "frame39", "image", "person2", "frame17"],
   meetTheTeam: ["meetTheTeam"],
-  frame39: ["frame39", "person", "frame16", "person2", "frame17"],
-  person: ["person", "frame16"],
-  frame16: ["frame16"],
+  frame39: ["frame39", "image", "person2", "frame17"],
+  image: ["image"],
   person2: ["person2", "frame17"],
   frame17: ["frame17"],
   bottom: [
@@ -1603,13 +1526,6 @@ const PlasmicDescendants = {
     "testimonial",
     "frame26",
     "frame25",
-    "list",
-    "_1",
-    "testimonialName",
-    "_2",
-    "testimonialName2",
-    "_3",
-    "testimonialName3",
     "buttonPrimaryWithIcon",
     "frame1",
     "seeAllReviews",
@@ -1619,13 +1535,6 @@ const PlasmicDescendants = {
   frame26: [
     "frame26",
     "frame25",
-    "list",
-    "_1",
-    "testimonialName",
-    "_2",
-    "testimonialName2",
-    "_3",
-    "testimonialName3",
     "buttonPrimaryWithIcon",
     "frame1",
     "seeAllReviews",
@@ -1633,22 +1542,6 @@ const PlasmicDescendants = {
   ],
 
   frame25: ["frame25"],
-  list: [
-    "list",
-    "_1",
-    "testimonialName",
-    "_2",
-    "testimonialName2",
-    "_3",
-    "testimonialName3"
-  ],
-
-  _1: ["_1", "testimonialName"],
-  testimonialName: ["testimonialName"],
-  _2: ["_2", "testimonialName2"],
-  testimonialName2: ["testimonialName2"],
-  _3: ["_3", "testimonialName3"],
-  testimonialName3: ["testimonialName3"],
   buttonPrimaryWithIcon: [
     "buttonPrimaryWithIcon",
     "frame1",
@@ -1659,6 +1552,7 @@ const PlasmicDescendants = {
   frame1: ["frame1", "seeAllReviews", "icon"],
   seeAllReviews: ["seeAllReviews"],
   icon: ["icon"],
+  cmsDataFetcher: ["cmsDataFetcher"],
   footer: ["footer"]
 };
 
@@ -1732,6 +1626,7 @@ export const PlasmicHomepage = Object.assign(
     titleSection: makeNodeComponent("titleSection"),
     h2: makeNodeComponent("h2"),
     columns: makeNodeComponent("columns"),
+    img: makeNodeComponent("img"),
     h5: makeNodeComponent("h5"),
     section: makeNodeComponent("section"),
     teamSection: makeNodeComponent("teamSection"),
@@ -1739,8 +1634,7 @@ export const PlasmicHomepage = Object.assign(
     top: makeNodeComponent("top"),
     meetTheTeam: makeNodeComponent("meetTheTeam"),
     frame39: makeNodeComponent("frame39"),
-    person: makeNodeComponent("person"),
-    frame16: makeNodeComponent("frame16"),
+    image: makeNodeComponent("image"),
     person2: makeNodeComponent("person2"),
     frame17: makeNodeComponent("frame17"),
     bottom: makeNodeComponent("bottom"),
@@ -1753,17 +1647,11 @@ export const PlasmicHomepage = Object.assign(
     testimonial: makeNodeComponent("testimonial"),
     frame26: makeNodeComponent("frame26"),
     frame25: makeNodeComponent("frame25"),
-    list: makeNodeComponent("list"),
-    _1: makeNodeComponent("_1"),
-    testimonialName: makeNodeComponent("testimonialName"),
-    _2: makeNodeComponent("_2"),
-    testimonialName2: makeNodeComponent("testimonialName2"),
-    _3: makeNodeComponent("_3"),
-    testimonialName3: makeNodeComponent("testimonialName3"),
     buttonPrimaryWithIcon: makeNodeComponent("buttonPrimaryWithIcon"),
     frame1: makeNodeComponent("frame1"),
     seeAllReviews: makeNodeComponent("seeAllReviews"),
     icon: makeNodeComponent("icon"),
+    cmsDataFetcher: makeNodeComponent("cmsDataFetcher"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
