@@ -19,6 +19,9 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import NavBarFinal from "../../NavBarFinal"; // plasmic-import: Ba2YaKrrpo/component
+import { CmsQueryRepeater } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: 8N9-WfZSaq/codeComponent
+import { CmsRowField } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: w6HdOz-Pcn/codeComponent
+import Button2 from "../../Button2"; // plasmic-import: puKm7ksVLVR/component
 import Footer from "../../Footer"; // plasmic-import: 6NjpMkUH8g-/component
 import { useScreenVariants as useScreenVariantsbmXrKiwboivdw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: bmXrKIWBOIVDW/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -27,7 +30,6 @@ import projectcss from "./plasmic_auxano.module.css"; // plasmic-import: oGQcGtb
 import sty from "./PlasmicServices.module.css"; // plasmic-import: F3vIIsFda1/css
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: OY1KSwwKNC/icon
 import icons8Puzzle282LwB8Yii from "./images/icons8Puzzle2.svg"; // plasmic-import: 82lwB8yii/picture
-import officeBuildingOutline2R4IkxbpYcS from "./images/officeBuildingOutline2.svg"; // plasmic-import: r4IkxbpYcS/picture
 
 export const PlasmicServices__VariantProps = new Array();
 
@@ -155,182 +157,219 @@ function PlasmicServices__RenderFunc(props) {
                 {"Our Services"}
               </div>
             </p.Stack>
-            <div className={classNames(projectcss.all, sty.columns__bxgUt)}>
-              <div className={classNames(projectcss.all, sty.column__gp29)}>
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"_1"}
-                  data-plasmic-override={overrides._1}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty._1)}
-                >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__vGhFf)}
-                    displayHeight={"35px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"35px"}
-                    loading={"lazy"}
-                    src={{
-                      src: icons8Puzzle282LwB8Yii,
-                      fullWidth: 35,
-                      fullHeight: 35,
-                      aspectRatio: 1
-                    }}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__xZbmV
-                    )}
-                  >
-                    {"BUSINESS RESCUE AND TURN AROUND STRATEGY"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__kzIUn
-                    )}
-                  >
-                    {
-                      "we understand that every business is unique, and we tailor our turnaround strategies to each client's specific needs. Our goal is to help businesses achieve financial stability and long-term success by implementing proven strategies that are customized to their situation."
-                    }
-                  </div>
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"button"}
-                    data-plasmic-override={overrides.button}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.button)}
-                  >
+            <CmsQueryRepeater
+              data-plasmic-name={"cmsDataFetcher"}
+              data-plasmic-override={overrides.cmsDataFetcher}
+              className={classNames("__wab_instance", sty.cmsDataFetcher)}
+              desc={false}
+              emptyMessage={
+                <ph.DataCtxReader>
+                  {$ctx => (
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__rUxni
+                        sty.text__b8BBa
                       )}
                     >
-                      {"Get in touch"}
+                      {"No matching published entries found."}
                     </div>
-                    <Icon2Icon
-                      className={classNames(projectcss.all, sty.svg___9CvC)}
-                      role={"img"}
-                    />
-                  </p.Stack>
-                </p.Stack>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__cEwyk)}>
-                {(
-                  hasVariant(globalVariants, "screen", "tabletOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    data-plasmic-name={"rectangle3"}
-                    data-plasmic-override={overrides.rectangle3}
-                    className={classNames(projectcss.all, sty.rectangle3)}
-                  />
-                ) : null}
-              </div>
-            </div>
-            <div className={classNames(projectcss.all, sty.columns__smo5A)}>
-              <div className={classNames(projectcss.all, sty.column__p6SPk)}>
-                {(
-                  hasVariant(globalVariants, "screen", "tabletOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    data-plasmic-name={"rectangle2"}
-                    data-plasmic-override={overrides.rectangle2}
-                    className={classNames(projectcss.all, sty.rectangle2)}
-                  />
-                ) : null}
-              </div>
-              <div className={classNames(projectcss.all, sty.column__tl7E)}>
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"_2"}
-                  data-plasmic-override={overrides._2}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty._2)}
-                >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img___2Ku1W)}
-                    displayHeight={"35px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"35px"}
-                    loading={"lazy"}
-                    src={{
-                      src: officeBuildingOutline2R4IkxbpYcS,
-                      fullWidth: 35,
-                      fullHeight: 35,
-                      aspectRatio: 1
-                    }}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ekXne
-                    )}
-                  >
-                    {"CORPORATE RESTRUCTURING"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ynE0A
-                    )}
-                  >
-                    {
-                      "Corporate restructuring is the process of making significant changes to a company's structure to improve its performance. At Auxano, we offer tailored solutions to help businesses overcome financial challenges and achieve long-term success through effective restructuring strategies."
-                    }
-                  </div>
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"button2"}
-                    data-plasmic-override={overrides.button2}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.button2)}
-                  >
+                  )}
+                </ph.DataCtxReader>
+              }
+              forceEmptyState={false}
+              forceLoadingState={false}
+              limit={0}
+              loadingMessage={
+                <ph.DataCtxReader>
+                  {$ctx => (
                     <div
-                      data-plasmic-name={"text2"}
-                      data-plasmic-override={overrides.text2}
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text2
+                        sty.text___7K197
                       )}
                     >
-                      {"Get in touch"}
+                      {"Loading..."}
                     </div>
-                    <Icon2Icon
-                      className={classNames(projectcss.all, sty.svg__nuFgh)}
-                      role={"img"}
+                  )}
+                </ph.DataCtxReader>
+              }
+              noAutoRepeat={false}
+              noLayout={false}
+              useDraft={false}
+            >
+              <ph.DataCtxReader>
+                {$ctx => (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__fgbaY)}
+                  >
+                    {true ? (
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__xSHv
+                        )}
+                      >
+                        {true ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__kOaXb
+                            )}
+                          >
+                            <CmsRowField
+                              className={classNames(
+                                "__wab_instance",
+                                sty.cmsEntryField__cJxbW
+                              )}
+                            />
+
+                            <CmsRowField
+                              className={classNames(
+                                "__wab_instance",
+                                sty.cmsEntryField___20Ror
+                              )}
+                              field={"serviceDesc"}
+                            />
+
+                            <Button2
+                              data-plasmic-name={"button2"}
+                              data-plasmic-override={overrides.button2}
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button2
+                              )}
+                            >
+                              {"Get in touch"}
+                            </Button2>
+                          </div>
+                        ) : null}
+                        {(
+                          hasVariant(globalVariants, "screen", "tabletOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <CmsRowField
+                            className={classNames(
+                              "__wab_instance",
+                              sty.cmsEntryField__fLg41
+                            )}
+                            field={"serviceRelatedImage"}
+                          />
+                        ) : null}
+                      </p.Stack>
+                    ) : null}
+                  </div>
+                )}
+              </ph.DataCtxReader>
+            </CmsQueryRepeater>
+            {(
+              hasVariant(globalVariants, "screen", "tabletOnly") ? true : true
+            ) ? (
+              <div
+                data-plasmic-name={"columns"}
+                data-plasmic-override={overrides.columns}
+                className={classNames(projectcss.all, sty.columns)}
+              >
+                <div className={classNames(projectcss.all, sty.column__gp29)}>
+                  {(
+                    hasVariant(globalVariants, "screen", "tabletOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"_1"}
+                      data-plasmic-override={overrides._1}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty._1)}
+                    >
+                      <p.PlasmicImg
+                        data-plasmic-name={"img"}
+                        data-plasmic-override={overrides.img}
+                        alt={""}
+                        className={classNames(sty.img)}
+                        displayHeight={"35px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"35px"}
+                        loading={"lazy"}
+                        src={{
+                          src: icons8Puzzle282LwB8Yii,
+                          fullWidth: 35,
+                          fullHeight: 35,
+                          aspectRatio: 1
+                        }}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__xZbmV
+                        )}
+                      >
+                        {"BUSINESS RESCUE AND TURN AROUND STRATEGY"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__kzIUn
+                        )}
+                      >
+                        {
+                          "we understand that every business is unique, and we tailor our turnaround strategies to each client's specific needs. Our goal is to help businesses achieve financial stability and long-term success by implementing proven strategies that are customized to their situation."
+                        }
+                      </div>
+                      <p.Stack
+                        as={"div"}
+                        data-plasmic-name={"button"}
+                        data-plasmic-override={overrides.button}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.button)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__rUxni
+                          )}
+                        >
+                          {"Get in touch"}
+                        </div>
+                        <Icon2Icon
+                          data-plasmic-name={"svg"}
+                          data-plasmic-override={overrides.svg}
+                          className={classNames(projectcss.all, sty.svg)}
+                          role={"img"}
+                        />
+                      </p.Stack>
+                    </p.Stack>
+                  ) : null}
+                </div>
+                <div className={classNames(projectcss.all, sty.column__cEwyk)}>
+                  {(
+                    hasVariant(globalVariants, "screen", "tabletOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <div
+                      data-plasmic-name={"rectangle3"}
+                      data-plasmic-override={overrides.rectangle3}
+                      className={classNames(projectcss.all, sty.rectangle3)}
                     />
-                  </p.Stack>
-                </p.Stack>
+                  ) : null}
+                </div>
               </div>
-            </div>
+            ) : null}
           </p.Stack>
-          <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
-          >
+          <div className={classNames(projectcss.all, sty.freeBox__cEacE)}>
             <Footer
               data-plasmic-name={"footer"}
               data-plasmic-override={overrides.footer}
@@ -353,14 +392,14 @@ const PlasmicDescendants = {
     "frame39",
     "section",
     "frame27",
-    "_1",
-    "button",
-    "rectangle3",
-    "rectangle2",
-    "_2",
+    "cmsDataFetcher",
     "button2",
-    "text2",
-    "freeBox",
+    "columns",
+    "_1",
+    "img",
+    "button",
+    "svg",
+    "rectangle3",
     "footer"
   ],
 
@@ -372,24 +411,25 @@ const PlasmicDescendants = {
   section: [
     "section",
     "frame27",
-    "_1",
-    "button",
-    "rectangle3",
-    "rectangle2",
-    "_2",
+    "cmsDataFetcher",
     "button2",
-    "text2"
+    "columns",
+    "_1",
+    "img",
+    "button",
+    "svg",
+    "rectangle3"
   ],
 
   frame27: ["frame27"],
-  _1: ["_1", "button"],
-  button: ["button"],
+  cmsDataFetcher: ["cmsDataFetcher", "button2"],
+  button2: ["button2"],
+  columns: ["columns", "_1", "img", "button", "svg", "rectangle3"],
+  _1: ["_1", "img", "button", "svg"],
+  img: ["img"],
+  button: ["button", "svg"],
+  svg: ["svg"],
   rectangle3: ["rectangle3"],
-  rectangle2: ["rectangle2"],
-  _2: ["_2", "button2", "text2"],
-  button2: ["button2", "text2"],
-  text2: ["text2"],
-  freeBox: ["freeBox", "footer"],
   footer: ["footer"]
 };
 
@@ -433,14 +473,14 @@ export const PlasmicServices = Object.assign(
     frame39: makeNodeComponent("frame39"),
     section: makeNodeComponent("section"),
     frame27: makeNodeComponent("frame27"),
-    _1: makeNodeComponent("_1"),
-    button: makeNodeComponent("button"),
-    rectangle3: makeNodeComponent("rectangle3"),
-    rectangle2: makeNodeComponent("rectangle2"),
-    _2: makeNodeComponent("_2"),
+    cmsDataFetcher: makeNodeComponent("cmsDataFetcher"),
     button2: makeNodeComponent("button2"),
-    text2: makeNodeComponent("text2"),
-    freeBox: makeNodeComponent("freeBox"),
+    columns: makeNodeComponent("columns"),
+    _1: makeNodeComponent("_1"),
+    img: makeNodeComponent("img"),
+    button: makeNodeComponent("button"),
+    svg: makeNodeComponent("svg"),
+    rectangle3: makeNodeComponent("rectangle3"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicServices
     internalVariantProps: PlasmicServices__VariantProps,
