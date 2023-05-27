@@ -1034,6 +1034,108 @@ function PlasmicHomepage__RenderFunc(props) {
                     }
                   </div>
                 </p.Stack>
+                {true ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__kBkC)}
+                  >
+                    <CmsQueryRepeater
+                      data-plasmic-name={"cmsDataFetcher"}
+                      data-plasmic-override={overrides.cmsDataFetcher}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.cmsDataFetcher
+                      )}
+                      desc={false}
+                      emptyMessage={
+                        <ph.DataCtxReader>
+                          {$ctx => (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__tMfx8
+                              )}
+                            >
+                              {"No matching published entries found."}
+                            </div>
+                          )}
+                        </ph.DataCtxReader>
+                      }
+                      filterField={"_id"}
+                      forceEmptyState={false}
+                      forceLoadingState={false}
+                      limit={3}
+                      loadingMessage={
+                        <ph.DataCtxReader>
+                          {$ctx => (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__dZFa
+                              )}
+                            >
+                              {"Loading..."}
+                            </div>
+                          )}
+                        </ph.DataCtxReader>
+                      }
+                      noAutoRepeat={false}
+                      noLayout={false}
+                      table={"testimonials"}
+                      useDraft={false}
+                    >
+                      <ph.DataCtxReader>
+                        {$ctx => (
+                          <React.Fragment>
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__w3Toh
+                              )}
+                            >
+                              <CmsRowField
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.cmsEntryField__aXcsG
+                                )}
+                              />
+
+                              <CmsRowField
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.cmsEntryField__dXnLq
+                                )}
+                                field={"content"}
+                              />
+                            </div>
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__jfwzj
+                              )}
+                            >
+                              <CmsRowField
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.cmsEntryField___2R0Ub
+                                )}
+                              />
+
+                              <CmsRowField
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.cmsEntryField__ehXrA
+                                )}
+                                field={"content"}
+                              />
+                            </div>
+                          </React.Fragment>
+                        )}
+                      </ph.DataCtxReader>
+                    </CmsQueryRepeater>
+                  </div>
+                ) : null}
                 <p.Stack
                   as={"div"}
                   data-plasmic-name={"buttonPrimaryWithIcon"}
@@ -1082,103 +1184,6 @@ function PlasmicHomepage__RenderFunc(props) {
                 </p.Stack>
               </p.Stack>
             </p.Stack>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__iRctg)}>
-                <CmsQueryRepeater
-                  data-plasmic-name={"cmsDataFetcher"}
-                  data-plasmic-override={overrides.cmsDataFetcher}
-                  className={classNames("__wab_instance", sty.cmsDataFetcher)}
-                  desc={false}
-                  emptyMessage={
-                    <ph.DataCtxReader>
-                      {$ctx => (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__af5Of
-                          )}
-                        >
-                          {"No matching published entries found."}
-                        </div>
-                      )}
-                    </ph.DataCtxReader>
-                  }
-                  filterField={"_id"}
-                  forceEmptyState={false}
-                  forceLoadingState={false}
-                  limit={3}
-                  loadingMessage={
-                    <ph.DataCtxReader>
-                      {$ctx => (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__o24J
-                          )}
-                        >
-                          {"Loading..."}
-                        </div>
-                      )}
-                    </ph.DataCtxReader>
-                  }
-                  noAutoRepeat={false}
-                  noLayout={false}
-                  table={"testimonials"}
-                  useDraft={false}
-                >
-                  <ph.DataCtxReader>
-                    {$ctx => (
-                      <React.Fragment>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__jImqZ
-                          )}
-                        >
-                          <CmsRowField
-                            className={classNames(
-                              "__wab_instance",
-                              sty.cmsEntryField__iuPcm
-                            )}
-                          />
-
-                          <CmsRowField
-                            className={classNames(
-                              "__wab_instance",
-                              sty.cmsEntryField__nesH7
-                            )}
-                            field={"content"}
-                          />
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__sb5K
-                          )}
-                        >
-                          <CmsRowField
-                            className={classNames(
-                              "__wab_instance",
-                              sty.cmsEntryField__nzwMf
-                            )}
-                          />
-
-                          <CmsRowField
-                            className={classNames(
-                              "__wab_instance",
-                              sty.cmsEntryField__zxfDs
-                            )}
-                            field={"content"}
-                          />
-                        </div>
-                      </React.Fragment>
-                    )}
-                  </ph.DataCtxReader>
-                </CmsQueryRepeater>
-              </div>
-            ) : null}
             <Footer
               data-plasmic-name={"footer"}
               data-plasmic-override={overrides.footer}
@@ -1252,11 +1257,11 @@ const PlasmicDescendants = {
     "testimonial",
     "frame26",
     "frame25",
+    "cmsDataFetcher",
     "buttonPrimaryWithIcon",
     "frame1",
     "seeAllReviews",
     "icon",
-    "cmsDataFetcher",
     "footer"
   ],
 
@@ -1457,11 +1462,11 @@ const PlasmicDescendants = {
     "testimonial",
     "frame26",
     "frame25",
+    "cmsDataFetcher",
     "buttonPrimaryWithIcon",
     "frame1",
     "seeAllReviews",
     "icon",
-    "cmsDataFetcher",
     "footer"
   ],
 
@@ -1526,6 +1531,7 @@ const PlasmicDescendants = {
     "testimonial",
     "frame26",
     "frame25",
+    "cmsDataFetcher",
     "buttonPrimaryWithIcon",
     "frame1",
     "seeAllReviews",
@@ -1535,6 +1541,7 @@ const PlasmicDescendants = {
   frame26: [
     "frame26",
     "frame25",
+    "cmsDataFetcher",
     "buttonPrimaryWithIcon",
     "frame1",
     "seeAllReviews",
@@ -1542,6 +1549,7 @@ const PlasmicDescendants = {
   ],
 
   frame25: ["frame25"],
+  cmsDataFetcher: ["cmsDataFetcher"],
   buttonPrimaryWithIcon: [
     "buttonPrimaryWithIcon",
     "frame1",
@@ -1552,7 +1560,6 @@ const PlasmicDescendants = {
   frame1: ["frame1", "seeAllReviews", "icon"],
   seeAllReviews: ["seeAllReviews"],
   icon: ["icon"],
-  cmsDataFetcher: ["cmsDataFetcher"],
   footer: ["footer"]
 };
 
@@ -1647,11 +1654,11 @@ export const PlasmicHomepage = Object.assign(
     testimonial: makeNodeComponent("testimonial"),
     frame26: makeNodeComponent("frame26"),
     frame25: makeNodeComponent("frame25"),
+    cmsDataFetcher: makeNodeComponent("cmsDataFetcher"),
     buttonPrimaryWithIcon: makeNodeComponent("buttonPrimaryWithIcon"),
     frame1: makeNodeComponent("frame1"),
     seeAllReviews: makeNodeComponent("seeAllReviews"),
     icon: makeNodeComponent("icon"),
-    cmsDataFetcher: makeNodeComponent("cmsDataFetcher"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
