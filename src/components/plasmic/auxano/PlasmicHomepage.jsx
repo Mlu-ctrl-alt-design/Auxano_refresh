@@ -20,7 +20,6 @@ import {
 } from "@plasmicapp/react-web";
 import NavBarFinal from "../../NavBarFinal"; // plasmic-import: Ba2YaKrrpo/component
 import Button2 from "../../Button2"; // plasmic-import: puKm7ksVLVR/component
-import Image from "../../Image"; // plasmic-import: 3-6KTLpsgf/component
 import { CmsQueryRepeater } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: 8N9-WfZSaq/codeComponent
 import { CmsRowField } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: w6HdOz-Pcn/codeComponent
 import Footer from "../../Footer"; // plasmic-import: 6NjpMkUH8g-/component
@@ -843,152 +842,97 @@ function PlasmicHomepage__RenderFunc(props) {
                         : "Our goal and vision remain steadfast in that we consistently strive to be the leading competitively business consultancy in South Africa"}
                     </div>
                   </p.Stack>
-                  <div
-                    data-plasmic-name={"frame39"}
-                    data-plasmic-override={overrides.frame39}
-                    className={classNames(projectcss.all, sty.frame39)}
-                  >
-                    <Image
-                      data-plasmic-name={"image"}
-                      data-plasmic-override={overrides.image}
-                      className={classNames("__wab_instance", sty.image)}
-                    />
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"person2"}
-                      data-plasmic-override={overrides.person2}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.person2)}
-                    >
-                      <div
-                        data-plasmic-name={"frame17"}
-                        data-plasmic-override={overrides.frame17}
-                        className={classNames(projectcss.all, sty.frame17)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__duha3
-                          )}
-                        >
-                          {"First Name"}
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__zlQAg
-                          )}
-                        >
-                          {"Director of something"}
-                        </div>
-                      </div>
-                    </p.Stack>
-                  </div>
                 </div>
                 <div
                   data-plasmic-name={"bottom"}
                   data-plasmic-override={overrides.bottom}
                   className={classNames(projectcss.all, sty.bottom)}
                 >
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"person3"}
-                    data-plasmic-override={overrides.person3}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.person3)}
+                  <CmsQueryRepeater
+                    className={classNames(
+                      "__wab_instance",
+                      sty.cmsDataFetcher___51SFb
+                    )}
+                    desc={false}
+                    emptyMessage={
+                      <ph.DataCtxReader>
+                        {$ctx => (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___1T1Lt
+                            )}
+                          >
+                            {"No matching published entries found."}
+                          </div>
+                        )}
+                      </ph.DataCtxReader>
+                    }
+                    forceEmptyState={false}
+                    forceLoadingState={false}
+                    limit={0}
+                    loadingMessage={
+                      <ph.DataCtxReader>
+                        {$ctx => (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__ecjuj
+                            )}
+                          >
+                            {"Loading..."}
+                          </div>
+                        )}
+                      </ph.DataCtxReader>
+                    }
+                    noAutoRepeat={false}
+                    noLayout={false}
+                    useDraft={false}
                   >
-                    <div
-                      data-plasmic-name={"frame18"}
-                      data-plasmic-override={overrides.frame18}
-                      className={classNames(projectcss.all, sty.frame18)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__eir0G
-                        )}
-                      >
-                        {"First Name"}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__vsD0R
-                        )}
-                      >
-                        {"Director of something"}
-                      </div>
-                    </div>
-                  </p.Stack>
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"person4"}
-                    data-plasmic-override={overrides.person4}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.person4)}
-                  >
-                    <div
-                      data-plasmic-name={"frame21"}
-                      data-plasmic-override={overrides.frame21}
-                      className={classNames(projectcss.all, sty.frame21)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__tnkhj
-                        )}
-                      >
-                        {"First Name"}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__rjEbA
-                        )}
-                      >
-                        {"Director of something"}
-                      </div>
-                    </div>
-                  </p.Stack>
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"person5"}
-                    data-plasmic-override={overrides.person5}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.person5)}
-                  >
-                    <div
-                      data-plasmic-name={"frame22"}
-                      data-plasmic-override={overrides.frame22}
-                      className={classNames(projectcss.all, sty.frame22)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__k5X5B
-                        )}
-                      >
-                        {"First Name"}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__y0VmL
-                        )}
-                      >
-                        {"Director of something"}
-                      </div>
-                    </div>
-                  </p.Stack>
+                    <ph.DataCtxReader>
+                      {$ctx => (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__bL0AS
+                          )}
+                        >
+                          <CmsRowField
+                            className={classNames(
+                              "__wab_instance",
+                              sty.cmsEntryField__uOl9G
+                            )}
+                            field={"memberPortrait"}
+                          />
+
+                          <CmsRowField
+                            className={classNames(
+                              "__wab_instance",
+                              sty.cmsEntryField__tc709
+                            )}
+                          />
+
+                          <CmsRowField
+                            className={classNames(
+                              "__wab_instance",
+                              sty.cmsEntryField___36D0M
+                            )}
+                            field={"memberDescription"}
+                          />
+
+                          <CmsRowField
+                            className={classNames(
+                              "__wab_instance",
+                              sty.cmsEntryField__iQ6CF
+                            )}
+                            field={"memberTitle"}
+                          />
+                        </div>
+                      )}
+                    </ph.DataCtxReader>
+                  </CmsQueryRepeater>
                 </div>
               </div>
             </p.Stack>
@@ -1039,11 +983,9 @@ function PlasmicHomepage__RenderFunc(props) {
                     className={classNames(projectcss.all, sty.freeBox__kBkC)}
                   >
                     <CmsQueryRepeater
-                      data-plasmic-name={"cmsDataFetcher"}
-                      data-plasmic-override={overrides.cmsDataFetcher}
                       className={classNames(
                         "__wab_instance",
-                        sty.cmsDataFetcher
+                        sty.cmsDataFetcher__hxdab
                       )}
                       desc={false}
                       emptyMessage={
@@ -1243,21 +1185,10 @@ const PlasmicDescendants = {
     "teamInner",
     "top",
     "meetTheTeam",
-    "frame39",
-    "image",
-    "person2",
-    "frame17",
     "bottom",
-    "person3",
-    "frame18",
-    "person4",
-    "frame21",
-    "person5",
-    "frame22",
     "testimonial",
     "frame26",
     "frame25",
-    "cmsDataFetcher",
     "buttonPrimaryWithIcon",
     "frame1",
     "seeAllReviews",
@@ -1448,21 +1379,10 @@ const PlasmicDescendants = {
     "teamInner",
     "top",
     "meetTheTeam",
-    "frame39",
-    "image",
-    "person2",
-    "frame17",
     "bottom",
-    "person3",
-    "frame18",
-    "person4",
-    "frame21",
-    "person5",
-    "frame22",
     "testimonial",
     "frame26",
     "frame25",
-    "cmsDataFetcher",
     "buttonPrimaryWithIcon",
     "frame1",
     "seeAllReviews",
@@ -1470,68 +1390,15 @@ const PlasmicDescendants = {
     "footer"
   ],
 
-  teamSection: [
-    "teamSection",
-    "teamInner",
-    "top",
-    "meetTheTeam",
-    "frame39",
-    "image",
-    "person2",
-    "frame17",
-    "bottom",
-    "person3",
-    "frame18",
-    "person4",
-    "frame21",
-    "person5",
-    "frame22"
-  ],
-
-  teamInner: [
-    "teamInner",
-    "top",
-    "meetTheTeam",
-    "frame39",
-    "image",
-    "person2",
-    "frame17",
-    "bottom",
-    "person3",
-    "frame18",
-    "person4",
-    "frame21",
-    "person5",
-    "frame22"
-  ],
-
-  top: ["top", "meetTheTeam", "frame39", "image", "person2", "frame17"],
+  teamSection: ["teamSection", "teamInner", "top", "meetTheTeam", "bottom"],
+  teamInner: ["teamInner", "top", "meetTheTeam", "bottom"],
+  top: ["top", "meetTheTeam"],
   meetTheTeam: ["meetTheTeam"],
-  frame39: ["frame39", "image", "person2", "frame17"],
-  image: ["image"],
-  person2: ["person2", "frame17"],
-  frame17: ["frame17"],
-  bottom: [
-    "bottom",
-    "person3",
-    "frame18",
-    "person4",
-    "frame21",
-    "person5",
-    "frame22"
-  ],
-
-  person3: ["person3", "frame18"],
-  frame18: ["frame18"],
-  person4: ["person4", "frame21"],
-  frame21: ["frame21"],
-  person5: ["person5", "frame22"],
-  frame22: ["frame22"],
+  bottom: ["bottom"],
   testimonial: [
     "testimonial",
     "frame26",
     "frame25",
-    "cmsDataFetcher",
     "buttonPrimaryWithIcon",
     "frame1",
     "seeAllReviews",
@@ -1541,7 +1408,6 @@ const PlasmicDescendants = {
   frame26: [
     "frame26",
     "frame25",
-    "cmsDataFetcher",
     "buttonPrimaryWithIcon",
     "frame1",
     "seeAllReviews",
@@ -1549,7 +1415,6 @@ const PlasmicDescendants = {
   ],
 
   frame25: ["frame25"],
-  cmsDataFetcher: ["cmsDataFetcher"],
   buttonPrimaryWithIcon: [
     "buttonPrimaryWithIcon",
     "frame1",
@@ -1640,21 +1505,10 @@ export const PlasmicHomepage = Object.assign(
     teamInner: makeNodeComponent("teamInner"),
     top: makeNodeComponent("top"),
     meetTheTeam: makeNodeComponent("meetTheTeam"),
-    frame39: makeNodeComponent("frame39"),
-    image: makeNodeComponent("image"),
-    person2: makeNodeComponent("person2"),
-    frame17: makeNodeComponent("frame17"),
     bottom: makeNodeComponent("bottom"),
-    person3: makeNodeComponent("person3"),
-    frame18: makeNodeComponent("frame18"),
-    person4: makeNodeComponent("person4"),
-    frame21: makeNodeComponent("frame21"),
-    person5: makeNodeComponent("person5"),
-    frame22: makeNodeComponent("frame22"),
     testimonial: makeNodeComponent("testimonial"),
     frame26: makeNodeComponent("frame26"),
     frame25: makeNodeComponent("frame25"),
-    cmsDataFetcher: makeNodeComponent("cmsDataFetcher"),
     buttonPrimaryWithIcon: makeNodeComponent("buttonPrimaryWithIcon"),
     frame1: makeNodeComponent("frame1"),
     seeAllReviews: makeNodeComponent("seeAllReviews"),
