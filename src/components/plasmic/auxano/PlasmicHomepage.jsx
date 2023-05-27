@@ -889,6 +889,11 @@ function PlasmicHomepage__RenderFunc(props) {
                     }
                     noAutoRepeat={false}
                     noLayout={false}
+                    table={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "team"
+                        : "team"
+                    }
                     useDraft={false}
                   >
                     <ph.DataCtxReader>
@@ -912,14 +917,6 @@ function PlasmicHomepage__RenderFunc(props) {
                               "__wab_instance",
                               sty.cmsEntryField__tc709
                             )}
-                          />
-
-                          <CmsRowField
-                            className={classNames(
-                              "__wab_instance",
-                              sty.cmsEntryField___36D0M
-                            )}
-                            field={"memberDescription"}
                           />
 
                           <CmsRowField
@@ -1440,7 +1437,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicHomepage__RenderFunc({
       variants,
       args,
